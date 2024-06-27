@@ -41,7 +41,6 @@ config.cursor_blink_rate = 750
 config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
-
 -- I can't get these to do anything even though they're copy-pasted from the docs
 -- They dont' work with Color or Ansci, with or without opacity tweaks
 config.colors = {
