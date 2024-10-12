@@ -15,16 +15,38 @@ wezterm.on('gui-startup', function(cmd)
   window:gui_window():maximize()
 end)
 
+<<<<<<< HEAD
 
 
 
 -- This is where you actually apply your config choices
+=======
+--[[ This is where you actually apply your config choices ]]
+
+
+config.window_background_opacity = 1
+-- set an image as the background
+-- config.window_background_image = "/home/thadryan/Documents/HomeVault/Areas/Art/Backgrounds/rapture.jpg"
+config.window_background_image = "/home/thadryan/Documents/rapture.jpg"
+-- set the image as partially transparent
+config.window_background_image_hsb = {
+  brightness = 0.03,
+  saturation = 0.2,
+}
+
+-- cursor
+config.default_cursor_style = "BlinkingBlock"
+config.cursor_blink_rate = 750
+config.cursor_blink_ease_in = 'Constant'
+config.cursor_blink_ease_out = 'Constant'
+>>>>>>> master
 
 -- set the font
 config.font = wezterm.font("FiraMono Nerd Font")
 -- set the font size
 config.font_size = 17.0
 
+<<<<<<< HEAD
 -- For example, changing the color scheme:
 config.color_scheme = "rose-pine"
 config.window_background_opacity = 1
@@ -40,6 +62,21 @@ config.default_cursor_style = "BlinkingBlock"
 config.cursor_blink_rate = 750
 config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
+=======
+-- config.color_scheme = "AlienBlood"
+-- config.color_scheme = 'Dark Ocean (terminal.sexy)'
+config.color_scheme = 'Embers (base16)' -- !!!
+-- config.color_scheme = 'ForestBlue'
+-- config.color_scheme = 'iceberg-dark'
+-- config.color_scheme = 'Insignificato (terminal.sexy)' -- !!!
+-- config.color_scheme = 'JWR dark (terminal.sexy)'
+-- config.color_scheme = 'Kanagawa (Gogh)' -- !!!
+-- config.color_scheme = 'kanagawabones'
+-- config.color_scheme = 'Kasugano (terminal.sexy)'
+-- config.color_scheme = 'Seafoam Pastel (Gogh)'
+-- config.color_scheme = 'Wryan'
+
+>>>>>>> master
 
 -- I can't get these to do anything even though they're copy-pasted from the docs
 -- They dont' work with Color or Ansci, with or without opacity tweaks
@@ -52,6 +89,11 @@ config.colors = {
   copy_mode_active_highlight_fg = { Color = '#52ad70' },
   copy_mode_inactive_highlight_bg = { Color = '#52ad70' },
   copy_mode_inactive_highlight_fg = { Color = '#52ad70' },
+<<<<<<< HEAD
+=======
+  cursor_fg = "black",
+  cursor_bg = "d3d3d3"
+>>>>>>> master
 
 }
 
@@ -74,6 +116,7 @@ config.keys = {
 
 }
 
+<<<<<<< HEAD
 -- start a tmux session on startup
 
 -- -- https://github.com/folke/zen-mode.nvim
@@ -99,6 +142,8 @@ config.keys = {
 --     end
 --     window:set_config_overrides(overrides)
 -- end)
+=======
+>>>>>>> master
 -- -- and finally, return the configuration to wezterm
 return config
 
