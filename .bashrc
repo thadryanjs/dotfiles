@@ -11,8 +11,8 @@
 # ridden in every subshell.
 
 test -s ~/.alias && . ~/.alias || true
-source ~/.dotfiles/bin/bashmarks.sh
-source /usr/share/fzf/shell/key-bindings.bash
+# source ~/.dotfiles/bin/bashmarks.sh
+# source /usr/share/fzf/shell/key-bindings.bash
 
 # don't do this unless I'm in a dev container
 # if [[ "$(hostname)" == "hostname" ]]; then
@@ -30,6 +30,8 @@ alias dartfs="sh /home/thadryan/Documents/WorkVault/Resources/Scripts/_mount-dar
 alias vpn="sh /home/thadryan/Documents/WorkVault/Resources/Scripts/_vpn.sh"
 
 alias dev="distrobox enter --root fedora-root -- bash "
+
+alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
 
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."

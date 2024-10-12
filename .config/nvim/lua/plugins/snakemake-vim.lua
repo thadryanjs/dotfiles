@@ -1,0 +1,5 @@
+return {
+    {
+        "ShaiberAlon/snakemake-vim"
+    }
+}
