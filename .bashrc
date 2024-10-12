@@ -22,14 +22,14 @@ test -s ~/.alias && . ~/.alias || true
 
 stty -ixon
 
-alias discovery="sh /home/thadryan/Documents/WorkVault/Resources/Scripts/_discovery.sh"
-alias polaris="sh /home/thadryan/Documents/WorkVault/Resources/Scripts/_polaris.sh"
-alias andes="sh /home/thadryan/Documents/WorkVault/Resources/Scripts/_andes.sh"
+alias discovery="sh ~/.scripts/discovery.sh"
+alias polaris="sh ~/.scripts/polaris.sh"
+alias andes="sh ~/.scripts/andes.sh"
 
-alias dartfs="sh /home/thadryan/Documents/WorkVault/Resources/Scripts/_mount-dartfs.sh"
-alias vpn="sh /home/thadryan/Documents/WorkVault/Resources/Scripts/_vpn.sh"
+alias dartfs="sh ~/.scripts/mount-dartfs.sh"
+alias vpn="sh ~/.scripts/vpn.sh"
 
-alias dev="distrobox enter --root fedora-root -- bash "
+alias dev="distrobox enter --root dev-fedora"
 
 alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
 
@@ -37,11 +37,6 @@ alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 alias open='xdg-open'
-
-# add quart to path
-export PATH=$PATH:/opt/quarto-1.4.554-linux-rhel7-amd64/quarto-1.4.554/bin
-# need to make this conditional on hostname
-# alias nvim="/usr/bin/distrobox-enter  --root -n dev-fedora-main -- bash && nvim"
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
