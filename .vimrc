@@ -1,4 +1,4 @@
-" largely based on this:
+" largely based on this: (maybe not anymore)
 " https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/
 
 " Disable compatibility with vi which can cause unexpected issues.
@@ -87,7 +87,7 @@ if !isdirectory($HOME."/.vim/backupdir")
 endif
 set backupdir=~/.vim/backupdir
 
-" clipboard, if possible 
+" clipboard, if possible
 set clipboard=unnamedplus
 
 " normal backspace
@@ -111,67 +111,9 @@ let &t_EI = "\e[2 q"
 " autocmd VimEnter * silent !echo -ne "\e[2 q"
 " augroup END
 
-" PLUGINS ---------------------------------------------------------------- {{{
-
-call plug#begin('~/.vim/plugged')
-
-    Plug 'preservim/nerdtree'
-    Plug 'flazz/vim-colorschemes'
-    Plug 'preservim/nerdcommenter'
-    Plug 'tpope/vim-surround'
-    Plug 'jpalardy/vim-slime'
-    Plug 'maxboisvert/vim-simple-complete'
-    Plug 'github/copilot.vim'
-
-call plug#end()
-
-
-" NERD file tree
-let g:NERDCreateDefaultMappings = 1
-
-" Add spaces after comment delimiters by default
-let g:NERDSpaceDelims = 1
-
-" Use compact syntax for prettified multi-line comments
-let g:NERDCompactSexyComs = 1
-
-" Align line-wise comment delimiters flush left instead of following code indentation
-let g:NERDDefaultAlign = 'left'
-
-" Set a language to use its alternate delimiters by default
-" let g:NERDAltDelims_java = 1
-
-" Add your own custom formats or override the defaults
-let g:NERDCustomDelimiters = { 'r': { 'left': '# ' } }
-
-" Allow commenting and inverting empty lines (useful when commenting a region)
-let g:NERDCommentEmptyLines = 1
-
-" Enable trimming of trailing whitespace when uncommenting
-let g:NERDTrimTrailingWhitespace = 1
-
-" Enable NERDCommenterToggle to check all selected lines is commented or not
-let g:NERDToggleCheckAllLines = 1
-
-" filetree plugin mappings
-nnoremap <leader>n :NERDTree<CR>
-nnoremap <C-n> :NERDTreeFocus<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-nnoremap <C-b> :NERDTreeToggle<CR>
-
-
-" Slime 
-let g:slime_cell_delimiter = "# %%"
-" minimal vim setup 
-let g:slime_target = "vimterminal"
-" neovim/tmux set up
-" let g:slime_target = "tmux"
-" let g:slime_default_config = {"socket_name": "default", "target_pane": ".2"}
-nnoremap <Leader>ss :SlimeConfig<CR>
-nnoremap <Leader>sc :call slime#send_cell()<CR>
-
-
 """ General mappings
+
+let mapleader=" "
 
 "inoremap <f8> <Esc>
 imap jj <Esc>
@@ -231,9 +173,69 @@ nmap <Leader>jc i# %% [code]<CR>
 nmap <Leader>jm O# %% [markdown]<CR><Esc>O<CR><CR># %% [code]<Esc>2ki#
 
 
-""" Commands 
+
+""" Plugins
+
+call plug#begin('~/.vim/plugged')
+
+    Plug 'preservim/nerdtree'
+    Plug 'flazz/vim-colorschemes'
+    Plug 'preservim/nerdcommenter'
+    Plug 'tpope/vim-surround'
+    Plug 'jpalardy/vim-slime'
+    Plug 'maxboisvert/vim-simple-complete'
+    Plug 'github/copilot.vim'
+
+call plug#end()
+
+
+"" NERD file tree
+let g:NERDCreateDefaultMappings = 1
+
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+
+" Align line-wise comment delimiters flush left instead of following code indentation
+let g:NERDDefaultAlign = 'left'
+
+" Set a language to use its alternate delimiters by default
+" let g:NERDAltDelims_java = 1
+
+" Add your own custom formats or override the defaults
+let g:NERDCustomDelimiters = { 'r': { 'left': '# ' } }
+
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+
+" Enable trimming of trailing whitespace when uncommenting
+let g:NERDTrimTrailingWhitespace = 1
+
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
+
+nnoremap <leader>n :NERDTree<CR>
+nnoremap <C-n> :NERDTreeFocus<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+nnoremap <C-b> :NERDTreeToggle<CR>
+
+
+"" Slime
+let g:slime_cell_delimiter = "# %%"
+" minimal vim setup
+let g:slime_target = "vimterminal"
+" neovim/tmux set up
+" let g:slime_target = "tmux"
+" let g:slime_default_config = {"socket_name": "default", "target_pane": ".2"}
+nnoremap <Leader>ss :SlimeConfig<CR>
+nnoremap <Leader>sc :call slime#send_cell()<CR>
+
+
+""" Commands
 " search buffer and put into quickfix list
 " :bufdo vimgrepadd threading % | copen
 "
 " search project and put into quickfix list
-" :vimgrep World **.* | copen 
+" :vimgrep World **.* | copen
