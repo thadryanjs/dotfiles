@@ -96,6 +96,9 @@ set backspace=indent,eol,start
 " no autocomment
 set formatoptions-=cro
 
+" set smart 
+filetype plugin indent on
+
 " not statusline by default
 set laststatus=0
 " change the cursor when the mode changes (this one works on my local machine)
@@ -185,7 +188,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
-    " Plug 'kana/vim-smartinput'
+    " Plug 'Townk/vim-autoclose'
+    Plug 'jiangmiao/auto-pairs'
     Plug 'github/copilot.vim'
     Plug 'Shougo/deoplete.nvim'
     " Maybe?:
@@ -229,9 +233,17 @@ let g:slime_target = "vimterminal"
 nnoremap <Leader>ss :SlimeConfig<CR>
 nnoremap <Leader>sc :call slime#send_cell()<CR>
 
+
+""" autocommands
 " don't include terminals as buffer for next/prev 
 " https://www.reddit.com/r/vim/comments/8njgul/is_it_possible_to_skip_over_terminal_buffers_when/
 autocmd TerminalOpen * setlocal nobuflisted
+
+augroup RIndent
+    autocmd!
+    autocmd FileType r setlocal expandtab shiftwidth=2 softtabstop=2 autoindent
+augroup END
+
 
 """ Commands
 " search buffer and put into quickfix list
