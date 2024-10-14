@@ -1,0 +1,278 @@
+2023-12-27 Grady Hendrix (Courtney mentioned) +media-books
+2023-12-27 Unbiased Science podcast (opioids with twitter guy) +media-podcasts
+2023-12-27 Tweak discord server profiles +general
+2023-12-27 Some sort of 'working knowledge' or synthesis system +work +workflow
+2023-12-27 Python script to tag all lines in an MD files (for making report in obsidian) +workflow
+2023-12-27 Post-it backlog +general
+2023-12-27 Focus Fridays (for synthesis) +workflow
+2023-12-27 Apply for a passport +general
+x 2024-03-07 2023-12-27 Send in new defferment form +general due:2024-02-20
+2023-12-27 Reach out to Kilmer from RAND +pro-dev
+x 2024-03-12 2023-12-27 Exercises to "weekly" via scheduling? +wellness +workflow
+2023-12-27 Find Mathmetica experts of interest +pro-dev due:2024-10-16
+2023-12-27 Megan O'Toole +social due:2024-10-12
+2023-12-27 Andrew from Twitter (tech solutions to regulatory problems) +social due:2024-10-12
+2023-12-27 Where is my Mind? lofi (most recent) to Discord +social due:2024-10-12
+2023-12-27 Literature dive on MDP independence +work +opioid-prediction
+2023-12-27 Github question: GLM with sensemaker +work
+2023-12-27 Say hi to Lance from bbb +social +pro-dev due:2024-10-18
+2023-12-27 Protocols for: Discord, Solitude, Phone +workflow
+2023-12-27 Bluetooth phone calls +social +wellness
+2023-12-27 Equitable sampling paper to Steve Arnold +social +pro-dev
+2023-12-27 Cardiologist +wellness due:2024-10-18
+2023-12-27 Are vivaldi sessions worth a look? +workflow
+2023-12-27 Ask Bernstien about OUD and Bupe at some point +opioid-prediction +backburner
+x 2024-04-02 2023-12-27 Schedule a time with Skip this spring +social due:2024-04-01
+x 2024-02-20 2023-12-28 Change splash screen for EndeavorOS laptop +tech
+2023-12-28 Organize 3 opi dataset +opioid-prediction
+2023-12-28 Blueprint of conformal forecasting project +opioid-prediction
+2024-01-03 "Sausage All The Way Down" +writing
+x 2024-03-12 2024-01-03 Syncthing weekly habit +workflow due:2024-02-29
+x 2024-02-01 2024-01-03 Jobs for Millie +general due:2024-01-12
+2024-01-03 Sam King +social due:2024-10-12
+2024-01-03 "Hap & Leonard" +media-tv
+2024-01-03 Hemlock Springs +media-music
+2024-01-04 Look at Ang's code +opioid-prediction
+x 2024-03-12 2024-01-04 Outline of conformal paper +opioid-prediction due:2024-02-29https://docs.google.com/document/d/1BeQbOXUpgWjA2XwEYWlYWcU-mg-zEGUw/edit
+x 2024-02-02 2024-01-04 Make a onedrive page +opioid-prediction due:monday
+x 2024-01-10 2024-01-05 Sign up to present for scientific writing +work due:2024-01-08
+x 2024-02-02 2024-01-05 Scientific Writing homework +work due:tuesday
+2024-01-07 "Actually, you're more likely to die from a bee sting that a shark attack" +cartoon-ideas
+x 2024-02-20 2024-01-07 Cafe Apocalypse (see post-its) +cartoon-ideas
+2024-01-07 Everything Bagel, Everywhere, All At Once +cartoon-ideas
+2024-01-07 Carrier pidgeon: "Do you mind putting that on vibrate" +cartoon-ideas
+2024-01-07 Grave stone: "Don't hesitate to reach out" +cartoon-ideas
+x 2024-04-21 2024-01-07 Dog-headed doctor to pregnant woman - "Are you ready for your first ultrasmell?" +cartoon-ideas
+2024-01-07 Two wolves: "Not to keep eating a dead horse but I'm quite hungry" +cartoon-ideas
+2024-01-07 "He's trying to paint his way into a corner office" +cartoon-ideas
+2024-01-07 Man with a boat for a head (or just a boat) "I was a wreck last night" +cartoon-ideas
+x 2024-01-28 2024-01-07 A ghost to a skeleton on a talk show "I try to do something that scares someone else every day" +cartoon-ideas
+2024-01-07 Out of smell, out of mind (maybe two dogs talking to one another - need a visual) +cartoon-ideas
+x 2024-01-10 2024-01-08 Discussion about data with Will/Wesley +opioid-prediction due:today
+x 2024-01-29 2024-01-09 Multithreading IterativeImputer +opioid-prediction due:2024-01-10
+x 2024-08-12 2024-01-10 Schedule medical appts through portal +general due:2024-04-13
+x 2024-01-11 2024-01-10 Try new pipeline with slurm on Discovery due:today
+x 2024-01-11 2024-01-10 Answer RC ticket emails due:2024-01-10
+x 2024-01-29 2024-01-11 Just create a folder or sharepoint +opioid-prediction due:2024-01-12
+x 2024-02-02 2024-01-11 Template for paper +opioid-prediction due:today
+x 2024-01-29 2024-01-11 Section 4.2 of greek guy paper - check that +opioid-prediction due:2024-01-12
+x 2024-02-02 2024-01-11 grant for CBTH +opioid-prediction due:friday
+2024-01-11 reach out to Doruk +opioid-prediction
+2024-01-11 assemble all links to sharepoint +opioid-prediction
+2024-01-28 Seal to other seal balancing a ball on nose: "Decent trick - maybe a little on the nose" +cartoon-ideas
+2024-01-30 Peru cocaine market +drug-epi
+2024-01-30 Bolivia cocaine regulation +drug-epi
+2024-01-30 DEA in Boliva +drug-epi
+2024-01-30 read: https://hdsr.mitpress.mit.edu/pub/pqiufdew/release/1 +data-science
+2024-01-30 Which ICD10 death codes in prediciton study? +opioid-prediction
+2024-01-30 CIAAG: https://www.youtube.com/watch?v=IrSfdfMcM84 +drug-epi
+2024-02-01 NSDUH: Can I aggregate? +opioid-prediction
+x 2024-02-08 2024-02-01 Should I do an uncertainty paper in classification? +opioid-prediction
+2024-02-01 Ang's code - how to get into csv +opioid-prediction
+x 2024-02-05 2024-02-02 Add inner CV +opioid-prediction  due:2024-02-05
+2024-02-02 Add "ambiguous predictions" +opioid-prediction
+x 2024-03-17 2024-02-02 Add "Prediction distance" +opioid-prediction  due:2024-03-15
+x 2024-03-15 2024-02-02 Watch Kilby video ( https://www.youtube.com/watch?v=pXwAZ7orIA8 ) +opioid-prediction  due:2024-03-15
+x 2024-02-20 2024-02-05 Biosketch +opioid-prediction due:2024-02-06
+2024-02-20 https://dask.pydata.org/en/latest/ / https://github.com/vaexio/vaex?tab=readme-ov-file / https://towardsdatascience.com/beyond-pandas-spark-dask-vaex-and-other-big-data-technologies-battling-head-to-head-a453a1f8cc13
+x 2024-03-13 2024-02-20 Redo habitica and make plan to add back habits gradually due:2024-03-18
+2024-02-20 Schedule consolidation thing in a few months after loan thing sorted due:2024-10-31
+2024-02-20 https://t-n-consulting.com
+2024-02-20 https://researchtraining.nih.gov/programs/fellowships/F31
+x 2024-08-13 2024-02-20 Two back up points per aim +qualifier
+2024-02-20 WM: It may be worthwhile for you to have a good idea of what’s out there for conformal regression for different data types. +opioid-prediction
+2024-02-20 https://scholar.google.com/scholar?hl=en&as_sdt=0%2C46&q=bupenorphine+long+term&btnG=#d=gs_qabs&t=1706746608015&u=%23p%3DpCb5E2ShIJ4J
+2024-02-20 reminder fr picture: https://www.britannica.com/topic/Opium-Wars +opioid-prediction +opioid-prediction
+Weird West +media-videogames
+x 2024-03-13 2024-02-29 Prison justice group: https://www.thedartmouth.com/article/2024/02/a-changed-club-spotlight-on-the-dartmouth-prison-justice-initiative +general  due:2024-03-12
+2024-02-29 Halfway house volunteer https://www.dismasofvt.org/get-involved/volunteer-opportunity-descriptions/ +general  due:2024-10-15
+2024-03-12 Drug War Capitalism +media-books
+x 2024-09-28 2024-09-28 In Pursuit of Oblivion ( https://www.amazon.com/Pursuit-Oblivion-Global-History-Narcotics/dp/0393325458 ) +media-books
+x 2024-03-22 2024-03-12 Will, Doruk, Jesse at every meeting due:2024-03-18 rec:1w
+2024-03-12 Tiffany Keys (RAND) +career
+x 2024-03-13 2024-03-12 Review person website (simple, spelling, current) due:2024-03-15 +career
+2024-03-12 "If you can't do a center, you always get mobile not a middle one" +aim2
+2024-03-12 MSOM/POMS +aim2
+2024-03-12 Under what circumstance would you only do always do x? +aim2
+2024-03-12 "want zero inflated pisson model to fix this" +opioid-prediction +aim1
+2024-03-12 "https://www.peow.studio/shop/a-frog-in-the-fall" +gift-ideas
+2024-03-12 This plus Hi to Lorri + Steven (conf in AD): https://onlinelibrary.wiley.com/doi/10.1002/sim.10024?af=R +social +career  due:2024-10-18
+x 2024-03-13 2024-03-12 Message D&W, recurring? due:2024-03-12
+2024-03-13 The Facemaker ( https://www.goodreads.com/book/show/58709510-the-facemaker ) +media-books
+2024-03-13 Hometown Prison "https://www.newyorker.com/culture/the-front-row/in-hometown-prison-richard-linklater-looks-at-life-on-both-sides-of-the-wall" +media-tv
+x 2024-04-02 2024-03-13 Reach out to DPJI leadership +volunteering due:2024-04-01
+2024-03-13 The Great Drug War: And Rational Proposals to Turn the Tide +media-books
+2024-03-14 Smoke and Mirrors: The War on Drugs and the Politics of Failure +media-books
+x 2024-08-12 2024-03-14 csp and mpr on final model (modified for non-cv) +opioid-prediction  due:2024-04-26
+x 2024-04-02 2024-03-14 ADD 2021 DATA GAH +opioid-prediction due: due:2024-04-01
+x 2024-03-27 2024-03-17 Move "Tests" to "Tech" and have a "Tests" subfolder for each tech +tech  due:2024-03-29
+2024-03-18 Rural Health grants through VA? +career
+2024-03-18 Pot study to Megan Romano +work  due:2024-10-30
+2024-03-18 Inas Khanal says her thesis failed because it wasn't integrated with the existing system +advice
+2024-03-18 Make "RandomAdvice" portion of vault +workflow
+x 2024-08-12 2024-03-18 INFORMS? Due I need and ID?  due:2024-04-06
+2024-03-19 https://www.nytimes.com/2024/03/14/books/funny-novels-humor.html?unlocked_article_code=1.d00.uVvo.at2b5IcxtavS&smid=url-share +media-books
+x 2024-08-12 2024-03-22 Will, Doruk, Jesse at every meeting due:2024-04-03 rec:1w
+x 2024-03-27 2024-03-22 fix typos and "Finding:" to key spots due:2024-03-26 +ado-mat
+x 2024-03-22 2024-03-22 Python Odds Ratio ref level +ado-mat  due:2024-03-22
+x 2024-03-22 2024-03-22 Rounding for all tables (REPL) +ado-mat due:2024-03-22
+x 2024-03-27 2024-03-22 "supplemental" folder for outputs +ado-mat  due:2024-03-26
+x 2024-03-22 2024-03-22 adjusted OR once and for all or never +ado-mat due:today
+x 2024-04-02 2024-03-22 Read Wesley's code review over again +ado-mat :due monday
+x 2024-04-11 2024-03-22 Read Wesley's code review again +ado-mat due: due:2024-04-10 @research
+2024-03-25 Thomas Ligotti +media-books 
+x 2024-03-27 2024-03-25 Email skip about April +social due:2024-03-26
+2024-03-25 https://read.macmillan.com/torforge/legends-lattes-bookshops-bonedust-baldree/ +gift-ideas 
+2024-03-27 "We can't give people umbrellas or the next thing you know people would be out in the rain" +cartoon-ideas 
+2024-03-27 No refined foods test day to prep for month +random
+2024-03-27 Center left economist against govt monopoly 70s mentioned on the reason roundtable 3.20.2024 +random 
+2024-03-27 Apple Cider Vinegar shot? https://nutrition.bmj.com/content/bmjnph/early/2024/01/18/bmjnph-2023-000823.full.pdf +wellness 
+2024-03-29 doruk weird file thing (feb 15) +opioid-prediction 
+x 2024-04-02 2024-03-29 Will: data-table +opioid-prediction  due:2024-04-02
+2024-03-29 WIll: try a different year +opioid-prediction 
+2024-04-01 Lilet +due friday
+2024-04-01 buy lillet +general
+x 2024-04-02 2024-04-02 start-to-finish with reimpute=True +ado-mat  due:2024-04-05 @research
+x 2024-04-09 2024-04-02 sub2/sub3 tiny amount of NA? +ado-mat  due:2024-04-05 @research
+x 2024-08-12 2024-04-02 check table and fig displays +ado-mat  due:2024-04-10 @research
+x 2024-04-11 2024-04-02 write out table and forest plot for effect size +ado-mat  due:2024-04-10@research
+x 2024-04-11 2024-04-02 correct file name for OR plot +ado-mat  due:2024-04-10 @research
+x 2024-04-05 2024-04-04 K6 variable +opioid-prediction @research  due:2024-04-05
+x 2024-04-05 2024-04-04 Debug pipeline +opioid-prediction @research  due:2024-04-05
+x 2024-04-11 2024-04-04 print out the df_prop_conf in Geospatial chapter +ado-mat @research  due:2024-04-05 t:2024-04-10
+x 2024-08-12 2024-04-05 Move model assesment script to src.pipeline, incorporate with collapse output option +opioid-prediction @research  due:2024-04-08
+x 2024-08-12 2024-08-12 Will, Doruk, Jesse at every meeting due:2024-08-19 rec:1w
+x 2024-08-12 2024-08-12 Will, Doruk, Jesse at every meeting due:2024-08-19 rec:1w
+x 2024-08-12 2024-08-12 Will, Doruk, Jesse at every meeting due:2024-08-19 rec:1w
+x 2024-08-12 2024-08-12 Will, Doruk, Jesse at every meeting due:2024-08-19 rec:1w
+x 2024-08-12 2024-08-12 Will, Doruk, Jesse at every meeting due:2024-08-19 rec:1w
+x 2024-08-21 2024-08-12 Start NEMSIS due:2024-08-20 +aim1 
+2024-08-12 Bio to Gary +general-work
+2024-08-12
+x 2024-08-14 2024-08-12 Asian/Pacific Islander in Plots +ado-mat due:2024-08-14
+x 2024-08-14 2024-08-12 Review Methods section +ado-mat due:2024-08-14
+x 2024-08-19 2024-08-12 Cuttoffs for very small p values +ado-mat due:2024-08-14
+x 2024-08-13 2024-08-12 Run again with higher iteration +ado-mat due:2024-08-13
+x 2024-08-13 2024-08-12 Shorten intro +ado-mat due:2024-08-13
+x 2024-08-13 2024-08-12 Add citations if desired +ado-mat due:2024-08-13
+2024-08-12 watch ( https://www.youtube.com/watch?app=desktop&v=gjtxQ2ulXv8 )
+2024-08-12
+2024-08-12 Onion burger
+x 2024-09-30 2024-08-12 Conformalize model +conformal-pred due:2024-09-26
+2024-08-12 vim: https://stackoverflow.com/questions/4545275/vim-close-all-buffers-but-this-one +tech
+2024-08-12 Zoxide? +tech 
+2024-08-12 https://statistics.wharton.upenn.edu/profile/dobriban/ +career 
+2024-08-12 "Please call me Al, Mr. Dente was my father" (bowl of pasta, with Millie) +cartoon-ideas 
+x 2024-08-12 2024-08-12 Poll for JC time due:2024-08-12
+x 2024-08-12 2024-08-12 Email Grammy due:2024-08-12
+2024-08-12
+x 2024-08-13 2024-08-12 Quinioa due:2024-08-13
+2024-08-12
+x 2024-08-14 2024-08-13 Run with no West VA (add filter list to config) +ado-mat  due:2024-08-14
+x 2024-08-19 2024-08-19 Outputs with and without West VA in different folder +ado-mat  due:2024-08-14
+x 2024-08-15 2024-08-13 Exact percentage for missing variables +ado-mat  due:2024-08-14
+2024-08-13 Missing outcome variable by state (range, etc)
+x 2024-08-19 2024-08-13 Details on how the CIs were estimated (add to methods section) +ado-mat due:2024-08-14
+x 2024-08-15 2024-08-13 R Version +ado-mat  due:2024-08-14 (pending the re-run)
+x 2024-08-15 2024-08-13 Axis titles as in doc +ado-mat  due:2024-08-14
+x 2024-08-14 2024-08-13 Recieved vs in treatment plan +ado-mat due:2024-08-14 (pending the re-run)
+x 2024-08-19 2024-08-13 Daggity and other citations +ado-mat  due:2024-08-14
+x 2024-08-14 2024-08-13 Oaklahoma, Idaho, Montana, West VA as filter list +ado-mat due:2024-08-14
+2024-08-13
+2024-08-13 Memory: The Origins of Alien +media-tv 
+2024-08-13 The Black Belt Blueprint: An Intelligent Approach to Brazilian Jiu Jitsu +media-books +bjj
+x 2024-08-13 2024-08-13 +media-books 
+x 2024-09-28 2024-08-13 Zen Jiu Jitsu - White to Blue +media-books +bjj (ordered)
+2024-08-13 Zen Jiu Jitsu - Human Chess: High Percentage Strategies and Concepts for Beginners and Advanced Students
+2024-08-13 Zen Jiu Jitsu - Human Chess: High Percentage Strategies and Concepts for Beginners and Advanced Students +media-books +bjj 
+x 2024-08-21 2024-08-13 The Tao of Jiu Jitsu +media-books +bjj (ordered)
+2024-08-14 Email about community college +general-work due:2024-10-18
+x 2024-08-14 2024-08-14 BJJ too heavy: podcast https://www.youtube.com/watch?v=5fu7vxOc_7E +bjj 
+x 2024-08-14 2024-08-14 Reddit thread on being too fat for BJJ https://www.reddit.com/r/bjj/comments/1eqhfrx/im_overweight_and_scared_to_start_how_can_i/ +bjj 
+2024-08-14 Get Gi taylored? due:2024-10-28 +bjj 
+2024-08-15 Jiu-Jitsu University +media-books +bjj
+2024-08-15
+x 2024-09-18 2024-08-15 check for B4XL gi on [ https://www.gorillagear.ca/shop/brazilian-jiu-jitsu-gear/bjj-gis/fundamentals-brazilian-jiujitsu-gi-blue/ ]  rec:1b
+x 2024-08-22 2024-08-20 Grading due:2024-08-21
+x 2024-08-22 2024-08-20 Touch base with Roman due:2024-08-20
+x 2024-08-22 2024-08-20 Cream due:2024-08-22
+2024-08-20
+x 2024-08-29 2024-08-20 Methods due:2024-08-29 +aim1 
+2024-08-20
+x 2024-08-22 2024-08-20 Rerun due:2024-08-21 +ado-mat
+x 2024-09-28 2024-08-21 The 21 Immutable Principles of Brazilian jiu-Jistsu +media-books +bjj (ordered)
+x 2024-09-28 2024-08-21 The Blackwater Lightship +media-books 
+2024-08-21 The Last Murderer at the End of the World +media-books 
+2024-08-21 The Trial ( https://app.thestorygraph.com/books/cf7ab272-afdb-4d64-a66c-581357b1235b +media-books 
+2024-08-21
+2024-08-23 File complaint with union (see David in Discord) +general-work  due:2024-10-18
+x 2024-08-26 2024-08-23 Answer regex question due:2024-08-23
+x 2024-08-26 2024-08-23 Upload report +ado-mat  due:2024-08-29
+x 2024-08-26 2024-08-23 Text Jesse +ado-mat due:2024-08-27
+x 2024-08-29 2024-08-23 Efficient read-in tweaks +aim1 due:2024-08-29
+x 2024-08-28 2024-08-23 Double check 5.14 "full date" due:2024-08-27
+x 2024-08-26 2024-08-26 Send Sep 7th and 28th to Grammy due:2024-08-26
+x 2024-08-28 2024-08-26 Data email from Wesley due:2024-08-27 pri:B
+x 2024-09-28 2024-08-27 Too Loud a Solitude by Bohumil Hrabal +media-books (ordered)
+x 2024-09-06 2024-08-27 Zebra metal pen ink due:2024-09-13
+2024-08-27
+x 2024-08-30 2024-08-27 Company 21 Gi measurements due:2024-08-31
+x 2024-09-28 2024-08-28 Creation Lake by Rachel Kushner (https://www.thenation.com/article/culture/rachel-kushner-creation-lake/) +media-books 
+x 2024-09-03 2024-08-29 Register for Journal Club due:2024-08-30
+x 2024-09-06 2024-08-29 Tattoo appt due:2024-09-06
+x 2024-08-30 2024-08-30 Haawiain +ado-mat due:2024-08-30
+x 2024-08-30 2024-08-30 remove Sub2 and Sub3 from table1 +ado-mat due:2024-08-30
+x 2024-08-30 2024-08-30 Figure3 trend edit (over time) (lower priority) +ado-mat due:2024-08-30
+x 2024-08-30 2024-08-30 Where is DAG? due:2024-08-30 +ado-mat 
+x 2024-08-30 2024-08-30 Color scheme for prop plot +ado-mat due:2024-08-30
+x 2024-08-30 2024-08-30 Hawaiian text replace +ado-mat due:2024-08-30
+x 2024-09-03 2024-08-30 Reg for JC 193 due:2024-09-09
+2024-08-30
+x 2024-09-03 2024-08-30 Grade 9 due:2024-09-02
+x 2024-09-03 2024-08-30 Grade MTI due:2024-09-03
+x 2024-09-03 2024-08-30 Order Gi and belt due:2024-09-09
+2024-08-30
+x 2024-09-11 2024-09-03 Back appt due:2024-09-13
+x 2024-09-03 2024-09-03 Neated NEMSIS to function by year +aim1 due:2024-09-03
+2024-09-03
+x 2024-09-03 2024-09-03 Grade final due:2024-09-03 
+2024-09-03 Internship search due:2024-10-16
+x 2024-09-06 2024-09-03 Email thriftbooks due:2024-09-06
+2024-09-03
+x 2024-09-06 2024-09-03 Spelling in DAG due:2024-09-04 +ado-mat
+x 2024-09-06 2024-09-03 Send report to Wesley due:2024-09-06
+x 2024-09-05 2024-09-03 OR logic from SAS to R GTP due:2024-09-04 +aim1
+x 2024-09-05 2024-09-03 Review corner cases for final due:2024-09-04
+x 2024-09-13 2024-09-05 TA schedule? due:2024-09-09
+2024-09-10 Basic model, eval fairness, conformal +conf-depr due:2024-10-23
+x 2024-09-13 2024-09-10 Age Group, simple insurance, unknown +aim1  due:2024-09-12
+2024-09-12 NEMSIS data dict validate Ns +aim1 due:2024-10-18
+x 2024-09-25 2024-09-16 Confirm Shannon deets due:2024-09-17
+x 2024-09-18 2024-09-18 check for B4XL gi on [ https://www.gorillagear.ca/shop/brazilian-jiu-jitsu-gear/bjj-gis/fundamentals-brazilian-jiujitsu-gi-blue/ ]  rec:1b due:2024-09-19
+x 2024-09-18 2024-09-18 check for B4XL gi on [ https://www.gorillagear.ca/shop/brazilian-jiu-jitsu-gear/bjj-gis/fundamentals-brazilian-jiujitsu-gi-blue/ ]  rec:1b due:2024-09-19
+x 2024-09-18 2024-09-18 check for B4XL gi on [ https://www.gorillagear.ca/shop/brazilian-jiu-jitsu-gear/bjj-gis/fundamentals-brazilian-jiujitsu-gi-blue/ ]  rec:1b due:2024-09-19
+2024-09-18 check for B4XL gi on [ https://www.gorillagear.ca/shop/brazilian-jiu-jitsu-gear/bjj-gis/fundamentals-brazilian-jiujitsu-gi-blue/ ]  
+x 2024-09-25 2024-09-19 Print for dad due:2024-09-23
+x 2024-09-26 2024-09-19 Cancel noom due:2024-09-25
+x 2024-09-26 2024-09-19 Continue with MacroFactor or try MFP? due:2024-09-25
+x 2024-10-01 2024-09-22 Consider: https://www.amazon.com/Lenovo-Thinkpad-1920x1080-Business-Thunderbolt/dp/B08T6J8MZK/ref=sr_1_16?crid=2UPJIXMAWC7CO&dib=eyJ2IjoiMSJ9.jumGJypa8z56zW3jgeWOjh2ZcWxCONAnQAi_Xfo4sQyPdZpWjs-WiKIi4DhrVeghc2P3yeejuoCqczhDsVtSEH1-12MJiaMxjkGcA1IgTnp_K05f_SAcalfBxfzXG8J2DH4EfpOMOkHvCGaGWp9AuuBiwAnk3t9nrrNiDIDvoVEaogR30BL2CdOEo7wCgzdlUiK3cNNruqdSuV6rb3SYQbqaN6F7EmEQDvfgObSZkNQXwF5IFZE_99nRHAxtZ4v2QFeVvgpm0vp_8jmSavz6XK3TJG5h_kDXcJKGAira0kY.d5nT3ifHmEorYv32dn0oPUXx0_kxSdjb7uMjSm1PLTI&dib_tag=se&keywords=refurbished+laptop+thunderbolt&qid=1726654938&refinements=p_n_feature_thirty-three_browse-bin%3A23720418011&rnid=23720416011&s=electronics&sprefix=refurbished+laptop+thunderbolt%2Celectronics%2C149&sr=1-16 due:2024-10-04
+x 2024-10-01 2024-09-22 Consider: https://www.amazon.com/Lenovo-ThinkPad-T470-1920x1080-Notebook/dp/B07W68GSGK/ref=sr_1_13?crid=2UPJIXMAWC7CO&dib=eyJ2IjoiMSJ9.JqB4MZWJ-Pfel1jDE3uB3bU7gaMbAlHMlx5s5NfORIfSnHnyjHV_IgSksA0Rwt8AkrPYfa4E_9_EKVWgr8UarDLQbvRnCGVALbwziaCKNMB-L4FacxBR9l7IHhZGYBTr4BX2XwkaBGh6UChcWGaIxRatH50T0xgOopURsD1ke4mX_XSbTBn-a8AMXClm5pQICxnhE3Bt-iSaZEDJoiEhdeuAx_cKtBt5jGwzoDD8USuYmyl52tuC2IVYb8XozDtQxlFJjjBgRNYjlGf7MPt51Vsvj4sxrd5SeaDmfv9BL-k.9gIqYoJ1N0VJWO_yy2oUH49y48hk5N6nKL_RNTnuXTg&dib_tag=se&keywords=refurbished+laptop+thunderbolt&qid=1726654592&refinements=p_n_feature_thirty-three_browse-bin%3A23720418011%7C23720419011&rnid=23720416011&s=electronics&sprefix=refurbished+laptop+thunderbolt%2Celectronics%2C149&sr=1-13 due:2024-10-04
+x 2024-09-26 2024-09-24 Grading? due:2024-09-25
+x 2024-09-25 2024-09-25 Interaction term +ado-mat due:2024-09-25
+2024-09-25 Call PT due:2024-10-15
+x 2024-09-26 2024-09-25 Email Grammy due:2024-09-25
+2024-09-26 invite to Vincent  due:2024-10-15
+2024-09-28 Slaughterhouse 5 (Spanish): https://www.amazon.com/Matadero-cinco-Spanish-Kurt-Vonnegut/dp/8433920316/ref=sr_1_1?crid=1SS77RO3G0QCM&dib=eyJ2IjoiMSJ9.J1DwzuAXosldyXGVb8Synw.CKEV3OWe7RR6QNA4rS1x7KZJDEmHJgi3hdrX-xGqK0Q&dib_tag=se&keywords=slaughterhouse+5+in+spanish&qid=1727556759&s=books&sprefix=slaughterhouse+5+in+spanish%2Cstripbooks%2C160&sr=1-1 +media-books 
+2024-09-28 Gallileo's middle finger +media-books 
+x 2024-10-04 2024-09-30 Model diagnostics to Wesley due:2024-10-02
+x 2024-10-01 2024-09-30 Grading due:2024-09-30
+x 2024-10-01 2024-09-30 New poll due:2024-10-01
+2024-09-30
+2024-09-30 NA for Vincent due:2024-10-15
+x 2024-10-01 2024-09-30 Order: https://www.amazon.com/LEATHERMAN-Premium-Sheath-Multitools-Medium/dp/B07CC425C7/ref=sr_1_5?crid=1N68G8JEASWGC&dib=eyJ2IjoiMSJ9.6Qt-UAo9bfDfT21wkiBkYGAB4L64noh4d4rFkYKmoVPvtwHPEWv5yqbW23280FDmQqx9SRaU_DCSY7NVQLyR0TGjPtRhU-rynRLkTwhrdHejgYDZ-zjmEa2mDKTHBFG0gx2V0G8SBcUMyM8yIKECtvsCzym82cah_KFvbDhEfLrCzYQOVy-_XAjLqppLnlKCxw3QkaxUpPdwy-3BgQdd4ACHIiF49T1KIMyXDrUJ-jSlio64_4KgizFql0e-QZtCRrz7WihmqXQYeF3zN53Cm9lpnYpPdIv_DNryC3eUmJE.of08Q7VDzh4nK5VReYMJ6ZJDQjJ5KiquPoiU6WKKgyQ&dib_tag=se&keywords=leatherman%2Bsheath%2Bwingman&qid=1727705069&sprefix=leatherman%2Bsheath%2Bwingman%2Caps%2C106&sr=8-5&th=1 due:2024-10-01
+2024-09-30 Leatherman warranty due:2024-10-12
+2024-09-30
+x 2024-10-14 2024-10-04 Priyanshu datasets due:2024-10-09
+x 2024-10-08 2024-10-04 Signifiance symbols to Jess due: 2024-10-07
+x 2024-10-14 2024-10-04 Add insurance to NEMSIS due:2024-10-08 +aim1 
+2024-10-08 Internship stuff due:2024-10-17
