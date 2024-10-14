@@ -98,7 +98,6 @@ set formatoptions-=cro
 
 " not statusline by default
 set laststatus=0
-
 " change the cursor when the mode changes (this one works on my local machine)
 " let &t_SI = "\<esc>[5 q"
 " let &t_SR = "\<esc>[5 q"
@@ -230,6 +229,9 @@ let g:slime_target = "vimterminal"
 nnoremap <Leader>ss :SlimeConfig<CR>
 nnoremap <Leader>sc :call slime#send_cell()<CR>
 
+" don't include terminals as buffer for next/prev 
+" https://www.reddit.com/r/vim/comments/8njgul/is_it_possible_to_skip_over_terminal_buffers_when/
+autocmd TerminalOpen * setlocal nobuflisted
 
 """ Commands
 " search buffer and put into quickfix list
