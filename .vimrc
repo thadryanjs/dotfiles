@@ -96,6 +96,9 @@ set backspace=indent,eol,start
 " no autocomment
 set formatoptions-=cro
 
+" not statusline by default
+set laststatus=0
+
 " change the cursor when the mode changes (this one works on my local machine)
 " let &t_SI = "\<esc>[5 q"
 " let &t_SR = "\<esc>[5 q"
@@ -183,7 +186,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
-    Plug 'kana/vim-smartinput'
+    " Plug 'kana/vim-smartinput'
     Plug 'github/copilot.vim'
     Plug 'Shougo/deoplete.nvim'
     " Maybe?:
