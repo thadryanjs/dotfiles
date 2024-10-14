@@ -10,10 +10,10 @@ return {
             --     autostart = false
             -- }))
             lspconfig.r_language_server.setup(coq.lsp_ensure_capabilities({
-                autostart = true
+                autostart = false
             }))
             lspconfig.pyright.setup(coq.lsp_ensure_capabilities({
-                autostart = true
+                autostart = false
             }))
             -- lspconfig.clangd.setup(coq.lsp_ensure_capabilities({
             --     autostart = false
