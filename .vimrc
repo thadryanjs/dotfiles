@@ -96,7 +96,7 @@ set backspace=indent,eol,start
 " no autocomment
 set formatoptions-=cro
 
-" set smart 
+" set smart
 filetype plugin indent on
 
 " not statusline by default
@@ -173,9 +173,13 @@ autocmd FileType rmd inoremap <buffer> <A-p> <Esc>:normal! a %>%<CR>a
 " }}}
 
 " Jupyter bindings (no plugin)
+" nomal mode
 nmap <Leader>jf /# %% \[code\]<CR>
 nmap <Leader>jc i# %% [code]<CR>
-nmap <Leader>jm O# %% [markdown]<CR><Esc>O<CR><CR># %% [code]<Esc>2ki#
+" insert mode
+inoremap <C-i> # %% [code]<CR>
+" this on is weird but I don't use it that much
+"inoremap <C-m> # %% [markdown]<CR><Esc>O<CR><CR># %% [code]<Esc>2ki#
 
 
 
@@ -235,7 +239,7 @@ nnoremap <Leader>sc :call slime#send_cell()<CR>
 
 
 """ autocommands
-" don't include terminals as buffer for next/prev 
+" don't include terminals as buffer for next/prev
 " https://www.reddit.com/r/vim/comments/8njgul/is_it_possible_to_skip_over_terminal_buffers_when/
 autocmd TerminalOpen * setlocal nobuflisted
 
