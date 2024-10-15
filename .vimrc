@@ -180,7 +180,7 @@ inoremap <C-o> # %% [code]<CR>
 " this on is weird but I don't use it that much
 "inoremap <C-m> # %% [markdown]<CR><Esc>O<CR><CR># %% [code]<Esc>2ki#
 
-
+nnoremap Q :<C-u>marks<CR>:normal! `
 
 """ Plugins
 
@@ -221,6 +221,7 @@ let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 let g:NERDTreeWinSize=16
+highlight link NERDTreeExecFile ModeMsg
 
 nnoremap <leader>n :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
@@ -245,9 +246,15 @@ imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
 
 """ Colors
 " I just let it use my terminal colors, but make a few tweaks
+colorscheme default
+
+" these complement 'Embers (base16)' from wezterm
 highlight Special ctermfg=cyan guifg=cyan
-highlight Delimiter ctermfg=cyan guifg=cyan
+" highlight Delimiter ctermfg=cyan guifg=cyan
 highlight Comment ctermfg=darkgrey guifg=darkgrey
+"highlight Search term=bold ctermfg=2 gui=bold guifg=SeaGreen
+highlight Operator term=bold ctermfg=4 guifg=Blue
+highlight Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
 
 
 """ autocommands

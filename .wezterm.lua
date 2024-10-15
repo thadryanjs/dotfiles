@@ -54,7 +54,7 @@ config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
 -- config.color_scheme = "AlienBlood"
--- config.color_scheme = 'Dark Ocean (terminal.sexy)'
+--config.color_scheme = 'Dark Ocean (terminal.sexy)'
 config.color_scheme = 'Embers (base16)' -- !!!
 -- config.color_scheme = 'ForestBlue'
 -- config.color_scheme = 'iceberg-dark'
