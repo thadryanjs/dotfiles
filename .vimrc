@@ -170,12 +170,6 @@ nnoremap <C-Down> :resize -1<CR>
 nnoremap <C-Left> :vertical resize -1<CR>
 nnoremap <C-Right> :vertical resize +1<CR>
 
-" not working right now
-" dplyr pipe, modified from here: https://github.com/jalvesaq/Nvim-R/issues/85
-autocmd FileType r inoremap <buffer> <A-p> <Esc>:normal! a %>%<CR>a
-autocmd FileType rnoweb inoremap <buffer> <A-p> <Esc>:normal!a %>%<CR>a
-autocmd FileType rmd inoremap <buffer> <A-p> <Esc>:normal! a %>%<CR>a
-" }}}
 
 " Jupyter bindings (no plugin)
 " nomal mode
@@ -232,6 +226,7 @@ nnoremap <leader>n :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+
 "" Slime
 let g:slime_cell_delimiter = "# %%"
 " minimal vim setup
@@ -243,10 +238,16 @@ nnoremap <Leader>ss :SlimeConfig<CR>
 nnoremap <Leader>sc :call slime#send_cell()<CR>
 
 
+"" Copilot
+let g:copilot_no_tab_map = v:true
+imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
+
+
 """ Colors
-" I just let it use my terminal colors, but make this one small tweak
+" I just let it use my terminal colors, but make a few tweaks
 highlight Special ctermfg=cyan guifg=cyan
 highlight Delimiter ctermfg=cyan guifg=cyan
+highlight Comment ctermfg=darkgrey guifg=darkgrey
 
 
 """ autocommands
@@ -259,6 +260,15 @@ augroup RIndent
     autocmd FileType r setlocal expandtab shiftwidth=2 softtabstop=2 autoindent
 augroup END
 
+
+" not working right now
+" dplyr pipe, modified from here: https://github.com/jalvesaq/Nvim-R/issues/85
+" augroup RFileTypeMappings
+"   autocmd!
+"   autocmd FileType r inoremap <buffer> <C-m> <Esc>:normal! a %>%<CR>a
+"   autocmd FileType rnoweb inoremap <buffer> <C-m> <Esc>:normal! a %>%<CR>a
+"   autocmd FileType rmd inoremap <buffer> <C-m> <Esc>:normal! a %>%<CR>a
+" augroup END
 
 """ Commands
 " search buffer and put into quickfix list
