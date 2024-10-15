@@ -182,7 +182,7 @@ autocmd FileType rmd inoremap <buffer> <A-p> <Esc>:normal! a %>%<CR>a
 nmap <Leader>jf /# %% \[code\]<CR>
 nmap <Leader>jc i# %% [code]<CR>
 " insert mode
-inoremap <C-i> # %% [code]<CR>
+inoremap <C-o> # %% [code]<CR>
 " this on is weird but I don't use it that much
 "inoremap <C-m> # %% [markdown]<CR><Esc>O<CR><CR># %% [code]<Esc>2ki#
 
