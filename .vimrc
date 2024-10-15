@@ -165,6 +165,11 @@ nnoremap <c-z> <nop>
 " open right split terminal
 nnoremap <Leader>tr :rightb vert term<CR>
 
+nnoremap <C-Up> :resize +1<CR>
+nnoremap <C-Down> :resize -1<CR>
+nnoremap <C-Left> :vertical resize -1<CR>
+nnoremap <C-Right> :vertical resize +1<CR>
+
 " not working right now
 " dplyr pipe, modified from here: https://github.com/jalvesaq/Nvim-R/issues/85
 autocmd FileType r inoremap <buffer> <A-p> <Esc>:normal! a %>%<CR>a
@@ -236,6 +241,12 @@ let g:slime_target = "vimterminal"
 " let g:slime_default_config = {"socket_name": "default", "target_pane": ".2"}
 nnoremap <Leader>ss :SlimeConfig<CR>
 nnoremap <Leader>sc :call slime#send_cell()<CR>
+
+
+""" Colors
+" I just let it use my terminal colors, but make this one small tweak
+highlight Special ctermfg=cyan guifg=cyan
+highlight Delimiter ctermfg=cyan guifg=cyan
 
 
 """ autocommands
