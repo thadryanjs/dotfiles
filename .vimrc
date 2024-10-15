@@ -269,6 +269,9 @@ augroup END
 "   autocmd FileType rnoweb inoremap <buffer> <C-m> <Esc>:normal! a %>%<CR>a
 "   autocmd FileType rmd inoremap <buffer> <C-m> <Esc>:normal! a %>%<CR>a
 " augroup END
+autocmd FileType r inoremap <buffer> kk <C-O>:normal! a %>% <CR>
+autocmd FileType rnoweb inoremap <buffer> kk <C-O>:normal! a %>% <CR>
+autocmd FileType rmd inoremap <buffer> kk <C-O>:normal! a %>% <CR>
 
 """ Commands
 " search buffer and put into quickfix list
