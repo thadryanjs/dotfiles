@@ -10,9 +10,9 @@ x 2024-03-07 2023-12-27 Send in new defferment form +general due:2024-02-20
 2023-12-27 Reach out to Kilmer from RAND +pro-dev
 x 2024-03-12 2023-12-27 Exercises to "weekly" via scheduling? +wellness +workflow
 2023-12-27 Find Mathmetica experts of interest +pro-dev due:2024-10-16
-2023-12-27 Megan O'Toole +social due:2024-10-12
-2023-12-27 Andrew from Twitter (tech solutions to regulatory problems) +social due:2024-10-12
-2023-12-27 Where is my Mind? lofi (most recent) to Discord +social due:2024-10-12
+2023-12-27 Megan O'Toole +social due:2024-10-19
+2023-12-27 Andrew from Twitter (tech solutions to regulatory problems) +social due:2024-10-19
+2023-12-27 Where is my Mind? lofi (most recent) to Discord +social due:2024-10-19
 2023-12-27 Literature dive on MDP independence +work +opioid-prediction
 2023-12-27 Github question: GLM with sensemaker +work
 2023-12-27 Say hi to Lance from bbb +social +pro-dev due:2024-10-18
@@ -29,7 +29,7 @@ x 2024-02-20 2023-12-28 Change splash screen for EndeavorOS laptop +tech
 2024-01-03 "Sausage All The Way Down" +writing
 x 2024-03-12 2024-01-03 Syncthing weekly habit +workflow due:2024-02-29
 x 2024-02-01 2024-01-03 Jobs for Millie +general due:2024-01-12
-2024-01-03 Sam King +social due:2024-10-12
+2024-01-03 Sam King +social due:2024-10-19
 2024-01-03 "Hap & Leonard" +media-tv
 2024-01-03 Hemlock Springs +media-music
 2024-01-04 Look at Ang's code +opioid-prediction
@@ -85,7 +85,7 @@ x 2024-08-13 2024-02-20 Two back up points per aim +qualifier
 2024-02-20 reminder fr picture: https://www.britannica.com/topic/Opium-Wars +opioid-prediction +opioid-prediction
 Weird West +media-videogames
 x 2024-03-13 2024-02-29 Prison justice group: https://www.thedartmouth.com/article/2024/02/a-changed-club-spotlight-on-the-dartmouth-prison-justice-initiative +general  due:2024-03-12
-2024-02-29 Halfway house volunteer https://www.dismasofvt.org/get-involved/volunteer-opportunity-descriptions/ +general  due:2024-10-15
+2024-02-29 Halfway house volunteer https://www.dismasofvt.org/get-involved/volunteer-opportunity-descriptions/ +general  due:2024-10-19
 2024-03-12 Drug War Capitalism +media-books
 x 2024-09-28 2024-09-28 In Pursuit of Oblivion ( https://www.amazon.com/Pursuit-Oblivion-Global-History-Narcotics/dp/0393325458 ) +media-books
 x 2024-03-22 2024-03-12 Will, Doruk, Jesse at every meeting due:2024-03-18 rec:1w
@@ -259,20 +259,21 @@ x 2024-10-01 2024-09-22 Consider: https://www.amazon.com/Lenovo-Thinkpad-1920x10
 x 2024-10-01 2024-09-22 Consider: https://www.amazon.com/Lenovo-ThinkPad-T470-1920x1080-Notebook/dp/B07W68GSGK/ref=sr_1_13?crid=2UPJIXMAWC7CO&dib=eyJ2IjoiMSJ9.JqB4MZWJ-Pfel1jDE3uB3bU7gaMbAlHMlx5s5NfORIfSnHnyjHV_IgSksA0Rwt8AkrPYfa4E_9_EKVWgr8UarDLQbvRnCGVALbwziaCKNMB-L4FacxBR9l7IHhZGYBTr4BX2XwkaBGh6UChcWGaIxRatH50T0xgOopURsD1ke4mX_XSbTBn-a8AMXClm5pQICxnhE3Bt-iSaZEDJoiEhdeuAx_cKtBt5jGwzoDD8USuYmyl52tuC2IVYb8XozDtQxlFJjjBgRNYjlGf7MPt51Vsvj4sxrd5SeaDmfv9BL-k.9gIqYoJ1N0VJWO_yy2oUH49y48hk5N6nKL_RNTnuXTg&dib_tag=se&keywords=refurbished+laptop+thunderbolt&qid=1726654592&refinements=p_n_feature_thirty-three_browse-bin%3A23720418011%7C23720419011&rnid=23720416011&s=electronics&sprefix=refurbished+laptop+thunderbolt%2Celectronics%2C149&sr=1-13 due:2024-10-04
 x 2024-09-26 2024-09-24 Grading? due:2024-09-25
 x 2024-09-25 2024-09-25 Interaction term +ado-mat due:2024-09-25
-2024-09-25 Call PT due:2024-10-15
+2024-09-25 Call PT due:2024-10-16
 x 2024-09-26 2024-09-25 Email Grammy due:2024-09-25
-2024-09-26 invite to Vincent  due:2024-10-15
+2024-09-26 invite to Vincent  due:2024-10-16
 2024-09-28 Slaughterhouse 5 (Spanish): https://www.amazon.com/Matadero-cinco-Spanish-Kurt-Vonnegut/dp/8433920316/ref=sr_1_1?crid=1SS77RO3G0QCM&dib=eyJ2IjoiMSJ9.J1DwzuAXosldyXGVb8Synw.CKEV3OWe7RR6QNA4rS1x7KZJDEmHJgi3hdrX-xGqK0Q&dib_tag=se&keywords=slaughterhouse+5+in+spanish&qid=1727556759&s=books&sprefix=slaughterhouse+5+in+spanish%2Cstripbooks%2C160&sr=1-1 +media-books 
 2024-09-28 Gallileo's middle finger +media-books 
 x 2024-10-04 2024-09-30 Model diagnostics to Wesley due:2024-10-02
 x 2024-10-01 2024-09-30 Grading due:2024-09-30
 x 2024-10-01 2024-09-30 New poll due:2024-10-01
 2024-09-30
-2024-09-30 NA for Vincent due:2024-10-15
+2024-09-30 NA for Vincent due:2024-10-16
 x 2024-10-01 2024-09-30 Order: https://www.amazon.com/LEATHERMAN-Premium-Sheath-Multitools-Medium/dp/B07CC425C7/ref=sr_1_5?crid=1N68G8JEASWGC&dib=eyJ2IjoiMSJ9.6Qt-UAo9bfDfT21wkiBkYGAB4L64noh4d4rFkYKmoVPvtwHPEWv5yqbW23280FDmQqx9SRaU_DCSY7NVQLyR0TGjPtRhU-rynRLkTwhrdHejgYDZ-zjmEa2mDKTHBFG0gx2V0G8SBcUMyM8yIKECtvsCzym82cah_KFvbDhEfLrCzYQOVy-_XAjLqppLnlKCxw3QkaxUpPdwy-3BgQdd4ACHIiF49T1KIMyXDrUJ-jSlio64_4KgizFql0e-QZtCRrz7WihmqXQYeF3zN53Cm9lpnYpPdIv_DNryC3eUmJE.of08Q7VDzh4nK5VReYMJ6ZJDQjJ5KiquPoiU6WKKgyQ&dib_tag=se&keywords=leatherman%2Bsheath%2Bwingman&qid=1727705069&sprefix=leatherman%2Bsheath%2Bwingman%2Caps%2C106&sr=8-5&th=1 due:2024-10-01
-2024-09-30 Leatherman warranty due:2024-10-12
+2024-09-30 Leatherman warranty due:2024-10-26
 2024-09-30
 x 2024-10-14 2024-10-04 Priyanshu datasets due:2024-10-09
 x 2024-10-08 2024-10-04 Signifiance symbols to Jess due: 2024-10-07
 x 2024-10-14 2024-10-04 Add insurance to NEMSIS due:2024-10-08 +aim1 
 2024-10-08 Internship stuff due:2024-10-17
+Census data +aim1 (https://www.census.gov/data/datasets/2023/demo/popproj/2023-popproj.html) due:2024-10-17

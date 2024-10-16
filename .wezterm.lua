@@ -54,7 +54,7 @@ config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
 -- config.color_scheme = "AlienBlood"
---config.color_scheme = 'Dark Ocean (terminal.sexy)'
+-- config.color_scheme = 'Dark Ocean (terminal.sexy)'
 config.color_scheme = 'Embers (base16)' -- !!!
 -- config.color_scheme = 'ForestBlue'
 -- config.color_scheme = 'iceberg-dark'
@@ -65,6 +65,14 @@ config.color_scheme = 'Embers (base16)' -- !!!
 -- config.color_scheme = 'Kasugano (terminal.sexy)'
 -- config.color_scheme = 'Seafoam Pastel (Gogh)'
 -- config.color_scheme = 'Wryan'
+-- config.color_scheme = 'Apprentice (base16)'
+-- config.color_scheme = 'Ashes (dark) (terminal.sexy)'
+-- config.color_scheme = 'Atelier Savanna (base16)'
+-- config.color_scheme = 'Azu (Gogh)'
+-- config.color_scheme = 'Bitmute (terminal.sexy)'
+-- config.color_scheme = 'Black Metal (base16)'
+-- config.color_scheme = 'Black Metal (Venom) (base16)'
+-- config.color_scheme = 'Cloud (terminal.sexy)'
 
 -- I can't get these to do anything even though they're copy-pasted from the docs
 -- They dont' work with Color or Ansci, with or without opacity tweaks
