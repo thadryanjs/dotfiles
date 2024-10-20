@@ -17,8 +17,8 @@ filetype indent on
 syntax on
 
 " Add numbers to each line on the left-hand side.
-" set number
-" set relativenumber
+set number
+set relativenumber
 
 " Set shift width to 4 spaces.
 set shiftwidth=4
@@ -169,7 +169,10 @@ nnoremap <C-Up> :resize +1<CR>
 nnoremap <C-Down> :resize -1<CR>
 nnoremap <C-Left> :vertical resize -1<CR>
 nnoremap <C-Right> :vertical resize +1<CR>
+nnoremap <Leader>ts :vertical resize +20<CR>
 
+" unhighlight
+nnoremap <Leader>hr :nohlsearch<CR>
 
 " Jupyter bindings (no plugin)
 " nomal mode
@@ -180,7 +183,10 @@ inoremap <C-o> # %% [code]<CR>
 " this on is weird but I don't use it that much
 "inoremap <C-m> # %% [markdown]<CR><Esc>O<CR><CR># %% [code]<Esc>2ki#
 
+
+" marks
 nnoremap Q :<C-u>marks<CR>:normal! `
+
 
 """ Plugins
 
@@ -227,7 +233,6 @@ nnoremap <leader>n :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-
 "" Slime
 let g:slime_cell_delimiter = "# %%"
 " minimal vim setup
@@ -235,8 +240,12 @@ let g:slime_target = "vimterminal"
 " neovim/tmux set up
 " let g:slime_target = "tmux"
 " let g:slime_default_config = {"socket_name": "default", "target_pane": ".2"}
-nnoremap <Leader>ss :SlimeConfig<CR>
+nnoremap <Leader>ss :call slime#send_lines(v:count1)<CR>j
 nnoremap <Leader>sc :call slime#send_cell()<CR>
+
+
+
+
 
 
 "" Copilot
@@ -262,23 +271,10 @@ highlight Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
 " https://www.reddit.com/r/vim/comments/8njgul/is_it_possible_to_skip_over_terminal_buffers_when/
 autocmd TerminalOpen * setlocal nobuflisted
 
-augroup RIndent
-    autocmd!
-    autocmd FileType r setlocal expandtab shiftwidth=2 softtabstop=2 autoindent
-augroup END
-
-
-" not working right now
-" dplyr pipe, modified from here: https://github.com/jalvesaq/Nvim-R/issues/85
-" augroup RFileTypeMappings
-"   autocmd!
-"   autocmd FileType r inoremap <buffer> <C-m> <Esc>:normal! a %>%<CR>a
-"   autocmd FileType rnoweb inoremap <buffer> <C-m> <Esc>:normal! a %>%<CR>a
-"   autocmd FileType rmd inoremap <buffer> <C-m> <Esc>:normal! a %>%<CR>a
-" augroup END
-autocmd FileType r inoremap <buffer> kk <C-O>:normal! a %>% <CR>
-autocmd FileType rnoweb inoremap <buffer> kk <C-O>:normal! a %>% <CR>
-autocmd FileType rmd inoremap <buffer> kk <C-O>:normal! a %>% <CR>
+autocmd FileType r inoremap <buffer> kk <C-O>:normal! a%>% <CR>
+autocmd FileType rnoweb inoremap <buffer> kk <C-O>:normal! a%>% <CR>
+autocmd FileType rmd inoremap <buffer> kk <C-O>:normal! a%>% <CR>
+autocmd FileType r setlocal expandtab autoindent shiftwidth=2 softtabstop=2 tabstop=2
 
 """ Commands
 " search buffer and put into quickfix list

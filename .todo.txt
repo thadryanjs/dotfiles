@@ -277,3 +277,4 @@ x 2024-10-08 2024-10-04 Signifiance symbols to Jess due: 2024-10-07
 x 2024-10-14 2024-10-04 Add insurance to NEMSIS due:2024-10-08 +aim1 
 2024-10-08 Internship stuff due:2024-10-17
 Census data +aim1 (https://www.census.gov/data/datasets/2023/demo/popproj/2023-popproj.html) due:2024-10-17
+The Wolf Trap +media-bookshttp://www.amazon.com/The-Wolf-Trap-Dennis-Wise/dp/0975393820https://genius.com/3371777

@@ -1,6 +1,6 @@
 [dev-fedora]
 image=fedora:latest
-additional_packages="git stow vim neovim tmux fzf gcc ripgrep python R nodejs"
+additional_packages="git stow vim-X11 neovim tmux fzf gcc ripgrep python R nodejs"
 init=false
 nvidia=false
 pull=true

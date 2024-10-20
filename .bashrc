@@ -13,6 +13,7 @@
 test -s ~/.alias && . ~/.alias || true
 # source ~/.dotfiles/bin/bashmarks.sh
 # source /usr/share/fzf/shell/key-bindings.bash
+eval "$(fzf --bash)"
 
 # don't do this unless I'm in a dev container
 # if [[ "$(hostname)" == "hostname" ]]; then
@@ -22,6 +23,7 @@ test -s ~/.alias && . ~/.alias || true
 
 stty -ixon
 
+alias vim='vimx'
 alias discovery="sh ~/.scripts/discovery.sh"
 alias polaris="sh ~/.scripts/polaris.sh"
 alias andes="sh ~/.scripts/andes.sh"
