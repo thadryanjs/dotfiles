@@ -71,7 +71,7 @@ imap("<A-y>", "```{python}\n\n```<esc>")
 -- imap("<A-l>", "```{julia}\n\n```<esc>")
 
 -- remove highlighting
-nmap("<leader>nh", ":nohl<CR>")
+nmap("<leader>hr", ":nohl<CR>")
 
 -- cd to current file directory
 nmap("<leader>cd", ":cd %:p:h<CR>")
@@ -82,7 +82,7 @@ nmap("<leader>bp", "<cmd>bprevious<CR>")
 nmap("<leader>bn", "<cmd>bnext<CR>")
 
 -- pipe operator
-imap("<A-p>", "%>%")
+imap("kk", "%>%")
 
 -- task/todo
 imap("<A-t>", "- [ ] ")

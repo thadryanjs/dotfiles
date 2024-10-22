@@ -32,11 +32,12 @@
     sshfs
     gpclient
     flatpak
+    nodejs
     # for the below I had to switch to xorg then back for the icon to show, as did some people on github
-    dconf
     gnome-tweaks
     # requires restart
     gnomeExtensions.vertical-workspaces
+    shotwell
     # Run (TODO: configify this):
     # gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
     # gsettings set org.gnome.shell.app-switcher current-workspace-only true

@@ -9,7 +9,10 @@ export EDITOR='nvim'
 # alias vim='vimx'
 alias vault="cd ~/Documents/WorkVault/"
 alias vaulth="cd ~/Documents/HomeVault/"
+alias config="cd ~/Config"
 alias mount="cd /mnt/Workspace"
+
+alias nvimconfig="cd ~/Config/.config/nvim"
 
 alias discovery="sh ~/.scripts/discovery.sh"
 alias polaris="sh ~/.scripts/polaris.sh"
