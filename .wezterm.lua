@@ -20,8 +20,10 @@ end)
 
 config.window_background_opacity = 1
 -- set an image as the background
--- config.window_background_image = "/home/thadryan/Documents/HomeVault/Areas/Art/Backgrounds/rapture.jpg"
-config.window_background_image = "/home/thadryan/Documents/rapture.jpg"
+-- this one on silverblue
+config.window_background_image = "/var/home/thadryan/Documents/HomeVault/Areas/Art/Backgrounds/rapture.jpg"
+-- this one on work partition backup
+-- config.window_background_image = "/home/thadryan/Documents/rapture.jpg"
 -- set the image as partially transparent
 config.window_background_image_hsb = {
   brightness = 0.03,
@@ -35,8 +37,9 @@ config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
 -- set the font
-config.font = wezterm.font("FiraMono Nerd Font")
--- set the font size
+-- config.font = wezterm.font("FiraMono Nerd Font")
+-- config.font = wezterm.font("Liberation Mono")
+config.font = wezterm.font("Ubuntu Mono")
 config.font_size = 17.0
 
 -- For example, changing the color scheme:

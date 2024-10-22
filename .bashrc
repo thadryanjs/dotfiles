@@ -23,7 +23,8 @@ eval "$(fzf --bash)"
 
 stty -ixon
 
-alias vim='vimx'
+export EDITOR='nvim'
+# alias vim='vimx'
 alias discovery="sh ~/.scripts/discovery.sh"
 alias polaris="sh ~/.scripts/polaris.sh"
 alias andes="sh ~/.scripts/andes.sh"
