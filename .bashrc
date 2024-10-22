@@ -17,9 +17,14 @@ alias nvimconfig="cd ~/Config/.config/nvim"
 alias discovery="sh ~/.scripts/discovery.sh"
 alias polaris="sh ~/.scripts/polaris.sh"
 alias andes="sh ~/.scripts/andes.sh"
-
 alias dartfs="sh ~/.scripts/mount-dartfs.sh"
 alias vpn="sh ~/.scripts/vpn.sh"
+
+alias check_NSDUH="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
+alias check_NEMSIS="tail /mnt/Workspace/triforecast/01_NEMSIS/_log.out"
+alias check_NCHS="tail /mnt/Workspace/triforecast/02_NCHS/_log.out"
+alias check_ado_mat="tail /mnt/Workspace/adolescent-MAT/_log.out"
+alias check_conf_depr="tail /mnt/Workspace/conformal-depression/_log.out"
 
 alias dev="distrobox enter --root dev-fedora"
 
