@@ -282,3 +282,12 @@ Leon Nayfakh 2015 slate mentioned in The Rise of the Warrior Cop +media-articles
 $50 more due:2024-10-26
 x 2024-10-22 2024-10-22 Cartoon Schedule due:today
 x 2024-10-22 2024-10-22 Send toon due:2024-10-22
+Recrete conf-depr conda evn? due:2024-10-23
+Start downloading data for NEMSIS 2 due:2024-10-23 +aim1
+Rake due:2024-10-26
+Practice music due:2024-10-23
+Tax thing to HR due:2024-10-23
+screen might replace nohup due:2024-10-23
+Slurm confusion? due:2024-10-23
+Run NSDUH after reorienting due:2024-10-23
+Cleaner build script to other projecst (won't take long) due:2024-10-23
