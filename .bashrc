@@ -1,30 +1,16 @@
-# Sample .bashrc for SUSE Linux
-# Copyright (c) SUSE Software Solutions Germany GmbH
-
-# There are 3 different types of shells in bash: the login shell, normal shell
-# and interactive shell. Login shells read ~/.profile and interactive shells
-# read ~/.bashrc; in our setup, /etc/profile sources ~/.bashrc - thus all
-# settings made here will also take effect in a login shell.
-#
-# NOTE: It is recommended to make language settings in ~/.profile rather than
-# here, since multilingual X sessions would not work properly if LANG is over-
-# ridden in every subshell.
 
 test -s ~/.alias && . ~/.alias || true
-# source ~/.dotfiles/bin/bashmarks.sh
-# source /usr/share/fzf/shell/key-bindings.bash
-eval "$(fzf --bash)"
 
-# don't do this unless I'm in a dev container
-# if [[ "$(hostname)" == "hostname" ]]; then
-    # Set up fzf key bindings and fuzzy completion
-#     eval "$(fzf --bash)"
-# fi
+eval "$(fzf --bash)"
 
 stty -ixon
 
 export EDITOR='nvim'
 # alias vim='vimx'
+alias vault="cd ~/Documents/WorkVault/"
+alias vaulth="cd ~/Documents/HomeVault/"
+alias mount="cd /mnt/Workspace"
+
 alias discovery="sh ~/.scripts/discovery.sh"
 alias polaris="sh ~/.scripts/polaris.sh"
 alias andes="sh ~/.scripts/andes.sh"
@@ -86,20 +72,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-
-# >>> juliaup initialize >>>
-
-# !! Contents within this block are managed by juliaup !!
-
-case ":$PATH:" in
-    *:/home/thadryan/.juliaup/bin:*)
-        ;;
-
-    *)
-        export PATH=/home/thadryan/.juliaup/bin${PATH:+:${PATH}}
-        ;;
-esac
-
-# <<< juliaup initialize <<<
-export PATH=$PATH:/home/thadryan/.pixi/bin

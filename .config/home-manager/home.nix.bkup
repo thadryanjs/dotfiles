@@ -42,7 +42,8 @@
     # gsettings set org.gnome.shell.app-switcher current-workspace-only true
     # gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
 
-    # going with flatpaks for these:
+    #
+    # going with flatpaks for these
     # wezterm
     # spotify
     # discord
@@ -51,9 +52,6 @@
     # libreoffice
     # obsidian
     # zoom
-    # sleek
-    # zotero
-    # shotwell
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -69,12 +67,10 @@
     # '')
   ];
 
-
-  programs.git = {
-    enable = true;
-    userName  = "thadryanjs";
-    userEmail = "thadryan@protonmail.com";
+  home.options = {
+      dconf.settings = {};
   };
+  programs.dconf.enable = true;
 
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
@@ -120,9 +116,11 @@
 
 
 
+
+
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
 
 
 }
