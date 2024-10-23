@@ -233,6 +233,7 @@ nnoremap <leader>n :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+
 "" Slime
 let g:slime_cell_delimiter = "# %%"
 " minimal vim setup
@@ -242,10 +243,6 @@ let g:slime_target = "vimterminal"
 " let g:slime_default_config = {"socket_name": "default", "target_pane": ".2"}
 nnoremap <Leader>ss :call slime#send_lines(v:count1)<CR>j
 nnoremap <Leader>sc :call slime#send_cell()<CR>
-
-
-
-
 
 
 "" Copilot

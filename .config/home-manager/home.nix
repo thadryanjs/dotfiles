@@ -8,8 +8,10 @@
 # nix-shell '<home-manager>' -A install
 
 # routine maintenance:
+# frequent:
 # nix-channel --update
 # home-manager switch
+# # infrequent:
 # nix-env --list-generations
 # nix-env --delete-generations +3
 # nix-collect-garbage
@@ -51,6 +53,7 @@
     gpclient
     flatpak
     nodejs
+    distrobox
     # for the below I had to switch to xorg then back for the icon to show, as did some people on github
     gnome-tweaks
     # requires restart

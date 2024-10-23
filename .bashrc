@@ -11,6 +11,7 @@ alias vault="cd ~/Documents/WorkVault/"
 alias vaulth="cd ~/Documents/HomeVault/"
 alias config="cd ~/Config"
 alias mount="cd /mnt/Workspace"
+alias ta="cd /var/home/thadryan/Documents/WorkVault/Projects/TA-2024-Fall"
 
 alias nvimconfig="cd ~/Config/.config/nvim"
 
