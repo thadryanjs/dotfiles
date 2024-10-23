@@ -24,8 +24,12 @@ vim.opt.mousefocus = true
 vim.opt.clipboard:append 'unnamedplus'
 --- don't hide characters (had this as autocommand too leaving for reference)
 vim.opt.conceallevel = 0
+-- also no signcolumn
+-- vim.opt.signcolumn = 'no'
+-- vim.opt.statuscolumn = 'no'
+vim.opt.scrolloff = 5
 vim.opt.spellfile = "~/.config/spell/en.utf-8.add"
-
+vim.o.scl = "no"
 -- translating "set formatoptions-=r"
 -- doesn't work: https://www.reddit.com/r/neovim/comments/11ij7t4/how_to_set_formatoptionso_in_lua/
 --vim.opt.formatoptions:remove({ 'o' })

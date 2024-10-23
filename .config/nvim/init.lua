@@ -5,3 +5,4 @@ require "config.autocmds"
 
 --vim.cmd("colorscheme iceberg")
 vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd('set scl=no')
