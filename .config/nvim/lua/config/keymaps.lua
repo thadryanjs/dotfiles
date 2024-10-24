@@ -40,7 +40,7 @@ nmap("<leader>lz", ":vs buffer | :vertical resize -120<cr>")
 
 -- [ Jupyter Notebook script hotkeys]
 -- insert and normal mode version
-imap("<A-c>", "# %% [code]")
+imap("<C-o>", "# %% [code]")
 -- looks weird, but it makes sure the markdown cell is automatically closed,
 -- first line is commented out, and is placed back automatically
 imap("<A-m>", "# %% [markdown]<CR><Esc>O\n\n# %% [code]<Esc>2ki# ")
