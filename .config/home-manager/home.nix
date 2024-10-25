@@ -54,6 +54,7 @@
     sshfs
     R
     micromamba
+    python312Packages.pip
     gpclient
     flatpak
     nodejs
