@@ -47,9 +47,13 @@
     stow
     ripgrep
     gcc
+    gnumake
     fzf
+    bat
     cifs-utils
     sshfs
+    R
+    micromamba
     gpclient
     flatpak
     nodejs

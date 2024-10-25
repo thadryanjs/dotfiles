@@ -24,8 +24,12 @@ alias vpn="sh ~/.scripts/vpn.sh"
 alias check_NSDUH="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
 alias check_NEMSIS="tail /mnt/Workspace/triforecast/01_NEMSIS/_log.out"
 alias check_NCHS="tail /mnt/Workspace/triforecast/02_NCHS/_log.out"
-alias check_ado_mat="tail /mnt/Workspace/adolescent-MAT/_log.out"
-alias check_conf_depr="tail /mnt/Workspace/conformal-depression/_log.out"
+
+alias ado_mat_check="tail /mnt/Workspace/adolescent-MAT/_log.out"
+alias ado_mat_report="cp -r /mnt/Workspace/adolescent-MAT/build/ ~/Temp/ado-MAT/"
+
+alias conf_depr_check="tail /mnt/Workspace/conformal-depression/_log.out"
+alias conf_depr_report="cp -r /mnt/Workspace/conformal-depression/build ~/Temp/conf-depr/"
 
 alias dev="distrobox enter --root dev-fedora"
 
@@ -35,6 +39,7 @@ alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 alias open='xdg-open'
+alias conda='micromamba'
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -81,3 +86,16 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+export MAMBA_EXE='/nix/store/kvvvw8dgkpq827i2c7x26jcp825yrx3j-micromamba-1.5.8/bin/micromamba';
+export MAMBA_ROOT_PREFIX='/var/home/thadryan/micromamba';
+__mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__mamba_setup"
+else
+    alias micromamba="$MAMBA_EXE"  # Fallback on help from mamba activate
+fi
+unset __mamba_setup
+# <<< mamba initialize <<<

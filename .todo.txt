@@ -292,3 +292,4 @@ Slurm confusion? due:2024-10-23
 Run NSDUH after reorienting due:2024-10-23
 Cleaner build script to other projecst (won't take long) due:2024-10-23
 Slurm job cacheing? due:2024-10-23
+RUCA categories https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes/documentation/

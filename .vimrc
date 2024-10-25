@@ -197,10 +197,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
-    " Plug 'Townk/vim-autoclose'
     Plug 'jiangmiao/auto-pairs'
     Plug 'github/copilot.vim'
     Plug 'Shougo/deoplete.nvim'
+    Plug 'dense-analysis/ale'
     " Maybe?:
     " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     " Plug 'junegunn/fzf.vim'
@@ -233,7 +233,6 @@ nnoremap <leader>n :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-
 "" Slime
 let g:slime_cell_delimiter = "# %%"
 " minimal vim setup
@@ -245,6 +244,14 @@ nnoremap <Leader>ss :call slime#send_lines(v:count1)<CR>j
 nnoremap <Leader>sc :call slime#send_cell()<CR>
 
 
+" ALE 
+" nnoremap <Leader>a :set signcolumn=yes \| ALEHover<CR>
+" start off by default
+let g:ale_enabled = 0
+nnoremap <Leader>a :let g:ale_enabled = 1 \| ALEEnable \| set signcolumn=yes \| ALEHover<CR>
+
+
+
 "" Copilot
 let g:copilot_no_tab_map = v:true
 imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
@@ -253,7 +260,6 @@ imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
 """ Colors
 " I just let it use my terminal colors, but make a few tweaks
 colorscheme default
-
 " these complement 'Embers (base16)' from wezterm
 highlight Special ctermfg=cyan guifg=cyan
 " highlight Delimiter ctermfg=cyan guifg=cyan
@@ -261,6 +267,9 @@ highlight Comment ctermfg=darkgrey guifg=darkgrey
 "highlight Search term=bold ctermfg=2 gui=bold guifg=SeaGreen
 highlight Operator term=bold ctermfg=4 guifg=Blue
 highlight Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
+highlight SignColumn ctermbg=none 
+" the hover menu for autocomplete is too bright
+highlight Pmenu ctermbg=8 ctermfg=7
 
 
 """ autocommands
