@@ -234,6 +234,7 @@ nnoremap <leader>n :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
+
 "" Slime
 let g:slime_cell_delimiter = "# %%"
 " minimal vim setup
@@ -250,7 +251,7 @@ nnoremap <Leader>sc :call slime#send_cell()<CR>
 " start off by default
 let g:ale_enabled = 0
 nnoremap <Leader>ae :let g:ale_enabled = 1 \| ALEEnable \| set signcolumn=yes \| ALEHover<CR>
-nnoremap <Leader>ad :let g:ale_enabled = 0 \| ALEDisable<CR>
+nnoremap <Leader>ad :let g:ale_enabled = 0 \| ALEDisable \| ALEStopAllLSPs \| :set signcolumn=no \| :edit<CR>
 nnoremap <Leader>an :ALENext<CR>
 nnoremap <Leader>ap :ALEPrevious<CR>
 
