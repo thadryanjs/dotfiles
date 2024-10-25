@@ -197,11 +197,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
+    " Plug 'Townk/vim-autoclose'
     Plug 'jiangmiao/auto-pairs'
     Plug 'github/copilot.vim'
     Plug 'Shougo/deoplete.nvim'
-    Plug 'dense-analysis/ale'
     " Maybe?:
+    Plug 'dense-analysis/ale'
     " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     " Plug 'junegunn/fzf.vim'
     " Previous
@@ -244,12 +245,14 @@ nnoremap <Leader>ss :call slime#send_lines(v:count1)<CR>j
 nnoremap <Leader>sc :call slime#send_cell()<CR>
 
 
-" ALE 
+" ALE
 " nnoremap <Leader>a :set signcolumn=yes \| ALEHover<CR>
 " start off by default
 let g:ale_enabled = 0
-nnoremap <Leader>a :let g:ale_enabled = 1 \| ALEEnable \| set signcolumn=yes \| ALEHover<CR>
-
+nnoremap <Leader>ae :let g:ale_enabled = 1 \| ALEEnable \| set signcolumn=yes \| ALEHover<CR>
+nnoremap <Leader>ad :let g:ale_enabled = 0 \| ALEDisable<CR>
+nnoremap <Leader>an :ALENext<CR>
+nnoremap <Leader>ap :ALEPrevious<CR>
 
 
 "" Copilot
@@ -267,7 +270,7 @@ highlight Comment ctermfg=darkgrey guifg=darkgrey
 "highlight Search term=bold ctermfg=2 gui=bold guifg=SeaGreen
 highlight Operator term=bold ctermfg=4 guifg=Blue
 highlight Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
-highlight SignColumn ctermbg=none 
+highlight SignColumn ctermbg=none
 " the hover menu for autocomplete is too bright
 highlight Pmenu ctermbg=8 ctermfg=7
 
