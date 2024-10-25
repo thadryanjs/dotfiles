@@ -40,7 +40,7 @@
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
-    vim
+    vim-full
     neovim
     tmux
     xclip

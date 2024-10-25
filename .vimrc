@@ -286,6 +286,38 @@ autocmd FileType rnoweb inoremap <buffer> kk <C-O>:normal! a%>% <CR>
 autocmd FileType rmd inoremap <buffer> kk <C-O>:normal! a%>% <CR>
 autocmd FileType r setlocal expandtab autoindent shiftwidth=2 softtabstop=2 tabstop=2
 
+
+""" Vimscript 
+" Thank you chat GTP
+function! MoveTrailingCommentsUp()
+    " Loop through all lines in the buffer
+    let l:line_count = line('$')
+    for l:num in range(1, l:line_count)
+        let l:line = getline(l:num)
+        " Check if the line contains a comment
+        if l:line =~ '#'
+            " Split the line into code and comment parts
+            let l:parts = split(l:line, '#', 2)
+            " Get the code and comment
+            let l:code = l:parts[0]
+            let l:comment = trim(l:parts[1])
+            " If there's a comment, move it above
+            if !empty(l:comment)
+                " Capture the indentation of the code
+                let l:indent = matchstr(l:line, '^\s*')
+                " Set the current line to only the code
+                call setline(l:num, l:code)
+                " Insert the comment above with matching indentation
+                call append(l:num - 1, l:indent . '# ' . l:comment)
+            endif
+        endif
+    endfor
+endfunction
+
+" Command to call the function
+command! MoveComments call MoveComments()
+
+
 """ Commands
 " search buffer and put into quickfix list
 " :bufdo vimgrepadd threading % | copen
