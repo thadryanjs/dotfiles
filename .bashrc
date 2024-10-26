@@ -21,6 +21,7 @@ alias andes="sh ~/.scripts/andes.sh"
 alias dartfs="sh ~/.scripts/mount-dartfs.sh"
 alias vpn="sh ~/.scripts/vpn.sh"
 
+alias triforecast="cd ~/Documents/WorkVault/Projects/OpioidPredictions/triforecast"
 alias check_NSDUH="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
 alias check_NEMSIS="tail /mnt/Workspace/triforecast/01_NEMSIS/_log.out"
 alias check_NCHS="tail /mnt/Workspace/triforecast/02_NCHS/_log.out"

@@ -45,10 +45,11 @@
     tmux
     xclip
     stow
-    ripgrep
     gcc
     gnumake
     fzf
+    ripgrep
+    silver-searcher
     bat
     cifs-utils
     sshfs

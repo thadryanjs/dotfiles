@@ -189,7 +189,6 @@ nnoremap Q :<C-u>marks<CR>:normal! `
 
 
 """ Plugins
-
 call plug#begin('~/.vim/plugged')
 
     Plug 'preservim/nerdtree'
@@ -197,16 +196,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
-    " Plug 'Townk/vim-autoclose'
     Plug 'jiangmiao/auto-pairs'
     Plug 'github/copilot.vim'
     Plug 'Shougo/deoplete.nvim'
-    " Maybe?:
     Plug 'dense-analysis/ale'
-    " Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    " Plug 'junegunn/fzf.vim'
-    " Previous
-    " Plug 'maxboisvert/vim-simple-complete'
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -287,8 +282,8 @@ autocmd FileType rmd inoremap <buffer> kk <C-O>:normal! a%>% <CR>
 autocmd FileType r setlocal expandtab autoindent shiftwidth=2 softtabstop=2 tabstop=2
 
 
-""" Vimscript 
-" Thank you chat GTP
+""" Vimscript
+" Thank you chat GTP - will f up your metadeta in jupyter notebooks as code
 function! MoveTrailingCommentsUp()
     " Loop through all lines in the buffer
     let l:line_count = line('$')
