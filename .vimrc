@@ -229,7 +229,6 @@ nnoremap <leader>n :NERDTree<CR>
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 
-
 "" Slime
 let g:slime_cell_delimiter = "# %%"
 " minimal vim setup
@@ -240,7 +239,6 @@ let g:slime_target = "vimterminal"
 nnoremap <Leader>ss :call slime#send_lines(v:count1)<CR>j
 nnoremap <Leader>sc :call slime#send_cell()<CR>
 
-
 " ALE
 " nnoremap <Leader>a :set signcolumn=yes \| ALEHover<CR>
 " start off by default
@@ -250,10 +248,13 @@ nnoremap <Leader>ad :let g:ale_enabled = 0 \| ALEDisable \| ALEStopAllLSPs \| :s
 nnoremap <Leader>an :ALENext<CR>
 nnoremap <Leader>ap :ALEPrevious<CR>
 
-
 "" Copilot
 let g:copilot_no_tab_map = v:true
 imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
+
+"" zfz etz
+nnoremap <Leader>ff :Files .<CR>
+nnoremap <Leader>fg :Ag <CR>
 
 
 """ Colors
