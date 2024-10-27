@@ -164,6 +164,7 @@ nnoremap <c-z> <nop>
 
 " open right split terminal
 nnoremap <Leader>tr :rightb vert term<CR>
+nnoremap <Leader>tb :belowright term<CR>
 
 nnoremap <C-Up> :resize +1<CR>
 nnoremap <C-Down> :resize -1<CR>

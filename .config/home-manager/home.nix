@@ -60,6 +60,7 @@
     flatpak
     nodejs
     distrobox
+    quarto
     # for the below I had to switch to xorg then back for the icon to show, as did some people on github
     gnome-tweaks
     # requires restart
