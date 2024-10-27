@@ -197,7 +197,14 @@ call plug#begin('~/.vim/plugged')
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
-    Plug 'jiangmiao/auto-pairs'
+    " all of these insert when it shouldn't (adding a function the left hand side of text, ie foo()bar(x)
+    " Plug 'jiangmiao/auto-pairs' 
+    " Plug 'kana/vim-smartinput'
+    " Plug 'spf13/vim-autoclose'
+    " this one doesn't but breaks auto indent
+    " Plug 'Townk/vim-autoclose'
+    " This one is good
+    Plug 'cohama/lexima.vim' 
     Plug 'github/copilot.vim'
     Plug 'Shougo/deoplete.nvim'
     Plug 'dense-analysis/ale'
@@ -205,6 +212,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf.vim'
 
 call plug#end()
+
+" let g:AutoPairsFlyMode = 1
 
 
 "" NERD file tree
