@@ -202,7 +202,7 @@ call plug#begin('~/.vim/plugged')
     " Plug 'kana/vim-smartinput'
     " Plug 'spf13/vim-autoclose'
     " this one doesn't but breaks auto indent
-    " Plug 'Townk/vim-autoclose'
+    Plug 'Townk/vim-autoclose'
     " This one is good
     Plug 'cohama/lexima.vim' 
     Plug 'github/copilot.vim'
