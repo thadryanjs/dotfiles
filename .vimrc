@@ -254,7 +254,15 @@ imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
 
 "" zfz etz
 nnoremap <Leader>ff :Files .<CR>
-nnoremap <Leader>fg :Ag <CR>
+nnoremap <Leader>fg :Ag<CR>
+nnoremap <Leader>fb :Buffers<CR>
+" file history 
+nnoremap <Leader>fr :History<CR>
+" command history
+nnoremap <Leader>fc :History:<CR>
+" key mappings
+nnoremap <Leader>fm :Maps<CR>
+
 
 
 """ Colors
