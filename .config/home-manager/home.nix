@@ -62,7 +62,6 @@
     distrobox
     quarto
     yazi
-    ranger
     poppler
     ffmpegthumbnailer
     imagemagick
