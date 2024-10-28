@@ -61,6 +61,12 @@
     nodejs
     distrobox
     quarto
+    yazi
+    ranger
+    poppler
+    ffmpegthumbnailer
+    imagemagick
+    zoxide
     # for the below I had to switch to xorg then back for the icon to show, as did some people on github
     gnome-tweaks
     # requires restart
