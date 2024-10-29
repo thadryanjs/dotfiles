@@ -331,7 +331,7 @@ syntax reset
 let g:colors_name = "blue-steel"
 set background=dark
 set t_Co=256
-hi Normal guifg=#dadada ctermbg=NONE guibg=#272935 gui=NONE
+hi Normal guifg=#b4b4b4 ctermbg=NONE guibg=#272935 gui=NONE
 
 hi DiffText guifg=#a0a0c2 guibg=NONE
 hi ErrorMsg guifg=#a0a0c2 guibg=NONE
@@ -382,14 +382,14 @@ hi Include guifg=#646476 guibg=NONE
 hi Storage guifg=#646476 guibg=NONE
 hi cssClassName guifg=#646476 guibg=NONE
 hi cssClassNameDot guifg=#646476 guibg=NONE
-hi Statement guifg=#498BC7 guibg=NONE
-hi Operator guifg=#498BC7 guibg=NONE
-hi cssAttr guifg=#498BC7 guibg=NONE
+hi Statement guifg=#3a6f9f guibg=NONE
+hi Operator guifg=#3a6f9f guibg=NONE
+hi cssAttr guifg=#3a6f9f guibg=NONE
 
 
-hi Pmenu guifg=#dadada guibg=#454545
+hi Pmenu guifg=#b4b4b4 guibg=#454545
 hi SignColumn guibg=#272935
-hi Title guifg=#dadada
+hi Title guifg=#b4b4b4
 hi LineNr guifg=#747474 guibg=#272935
 hi NonText guifg=#6c6b70 guibg=#272935
 hi Comment guifg=#6c6b70 gui=italic
@@ -397,9 +397,9 @@ hi SpecialComment guifg=#6c6b70 gui=italic guibg=NONE
 hi CursorLine guibg=#454545
 hi TabLineFill gui=NONE guibg=#454545
 hi TabLine guifg=#747474 guibg=#454545 gui=NONE
-hi StatusLine gui=bold guibg=#454545 guifg=#dadada
-hi StatusLineNC gui=NONE guibg=#272935 guifg=#dadada
-hi Search guibg=#6c6b70 guifg=#dadada
+hi StatusLine gui=bold guibg=#454545 guifg=#b4b4b4
+hi StatusLineNC gui=NONE guibg=#272935 guifg=#b4b4b4
+hi Search guibg=#6c6b70 guifg=#b4b4b4
 hi VertSplit gui=NONE guifg=#454545 guibg=NONE
 hi Visual gui=NONE guibg=#454545
 
