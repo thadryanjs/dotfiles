@@ -194,6 +194,8 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'preservim/nerdtree'
     Plug 'flazz/vim-colorschemes'
+    Plug 'axvr/photon.vim'
+    Plug 'zenbones-theme/zenbones.nvim'
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
@@ -277,18 +279,41 @@ nnoremap <Leader>fm :Maps<CR>
 
 """ Colors
 " I just let it use my terminal colors, but make a few tweaks
-colorscheme default
-" these complement 'Embers (base16)' from wezterm
-highlight Special ctermfg=cyan guifg=cyan
-" highlight Delimiter ctermfg=cyan guifg=cyan
-highlight Comment ctermfg=darkgrey guifg=darkgrey
-"highlight Search term=bold ctermfg=2 gui=bold guifg=SeaGreen
-highlight Operator term=bold ctermfg=4 guifg=Blue
-highlight Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
-highlight SignColumn ctermbg=none
-" the hover menu for autocomplete is too bright
-highlight Pmenu ctermbg=8 ctermfg=7
+" colorscheme default
+" " these complement 'Embers (base16)' from wezterm
+" highlight Special ctermfg=cyan guifg=cyan
+" " highlight Delimiter ctermfg=cyan guifg=cyan
+" highlight Comment ctermfg=darkgrey guifg=darkgrey
+" "highlight Search term=bold ctermfg=2 gui=bold guifg=SeaGreen
+" highlight Operator term=bold ctermfg=4 guifg=Blue
+" highlight Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
+" highlight SignColumn ctermbg=none
+" " the hover menu for autocomplete is too bright
+" highlight Pmenu ctermbg=8 ctermfg=7
 
+" I just let it use my terminal colors, but make a few tweaks
+" colorscheme candle-grey 
+" highlight Normal guibg=NONE ctermbg=NONE
+
+colorscheme photon 
+highlight Normal guibg=NONE ctermbg=NONE guifg=#c0c0c0 ctermfg=250  
+highlight Normal guibg=NONE ctermbg=NONE
+highlight Comment guibg=NONE ctermbg=NONE
+highlight Constant guibg=NONE ctermbg=NONE
+highlight Identifier guibg=NONE ctermbg=NONE
+highlight Function guibg=NONE ctermbg=NONE
+highlight Statement guibg=NONE ctermbg=NONE
+highlight Type guibg=NONE ctermbg=NONE
+highlight Special guibg=NONE ctermbg=NONE
+highlight Keyword guibg=NONE ctermbg=NONE
+highlight Operator guibg=NONE ctermbg=NONE
+highlight PreProc guibg=NONE ctermbg=NONE
+highlight NonText guibg=NONE ctermbg=NONE
+highlight Title guibg=NONE ctermbg=NONE
+highlight MsgArea guibg=NONE ctermbg=NONE
+highlight ModeMsg guibg=NONE ctermbg=NONE
+highlight MoreMsg guibg=NONE ctermbg=NONE
+highlight Question guibg=NONE ctermbg=NONE
 
 """ autocommands
 " don't include terminals as buffer for next/prev
