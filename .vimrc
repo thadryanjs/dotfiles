@@ -295,25 +295,123 @@ nnoremap <Leader>fm :Maps<CR>
 " colorscheme candle-grey 
 " highlight Normal guibg=NONE ctermbg=NONE
 
-colorscheme photon 
-highlight Normal guibg=NONE ctermbg=NONE guifg=#c0c0c0 ctermfg=250  
+" colorscheme photon
+" highlight Normal guibg=NONE ctermbg=NONE guifg=#c0c0c0 ctermfg=250  
+" highlight Search guifg=#262626 guibg=#008080 ctermfg=235 ctermbg=37
+" highlight Normal guibg=NONE ctermbg=NONE
+" highlight Comment guibg=NONE ctermbg=NONE
+" highlight Constant guibg=NONE ctermbg=NONE
+" highlight Identifier guibg=NONE ctermbg=NONE
+" highlight Function guibg=NONE ctermbg=NONE
+" highlight Statement guibg=NONE ctermbg=NONE
+" highlight Type guibg=NONE ctermbg=NONE
+" highlight Special guibg=NONE ctermbg=NONE
+" highlight Keyword guibg=NONE ctermbg=NONE
+" highlight Operator guibg=NONE ctermbg=NONE
+" highlight PreProc guibg=NONE ctermbg=NONE
+" highlight NonText guibg=NONE ctermbg=NONE
+" highlight Title guibg=NONE ctermbg=NONE
+" highlight MsgArea guibg=NONE ctermbg=NONE
+" highlight ModeMsg guibg=NONE ctermbg=NONE
+" highlight MoreMsg guibg=NONE ctermbg=NONE
+" highlight Question guibg=NONE ctermbg=NONE
+
+" set termguicolors
+" set background=dark
+" colorscheme zenbones
+" highlight Normal guibg=NONE ctermbg=NONE
+" highlight Constant term=underline ctermfg=13 guifg=#868C91
+" highlight Constant term=underline cterm=none ctermfg=13 gui=none guifg=#868C91
+" highlight Comment term=bold cterm=none ctermfg=14 gui=none guifg=#6E6763
+
+" https://vimcolors.org
+set termguicolors
+hi clear
+syntax reset
+let g:colors_name = "blue-steel"
+set background=dark
+set t_Co=256
+hi Normal guifg=#dadada ctermbg=NONE guibg=#272935 gui=NONE
+
+hi DiffText guifg=#a0a0c2 guibg=NONE
+hi ErrorMsg guifg=#a0a0c2 guibg=NONE
+hi WarningMsg guifg=#a0a0c2 guibg=NONE
+hi PreProc guifg=#a0a0c2 guibg=NONE
+hi Exception guifg=#a0a0c2 guibg=NONE
+hi Error guifg=#a0a0c2 guibg=NONE
+hi DiffDelete guifg=#a0a0c2 guibg=NONE
+hi GitGutterDelete guifg=#a0a0c2 guibg=NONE
+hi GitGutterChangeDelete guifg=#a0a0c2 guibg=NONE
+hi cssIdentifier guifg=#a0a0c2 guibg=NONE
+hi cssImportant guifg=#a0a0c2 guibg=NONE
+hi Type guifg=#a0a0c2 guibg=NONE
+hi Identifier guifg=#a0a0c2 guibg=NONE
+hi PMenuSel guifg=#bbb9b0 guibg=NONE
+hi Constant guifg=#bbb9b0 guibg=NONE
+hi Repeat guifg=#bbb9b0 guibg=NONE
+hi DiffAdd guifg=#bbb9b0 guibg=NONE
+hi GitGutterAdd guifg=#bbb9b0 guibg=NONE
+hi cssIncludeKeyword guifg=#bbb9b0 guibg=NONE
+hi Keyword guifg=#bbb9b0 guibg=NONE
+hi IncSearch guifg=#778899 guibg=NONE
+hi Title guifg=#778899 guibg=NONE
+hi PreCondit guifg=#778899 guibg=NONE
+hi Debug guifg=#778899 guibg=NONE
+hi SpecialChar guifg=#778899 guibg=NONE
+hi Conditional guifg=#778899 guibg=NONE
+hi Todo guifg=#778899 guibg=NONE
+hi Special guifg=#778899 guibg=NONE
+hi Label guifg=#778899 guibg=NONE
+hi Delimiter guifg=#778899 guibg=NONE
+hi Number guifg=#778899 guibg=NONE
+hi CursorLineNR guifg=#778899 guibg=NONE
+hi Define guifg=#778899 guibg=NONE
+hi MoreMsg guifg=#778899 guibg=NONE
+hi Tag guifg=#778899 guibg=NONE
+hi String guifg=#778899 guibg=NONE
+hi MatchParen guifg=#778899 guibg=NONE
+hi Macro guifg=#778899 guibg=NONE
+hi DiffChange guifg=#778899 guibg=NONE
+hi GitGutterChange guifg=#778899 guibg=NONE
+hi cssColor guifg=#778899 guibg=NONE
+hi Function guifg=#d1d9e5 guibg=NONE
+hi Directory guifg=#646476 guibg=NONE
+hi markdownLinkText guifg=#646476 guibg=NONE
+hi javaScriptBoolean guifg=#646476 guibg=NONE
+hi Include guifg=#646476 guibg=NONE
+hi Storage guifg=#646476 guibg=NONE
+hi cssClassName guifg=#646476 guibg=NONE
+hi cssClassNameDot guifg=#646476 guibg=NONE
+hi Statement guifg=#498BC7 guibg=NONE
+hi Operator guifg=#498BC7 guibg=NONE
+hi cssAttr guifg=#498BC7 guibg=NONE
+
+
+hi Pmenu guifg=#dadada guibg=#454545
+hi SignColumn guibg=#272935
+hi Title guifg=#dadada
+hi LineNr guifg=#747474 guibg=#272935
+hi NonText guifg=#6c6b70 guibg=#272935
+hi Comment guifg=#6c6b70 gui=italic
+hi SpecialComment guifg=#6c6b70 gui=italic guibg=NONE
+hi CursorLine guibg=#454545
+hi TabLineFill gui=NONE guibg=#454545
+hi TabLine guifg=#747474 guibg=#454545 gui=NONE
+hi StatusLine gui=bold guibg=#454545 guifg=#dadada
+hi StatusLineNC gui=NONE guibg=#272935 guifg=#dadada
+hi Search guibg=#6c6b70 guifg=#dadada
+hi VertSplit gui=NONE guifg=#454545 guibg=NONE
+hi Visual gui=NONE guibg=#454545
+
+" Clear background for other relevant groups
 highlight Normal guibg=NONE ctermbg=NONE
-highlight Comment guibg=NONE ctermbg=NONE
-highlight Constant guibg=NONE ctermbg=NONE
-highlight Identifier guibg=NONE ctermbg=NONE
-highlight Function guibg=NONE ctermbg=NONE
-highlight Statement guibg=NONE ctermbg=NONE
-highlight Type guibg=NONE ctermbg=NONE
-highlight Special guibg=NONE ctermbg=NONE
-highlight Keyword guibg=NONE ctermbg=NONE
-highlight Operator guibg=NONE ctermbg=NONE
-highlight PreProc guibg=NONE ctermbg=NONE
 highlight NonText guibg=NONE ctermbg=NONE
 highlight Title guibg=NONE ctermbg=NONE
 highlight MsgArea guibg=NONE ctermbg=NONE
 highlight ModeMsg guibg=NONE ctermbg=NONE
 highlight MoreMsg guibg=NONE ctermbg=NONE
 highlight Question guibg=NONE ctermbg=NONE
+
 
 """ autocommands
 " don't include terminals as buffer for next/prev

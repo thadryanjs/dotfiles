@@ -8,13 +8,10 @@ return {
             ensure_installed = {
                 "clangd",
                 "pyright",
-                "gopls",
                 "lua-language-server",
                 "r-languageserver",
-                "letek-ls",
+                "letex-ls",
                 "julia-lsp",
-                "nimlsp",
-                "kotlin_language_server"
             }
         },
 
