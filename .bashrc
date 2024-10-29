@@ -6,12 +6,12 @@ eval "$(fzf --bash)"
 stty -ixon
 
 # https://www.baeldung.com/linux/tmux-startup-default-shell
-# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-#   tmux attach-session -t default || tmux new-session -s default
-# fi
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi
 
-export EDITOR='nvim'
-# alias vim='vimx'
+export EDITOR='vim'
+
 alias vault="cd ~/Documents/WorkVault/"
 alias vaulth="cd ~/Documents/HomeVault/"
 alias config="cd ~/Config"
