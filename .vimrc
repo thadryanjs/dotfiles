@@ -188,27 +188,25 @@ inoremap <C-o> # %% [code]<CR>
 " marks
 nnoremap Q :<C-u>marks<CR>:normal! `
 
+" Most autoclose functions insert when they shouldn't (adding a function the left hand side of text, ie foo()bar(x).
+" Plug 'jiangmiao/auto-pairs' 
+" Plug 'kana/vim-smartinput'
+" Plug 'spf13/vim-autoclose'
+" This one I am using doesn't, but breaks auto indent. This one plus lexima together work as I want. 
 
 """ Plugins
 call plug#begin('~/.vim/plugged')
 
     Plug 'preservim/nerdtree'
-    Plug 'flazz/vim-colorschemes'
-    Plug 'axvr/photon.vim'
-    Plug 'zenbones-theme/zenbones.nvim'
+    " Plug 'flazz/vim-colorschemes'
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
-    " all of these insert when it shouldn't (adding a function the left hand side of text, ie foo()bar(x)
-    " Plug 'jiangmiao/auto-pairs' 
-    " Plug 'kana/vim-smartinput'
-    " Plug 'spf13/vim-autoclose'
-    " this one doesn't but breaks auto indent
     Plug 'Townk/vim-autoclose'
-    " This one is good
     Plug 'cohama/lexima.vim' 
     Plug 'github/copilot.vim'
-    Plug 'Shougo/deoplete.nvim'
+    Plug 'wellle/tmux-complete.vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'dense-analysis/ale'
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
     Plug 'junegunn/fzf.vim'
@@ -402,6 +400,7 @@ hi StatusLineNC gui=NONE guibg=#272935 guifg=#b4b4b4
 hi Search guibg=#6c6b70 guifg=#b4b4b4
 hi VertSplit gui=NONE guifg=#454545 guibg=NONE
 hi Visual gui=NONE guibg=#454545
+hi MatchParen cterm=bold ctermbg=14 guibg=#008080
 
 " Clear background for other relevant groups
 highlight Normal guibg=NONE ctermbg=NONE

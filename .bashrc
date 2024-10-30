@@ -34,9 +34,6 @@ alias check_NCHS="tail /mnt/Workspace/triforecast/02_NCHS/_log.out"
 alias ado_mat_check="tail /mnt/Workspace/adolescent-MAT/_log.out"
 alias ado_mat_report="rm -rf ~/Temp/ado-MAT; cp -r /mnt/Workspace/adolescent-MAT/build ~/Temp/ado-MAT/"
 
-alias conf_depr_check="tail /mnt/Workspace/conformal-depression/_log.out"
-alias conf_depr_report="rm -rf ~/Temp/ado-MAT; cp -r /mnt/Workspace/conformal-depression/build ~/Temp/conf-depr/"
-
 alias dev="distrobox enter --root dev-fedora"
 
 alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
