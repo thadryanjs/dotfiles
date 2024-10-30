@@ -232,7 +232,7 @@ let g:NERDCommentEmptyLines = 1
 let g:NERDTrimTrailingWhitespace = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
-let g:NERDTreeWinSize=16
+let g:NERDTreeWinSize=30
 highlight link NERDTreeExecFile ModeMsg
 
 nnoremap <leader>n :NERDTree<CR>
@@ -261,6 +261,12 @@ nnoremap <Leader>ap :ALEPrevious<CR>
 "" Copilot
 let g:copilot_no_tab_map = v:true
 imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
+
+
+"" CoC
+" accept on k
+inoremap <silent><expr> <C-k> coc#pum#visible() ? coc#pum#confirm() : "\<C-k>"
+
 
 "" zfz etz
 nnoremap <Leader>ff :Files .<CR>
