@@ -17,11 +17,14 @@
 # nix-collect-garbage
 # nix store optimise
 
+# Run (TODO: configify this):
+# gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
+# gsettings set org.gnome.shell.app-switcher current-workspace-only true
+# gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
+
 { config, pkgs, ... }:
 
 {
-  # Home Manager needs a bit of information about you and the paths it should
-  # manage.
   home.username = "thadryan";
   home.homeDirectory = "/var/home/thadryan";
 
@@ -69,10 +72,6 @@
     # requires restart
     gnomeExtensions.vertical-workspaces
     shotwell
-    # Run (TODO: configify this):
-    # gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
-    # gsettings set org.gnome.shell.app-switcher current-workspace-only true
-    # gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
 
     # going with flatpaks for these:
     # wezterm
