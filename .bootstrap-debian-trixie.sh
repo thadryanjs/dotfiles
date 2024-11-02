@@ -46,6 +46,7 @@ chmod -u+xrw tresorit_installer.run
 
 # install micromamba 
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh)
+# basic env for data science ad LSPs
 micromamba create --name .dcsi-mmamba-env.yaml --yes
 
 # gnome tweaks 
