@@ -38,17 +38,17 @@ return {
 
       -- Set men
       dashboard.section.buttons.val = {
-        dashboard.button('e', '  > New file', ':ene <BAR> startinsert <CR>'),
-        dashboard.button('f', '󰈞  > Find file', ':Telescope find_files<CR>'),
-        dashboard.button('r', '  > Recent', ':Telescope oldfiles<CR>'),
+        dashboard.button('e', '> New file', ':ene <BAR> startinsert <CR>'),
+        dashboard.button('f', '> Find file', ':Telescope find_files<CR>'),
+        dashboard.button('r', '> Recent', ':Telescope oldfiles<CR>'),
         -- workspaces
-        dashboard.button('w', '  > Workspaces', ':Telescope workspaces<CR>'),
+        dashboard.button('w', '> Workspaces', ':Telescope workspaces<CR>'),
         -- bookmarks
-        dashboard.button('b', '󰅚  > Bookmarks', ":lua require('ezbookmarks').OpenBookmark()<CR>"),
+        dashboard.button('b', '> Bookmarks', ":lua require('ezbookmarks').OpenBookmark()<CR>"),
         -- line marks
-        dashboard.button('m', '󰅚  > Line marks', ':Telescope marks<CR>'),
-        dashboard.button('s', '  > Settings', ':e $MYVIMRC | :cd %:p:h<cr>'),
-        dashboard.button('q', '󰅚  > Quit', ':qa<CR>'),
+        dashboard.button('m', '> Line marks', ':Telescope marks<CR>'),
+        dashboard.button('s', '> Settings', ':e $MYVIMRC | :cd %:p:h<cr>'),
+        dashboard.button('q', '> Quit', ':qa<CR>'),
       }
 
       -- Send config to alpha

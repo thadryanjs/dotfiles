@@ -29,16 +29,19 @@ reboot
 
 ## Phase 3
 # get vim plugin
-# done
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
 # get tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+
 # install your stuff
 sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag ripgrep fonts-ubuntu nodejs fuse tree r-base npm --yes
+
 # get flatpaks running
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
+
 # tresorit
 wget https://installer.tresorit.com/tresorit_installer.run
 chmod -u+xrw tresorit_installer.run
@@ -53,3 +56,6 @@ micromamba create --name .dcsi-mmamba-env.yaml --yes
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
+
+# after tresorit is up-to-date
+sudo cp ~/Documents/WorkVault/Areas/Tech/Areas/GNOME/Jolly-Downloads/Jolly-Dark-Icons /usr/share/icons
