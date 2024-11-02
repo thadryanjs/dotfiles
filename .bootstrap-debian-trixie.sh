@@ -46,7 +46,7 @@ chmod -u+xrw tresorit_installer.run
 
 # install micromamba 
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh)
-micromamba create --name dcsi-mmamba-env.yaml --yes
+micromamba create --name .dcsi-mmamba-env.yaml --yes
 
 # gnome tweaks 
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
