@@ -35,10 +35,10 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # get tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # install your stuff
-sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag fonts-ubuntu nodejs fuse tree --yes
+sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag fonts-ubuntu nodejs fuse tree r-base npm --yes
 # get flatpaks running
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek org.videolan.VLC
+flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
 # tresorit
 wget https://installer.tresorit.com/tresorit_installer.run
 chmod -u+xrw tresorit_installer.run

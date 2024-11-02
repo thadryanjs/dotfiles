@@ -10,7 +10,7 @@ return {
                 "pyright",
                 "lua-language-server",
                 "r-languageserver",
-                "letex-ls",
+                "ltex-ls",
                 "julia-lsp",
             }
         },
