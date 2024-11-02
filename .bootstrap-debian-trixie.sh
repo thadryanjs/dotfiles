@@ -10,7 +10,7 @@ cat ~/.ssh/id_ed25519.pub
 
 
 ## Phase 2
-# get yoursetup 
+# get yoursetup
 git clone git@github.com:thadryanjs/dotfiles.git ~/.dotfiles
 git config user.email "thadryan@protonmail.com"
 git config user.name "thadryanjs"
@@ -27,7 +27,7 @@ sudo apt update
 reboot
 
 
-## Phase 3 
+## Phase 3
 # get vim plugin
 # done
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -35,7 +35,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # get tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # install your stuff
-sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag fonts-ubuntu nodejs fuse tree r-base npm --yes
+sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag ripgrep fonts-ubuntu nodejs fuse tree r-base npm --yes
 # get flatpaks running
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
@@ -44,12 +44,12 @@ wget https://installer.tresorit.com/tresorit_installer.run
 chmod -u+xrw tresorit_installer.run
 ./tresorit_installer.run
 
-# install micromamba 
+# install micromamba
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh)
 # basic env for data science ad LSPs
 micromamba create --name .dcsi-mmamba-env.yaml --yes
 
-# gnome tweaks 
+# gnome tweaks
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
 gsettings set org.gnome.shell.app-switcher current-workspace-only true
 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
