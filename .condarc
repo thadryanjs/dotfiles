@@ -1,6 +1,6 @@
 auto_activate_base: false
+default_channels: []
 channels:
-  - defaults
   - conda-forge
   - nodefaults
 channel_priority: strict

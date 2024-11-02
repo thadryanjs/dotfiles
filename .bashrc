@@ -42,7 +42,6 @@ alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
 alias open='xdg-open'
-alias conda='micromamba'
 
 
 parse_git_branch() {
@@ -110,6 +109,7 @@ export FZF_CTRL_R_OPTS="
 export FZF_ALT_C_OPTS="
   --preview 'tree -C {}'"
 
+# not currently in use
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -119,10 +119,11 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'micromamba shell init' !!
 export MAMBA_EXE='/home/thadryan/.local/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/home/thadryan/micromamba';
+export MAMBA_ROOT_PREFIX='/home/thadryan/Micromamba';
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
