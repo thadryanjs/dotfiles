@@ -35,7 +35,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # get tmux
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# install your stuff
+# install your stuff (stow, vim-gtk3, and git are already here)
 sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag ripgrep fonts-ubuntu nodejs fuse tree r-base npm default-jre --yes
 
 # get flatpaks running

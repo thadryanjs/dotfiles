@@ -17,16 +17,11 @@
 # nix-collect-garbage
 # nix store optimise
 
-# Run (TODO: configify this):
-# gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
-# gsettings set org.gnome.shell.app-switcher current-workspace-only true
-# gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
-
 { config, pkgs, ... }:
 
 {
   home.username = "thadryan";
-  home.homeDirectory = "/var/home/thadryan";
+  home.homeDirectory = "/home/thadryan";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -40,8 +35,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    vim-full
-    vimPlugins.vim-plug
+    git
     neovim
     tmux
     xclip
@@ -55,12 +49,10 @@
     cifs-utils
     sshfs
     R
+    jdk
     micromamba
     gpclient
-    flatpak
     nodejs
-    distrobox
-    podman
     quarto
     yazi
     poppler
@@ -68,9 +60,9 @@
     imagemagick
     zoxide
     # for the below I had to switch to xorg then back for the icon to show, as did some people on github
-    gnome-tweaks
+    # gnome-tweaks
     # requires restart
-    gnomeExtensions.vertical-workspaces
+    # gnomeExtensions.vertical-workspaces
     shotwell
 
     # going with flatpaks for these:
