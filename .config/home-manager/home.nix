@@ -50,7 +50,6 @@
     sshfs
     R
     jdk
-    micromamba
     gpclient
     nodejs
     quarto
