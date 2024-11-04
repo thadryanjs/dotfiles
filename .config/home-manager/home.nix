@@ -50,7 +50,6 @@
     sshfs
     R
     jdk
-    gpclient
     nodejs
     quarto
     yazi

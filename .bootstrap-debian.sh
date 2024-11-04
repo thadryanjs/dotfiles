@@ -44,6 +44,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # get flatpaks running
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
+
 # if you're using nix for package managment
 # install your minimal base stuff and stuff that needs sudo
 # sudo apt install kitty vim-gtk3 cifs-utils openconnect flatpak fuse --yes
@@ -62,6 +63,7 @@ flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/o
 # if not using nix
 # install your stuff (stow, vim-gtk3, and git are already here)
 sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag ripgrep bat fonts-ubuntu nodejs fuse tree r-base npm default-jre --yes
+# sudo apt uninstall neovim fzf tmux distrobox python3-venv gcc podman wget silversearcher-ag ripgrep bat fonts-ubuntu nodejs tree r-base npm default-jre --yes
 
 # tresorit
 wget https://installer.tresorit.com/tresorit_installer.run
