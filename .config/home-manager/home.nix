@@ -57,25 +57,15 @@
     poppler
     ffmpegthumbnailer
     imagemagick
-    zoxide
+    # zoxide
+    shotwell
     # for the below I had to switch to xorg then back for the icon to show, as did some people on github
     # gnome-tweaks
     # requires restart
     # gnomeExtensions.vertical-workspaces
-    shotwell
-
     # going with flatpaks for these:
-    # wezterm
-    # spotify
-    # discord
-    # vivaldi
-    # ferdium
-    # libreoffice
-    # obsidian
-    # zoom
-    # sleek
-    # zotero
-    # shotwell
+    # flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
+
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
