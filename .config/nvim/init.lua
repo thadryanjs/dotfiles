@@ -3,6 +3,5 @@ require "config.keymaps"
 require "config.lazy"
 require "config.autocmds"
 
---vim.cmd("colorscheme iceberg")
 vim.cmd("colorscheme kanagawa-dragon")
-vim.cmd('set scl=no')
+vim.cmd("set scl=no")

@@ -35,35 +35,39 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-    git
-    neovim
-    tmux
-    xclip
-    stow
-    gcc
-    gnumake
-    fzf
-    ripgrep
-    silver-searcher
-    bat
-    cifs-utils
-    sshfs
-    R
-    jdk
-    nodejs
-    quarto
-    yazi
-    poppler
-    ffmpegthumbnailer
-    imagemagick
-    # zoxide
-    shotwell
-    # for the below I had to switch to xorg then back for the icon to show, as did some people on github
-    # gnome-tweaks
-    # requires restart
-    # gnomeExtensions.vertical-workspaces
-    # going with flatpaks for these:
-    # flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
+   git
+   neovim
+   tmux
+   xclip
+   stow
+   gcc
+   tree
+   gnumake
+   fzf
+   ripgrep
+   silver-searcher
+   bat
+   cifs-utils
+   sshfs
+   R
+   jdk
+   nodejs
+   yazi
+   poppler
+   ffmpegthumbnailer
+   imagemagick
+   zoxide
+   # seems cool but I can't find how to set the path when it's install with nix
+   # atuin
+   # blesh
+   # quarto
+   # shotwell
+   # for the below I had to switch to xorg then back for the icon to show, as did some people on github
+   # gnome-tweaks
+   # requires restart
+   # gnomeExtensions.vertical-workspaces
+   # going with flatpaks for these:
+   # flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
 
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
@@ -88,6 +92,17 @@
   };
 
 
+  # it looks like I need to let it manage my .bashrc (https://discourse.nixos.org/t/home-manager-doesnt-seem-to-recognize-sessionvariables/8488/7)
+  # not sure what that entails excactly
+  programs.bash = {
+    enable = true;
+    sessionVariables = {
+      EDITOR = "vim";
+    };
+    initExtra = ''
+      . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+    '';
+  };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.

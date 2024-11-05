@@ -62,7 +62,7 @@ flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/o
 
 # if not using nix
 # install your stuff (stow, vim-gtk3, and git are already here)
-sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag ripgrep bat fonts-ubuntu nodejs fuse tree r-base npm default-jre --yes
+sudo apt install neovim fzf tmux kitty distrobox python3-venv gcc flatpak podman cifs-utils openconnect wget silversearcher-ag ripgrep bat fonts-ubuntu nodejs fuse tree r-base npm default-jre grub-customizer --yes
 # sudo apt uninstall neovim fzf tmux distrobox python3-venv gcc podman wget silversearcher-ag ripgrep bat fonts-ubuntu nodejs tree r-base npm default-jre --yes
 
 # tresorit
@@ -70,10 +70,15 @@ wget https://installer.tresorit.com/tresorit_installer.run
 chmod -u+xrw tresorit_installer.run
 ./tresorit_installer.run
 
+# consider not using ~/Documents and just having vaults in ~
+
 # install micromamba (it's easier to manager if it's a native install)
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh)
 # basic env for data science ad LSPs
 micromamba create --name .dcsi-mmamba-env.yaml --yes
+
+# this
+# curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # gnome tweaks
 gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"

@@ -2,6 +2,7 @@
 test -s ~/.alias && . ~/.alias || true
 
 eval "$(fzf --bash)"
+eval "$(zoxide init bash)"
 
 stty -ixon
 
@@ -11,6 +12,7 @@ stty -ixon
 # fi
 
 export EDITOR="vim"
+
 alias reboot="systemctl reboot"
 alias vault="cd ~/Documents/WorkVault/"
 alias vaulth="cd ~/Documents/HomeVault/"
@@ -109,7 +111,6 @@ export FZF_CTRL_R_OPTS="
 export FZF_ALT_C_OPTS="
   --preview 'tree -C {}'"
 
-# not currently in use
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -131,3 +132,4 @@ else
 fi
 unset __mamba_setup
 # <<< mamba initialize <<<
+
