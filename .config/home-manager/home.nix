@@ -94,15 +94,15 @@
 
   # it looks like I need to let it manage my .bashrc (https://discourse.nixos.org/t/home-manager-doesnt-seem-to-recognize-sessionvariables/8488/7)
   # not sure what that entails excactly
-  programs.bash = {
-    enable = true;
-    sessionVariables = {
-      EDITOR = "vim";
-    };
-    initExtra = ''
-      . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
-    '';
-  };
+  # programs.bash = {
+  #   enable = true;
+  #   sessionVariables = {
+  #     EDITOR = "vim";
+  #   };
+  #   initExtra = ''
+  #     . "$HOME/.nix-profile/etc/profile.d/hm-session-vars.sh"
+  #   '';
+  # };
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
@@ -134,11 +134,31 @@
   # or
   #
   #  /etc/profiles/per-user/thadryan/etc/profile.d/hm-session-vars.sh
-  #
+
+  # sudo env "PATH=$HOME/.nix-profile/bin:$PATH" \
+  #        "XDG_CONFIG_HOME=$HOME/.config" \
+  #        "XDG_DATA_HOME=$HOME/.local/share" \
+  #        "HOME=$HOME" \
+  #        "USER=$USER" \
+  #        "SHELL=$SHELL" \
+  #        "EDITOR=nvim" \
+  #        nvim
 
   home.sessionVariables = {
-  # why didn't this work?
-  #  EDITOR = "vi";
+    # # Ensure your user binaries are on the PATH
+    # PATH = "$HOME/.nix-profile/bin:$HOME/.nix-profile/bin:$HOME/.local/bin:$PATH";
+
+    # # Ensure correct XDG variables for your user config & data
+    # XDG_CONFIG_HOME = "$HOME/.config";
+    # XDG_DATA_HOME = "$HOME/.local/share";
+
+    # # Make sure the HOME and USER variables are set to your user environment
+    # HOME = "$HOME";
+    # USER = "thadryan";  # Replace 'your-username' with your actual username
+
+    # # Set the SHELL and EDITOR
+    # SHELL = "$SHELL";
+    # EDITOR = "nvim";
   };
 
   nixpkgs.config = {
