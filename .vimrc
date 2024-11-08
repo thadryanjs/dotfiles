@@ -175,6 +175,13 @@ nnoremap <Leader>ts :vertical resize +20<CR>
 " unhighlight
 nnoremap <Leader>hr :nohlsearch<CR>
 
+" Save session with <leader>s
+nnoremap <leader>es :mksession! .session.vim<CR>
+
+" Load session with <leader>l
+nnoremap <leader>el :source .session.vim<CR>
+
+
 " Jupyter bindings (no plugin)
 " nomal mode
 nmap <Leader>jf /# %% \[code\]<CR>
@@ -417,6 +424,12 @@ highlight ModeMsg guibg=NONE ctermbg=NONE
 highlight MoreMsg guibg=NONE ctermbg=NONE
 highlight Question guibg=NONE ctermbg=NONE
 
+" https://vi.stackexchange.com/questions/25456/how-can-i-change-the-colorscheme-of-the-vim-terminal-buffer
+let g:terminal_ansi_colors = [
+  \'#282828', '#CC241D', '#98971A', '#D79921',
+  \'#458588', '#B16286', '#689D6A', '#D65D0E',
+  \'#fb4934', '#b8bb26', '#fabd2f', '#83a598',
+  \'#d3869b', '#8ec07c', '#fe8019', '#FBF1C7' ]
 
 """ autocommands
 " don't include terminals as buffer for next/prev

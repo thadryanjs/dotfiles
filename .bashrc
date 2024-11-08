@@ -6,7 +6,6 @@ eval "$(zoxide init bash)"
 
 stty -ixon
 
-
 # https://www.baeldung.com/linux/tmux-startup-default-shell
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
 #   tmux attach-session -t default || tmux new-session -s default
@@ -30,9 +29,15 @@ alias dartfs="sh ~/.scripts/mount-dartfs.sh"
 alias vpn="sh ~/.scripts/vpn.sh"
 
 alias triforecast="cd ~/Documents/WorkVault/Projects/OpioidPredictions/triforecast"
-alias check_NSDUH="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
-alias check_NEMSIS="tail /mnt/Workspace/triforecast/01_NEMSIS/_log.out"
-alias check_NCHS="tail /mnt/Workspace/triforecast/02_NCHS/_log.out"
+
+alias NSDUH_check="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
+alias NSDUH_report="rm -rf ~/Temp/00_NSDUH; cp -r /mnt/Workspace/triforecast/00_NSDUH/build ~/Temp/00_NSDUH/"
+
+alias NEMSIS_check="tail /mnt/Workspace/triforecast/01_NEMSIS/_log.out"
+alias NEMSIS_report="rm -rf ~/Temp/01_NEMSIS; cp -r /mnt/Workspace/triforecast/01_NEMSIS/build ~/Temp/01_NEMSIS/"
+
+alias NCHS_check="tail /mnt/Workspace/triforecast/02_NCHS/_log.out"
+alias NCHS_report="rm -rf ~/Temp/02_NCHS; cp -r /mnt/Workspace/triforecast/02_NCHS/build ~/Temp/02_NCHS/"
 
 alias ado_mat_check="tail /mnt/Workspace/adolescent-MAT/_log.out"
 alias ado_mat_report="rm -rf ~/Temp/ado-MAT; cp -r /mnt/Workspace/adolescent-MAT/build ~/Temp/ado-MAT/"

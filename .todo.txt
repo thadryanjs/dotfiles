@@ -19,7 +19,7 @@ x 2024-10-22 2023-12-27 Find Mathmetica experts of interest +pro-dev due:2024-10
 2023-12-27 Protocols for: Discord, Solitude, Phone +workflow
 2023-12-27 Bluetooth phone calls +social +wellness
 2023-12-27 Equitable sampling paper to Steve Arnold +social +pro-dev
-2023-12-27 Cardiologist +wellness due:2024-11-06
+2023-12-27 Cardiologist +wellness due:2024-11-08
 2023-12-27 Are vivaldi sessions worth a look? +workflow
 2023-12-27 Ask Bernstien about OUD and Bupe at some point +opioid-prediction +backburner
 x 2024-04-02 2023-12-27 Schedule a time with Skip this spring +social due:2024-04-01
@@ -85,7 +85,7 @@ x 2024-08-13 2024-02-20 Two back up points per aim +qualifier
 2024-02-20 reminder fr picture: https://www.britannica.com/topic/Opium-Wars +opioid-prediction +opioid-prediction
 Weird West +media-videogames
 x 2024-03-13 2024-02-29 Prison justice group: https://www.thedartmouth.com/article/2024/02/a-changed-club-spotlight-on-the-dartmouth-prison-justice-initiative +general  due:2024-03-12
-2024-02-29 Halfway house volunteer https://www.dismasofvt.org/get-involved/volunteer-opportunity-descriptions/ +general  due:2024-11-06
+x 2024-11-07 2024-02-29 Halfway house volunteer https://www.dismasofvt.org/get-involved/volunteer-opportunity-descriptions/ +general  due:2024-11-06
 2024-03-12 Drug War Capitalism +media-books
 x 2024-09-28 2024-09-28 In Pursuit of Oblivion ( https://www.amazon.com/Pursuit-Oblivion-Global-History-Narcotics/dp/0393325458 ) +media-books
 x 2024-03-22 2024-03-12 Will, Doruk, Jesse at every meeting due:2024-03-18 rec:1w
@@ -186,7 +186,7 @@ x 2024-09-28 2024-08-13 Zen Jiu Jitsu - White to Blue +media-books +bjj (ordered
 2024-08-13 Zen Jiu Jitsu - Human Chess: High Percentage Strategies and Concepts for Beginners and Advanced Students
 2024-08-13 Zen Jiu Jitsu - Human Chess: High Percentage Strategies and Concepts for Beginners and Advanced Students +media-books +bjj 
 x 2024-08-21 2024-08-13 The Tao of Jiu Jitsu +media-books +bjj (ordered)
-2024-08-14 Email about community college +general-work due:2024-11-06
+2024-08-14 Email about community college +general-work due:2024-11-08
 x 2024-08-14 2024-08-14 BJJ too heavy: podcast https://www.youtube.com/watch?v=5fu7vxOc_7E +bjj 
 x 2024-08-14 2024-08-14 Reddit thread on being too fat for BJJ https://www.reddit.com/r/bjj/comments/1eqhfrx/im_overweight_and_scared_to_start_how_can_i/ +bjj 
 2024-08-15 Jiu-Jitsu University +media-books +bjj
@@ -258,7 +258,7 @@ x 2024-10-01 2024-09-22 Consider: https://www.amazon.com/Lenovo-Thinkpad-1920x10
 x 2024-10-01 2024-09-22 Consider: https://www.amazon.com/Lenovo-ThinkPad-T470-1920x1080-Notebook/dp/B07W68GSGK/ref=sr_1_13?crid=2UPJIXMAWC7CO&dib=eyJ2IjoiMSJ9.JqB4MZWJ-Pfel1jDE3uB3bU7gaMbAlHMlx5s5NfORIfSnHnyjHV_IgSksA0Rwt8AkrPYfa4E_9_EKVWgr8UarDLQbvRnCGVALbwziaCKNMB-L4FacxBR9l7IHhZGYBTr4BX2XwkaBGh6UChcWGaIxRatH50T0xgOopURsD1ke4mX_XSbTBn-a8AMXClm5pQICxnhE3Bt-iSaZEDJoiEhdeuAx_cKtBt5jGwzoDD8USuYmyl52tuC2IVYb8XozDtQxlFJjjBgRNYjlGf7MPt51Vsvj4sxrd5SeaDmfv9BL-k.9gIqYoJ1N0VJWO_yy2oUH49y48hk5N6nKL_RNTnuXTg&dib_tag=se&keywords=refurbished+laptop+thunderbolt&qid=1726654592&refinements=p_n_feature_thirty-three_browse-bin%3A23720418011%7C23720419011&rnid=23720416011&s=electronics&sprefix=refurbished+laptop+thunderbolt%2Celectronics%2C149&sr=1-13 due:2024-10-04
 x 2024-09-26 2024-09-24 Grading? due:2024-09-25
 x 2024-09-25 2024-09-25 Interaction term +ado-mat due:2024-09-25
-2024-09-25 Call PT due:2024-11-06
+2024-09-25 Call PT due:2024-11-08
 x 2024-09-26 2024-09-25 Email Grammy due:2024-09-25
 x 2024-10-22 2024-09-26 invite to Vincent  due:2024-10-16
 2024-09-28 Slaughterhouse 5 (Spanish): https://www.amazon.com/Matadero-cinco-Spanish-Kurt-Vonnegut/dp/8433920316/ref=sr_1_1?crid=1SS77RO3G0QCM&dib=eyJ2IjoiMSJ9.J1DwzuAXosldyXGVb8Synw.CKEV3OWe7RR6QNA4rS1x7KZJDEmHJgi3hdrX-xGqK0Q&dib_tag=se&keywords=slaughterhouse+5+in+spanish&qid=1727556759&s=books&sprefix=slaughterhouse+5+in+spanish%2Cstripbooks%2C160&sr=1-1 +media-books 
@@ -285,7 +285,7 @@ x 2024-10-30 2024-10-30 Recrete conf-depr conda evn? due:2024-10-23
 x 2024-10-30 2024-10-30 Start downloading data for NEMSIS 2 due:2024-10-23 +aim1
 x 2024-11-04 2024-11-04 Rake due:2024-11-05
 x 2024-10-30 2024-10-30 Practice music due:2024-10-23
-Tax thing to HR due:2024-11-06
+Tax thing to HR due:2024-11-08
 x 2024-10-30 2024-10-30 screen might replace nohup due:2024-10-23
 x 2024-10-30 2024-10-30 Slurm confusion? due:2024-10-23
 x 2024-10-30 2024-10-30 Run NSDUH after reorienting due:2024-10-23
@@ -294,13 +294,14 @@ Slurm job cacheing? due:2024-11-08
 RUCA categories https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes/documentation/
 https://www.emedevents.com/c/medical-conferences-2024/the-college-on-problems-of-drug-dependence-cpdd-2024 due:2025-01-01 
 Cancel Gag Recap autopay due:2024-11-30
-Melania due:2024-11-06
-Seara due: 2024-11-01 due:2024-11-06
+Melania due:2024-11-08
+Seara due: 2024-11-01 due:2024-11-08
 Passwordless login to server? 
 x 2024-11-05 2024-11-05 Email Gifford due:2024-11-05
 x 2024-11-05 2024-11-05 Email MITRE due: 2024-11-05 due:2024-11-06
 x 2024-11-05 2024-11-05 Grading due: 2024-11-04
 Test reset GNOME to defaults on Spiral due:2024-11-08
-NEMSIS v2 integration due: 2024-11-07
-Sign into COVIDENCE due: 2024-11-05 due:2024-11-06
-Grade missed stuff from the slack channel due:2024-11-06
+NEMSIS v2 integration due: 2024-11-07 due:2024-11-08
+Sign into COVIDENCE due: 2024-11-05 due:2024-11-08
+Grade missed stuff from the slack channel due:2024-11-08
+IDA Summer Associate Application due: monhttps://www.ida.org/en/careers/students-and-recent-graduates/internships-and-fellowships/summer-associates
