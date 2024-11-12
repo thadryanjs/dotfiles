@@ -196,10 +196,10 @@ inoremap <C-o> # %% [code]<CR>
 nnoremap Q :<C-u>marks<CR>:normal! `
 
 " Most autoclose functions insert when they shouldn't (adding a function the left hand side of text, ie foo()bar(x).
-" Plug 'jiangmiao/auto-pairs' 
+" Plug 'jiangmiao/auto-pairs'
 " Plug 'kana/vim-smartinput'
 " Plug 'spf13/vim-autoclose'
-" This one I am using doesn't, but breaks auto indent. This one plus lexima together work as I want. 
+" This one I am using doesn't, but breaks auto indent. This one plus lexima together work as I want.
 
 """ Plugins
 call plug#begin('~/.vim/plugged')
@@ -210,7 +210,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
     Plug 'Townk/vim-autoclose'
-    Plug 'cohama/lexima.vim' 
+    Plug 'cohama/lexima.vim'
     Plug 'github/copilot.vim'
     Plug 'wellle/tmux-complete.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -272,14 +272,14 @@ imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
 
 "" CoC
 " accept on k
-inoremap <silent><expr> <C-k> coc#pum#visible() ? coc#pum#confirm() : "\<C-k>"
+inoremap <silent><expr> <Space> coc#pum#visible() ? coc#pum#confirm() : "\<C-k>"
 
 
 "" zfz etz
 nnoremap <Leader>ff :Files .<CR>
 nnoremap <Leader>fg :Ag<CR>
 nnoremap <Leader>fb :Buffers<CR>
-" file history 
+" file history
 nnoremap <Leader>fr :History<CR>
 " command history
 nnoremap <Leader>fc :History:<CR>
@@ -303,11 +303,11 @@ nnoremap <Leader>fm :Maps<CR>
 " highlight Pmenu ctermbg=8 ctermfg=7
 
 " I just let it use my terminal colors, but make a few tweaks
-" colorscheme candle-grey 
+" colorscheme candle-grey
 " highlight Normal guibg=NONE ctermbg=NONE
 
 " colorscheme photon
-" highlight Normal guibg=NONE ctermbg=NONE guifg=#c0c0c0 ctermfg=250  
+" highlight Normal guibg=NONE ctermbg=NONE guifg=#c0c0c0 ctermfg=250
 " highlight Search guifg=#262626 guibg=#008080 ctermfg=235 ctermbg=37
 " highlight Normal guibg=NONE ctermbg=NONE
 " highlight Comment guibg=NONE ctermbg=NONE

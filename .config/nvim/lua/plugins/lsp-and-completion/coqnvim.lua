@@ -7,6 +7,10 @@ return {
         config = function()
             require("coq")
             vim.cmd("COQnow --shut-up")
+            -- remap accept to ctrl-k
+
         end
     }
 }
+
+

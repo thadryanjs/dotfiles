@@ -47,6 +47,7 @@ imap("<A-m>", "# %% [markdown]<CR><Esc>O\n\n# %% [code]<Esc>2ki# ")
 nmap("<leader>jc", "i# %% [code]")
 nmap("<leader>jm", "O# %% [markdown]<CR><Esc>O\n\n# %% [code]<Esc>2ki# ")
 
+
 -- remove all code tags
 imap("<A-e>", ":%s/# %% \\[code\\]<CR>")
 -- search for code tags
@@ -84,8 +85,13 @@ nmap("<leader>bn", "<cmd>bnext<CR>")
 -- pipe operator
 imap("kk", "%>%")
 
--- task/todo
-imap("<A-t>", "- [ ] ")
+local keyset = vim.keymap.set
+local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
+function _G.check_back_space()
+    local col = vim.fn.col('.') - 1
+    return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') ~= nil
+end
+keyset("i", "<TAB>", 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()', opts)
 
 -- sane diagnostics
 vim.api.nvim_create_user_command("DiagnosticsLight", function()
