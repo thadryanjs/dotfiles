@@ -272,7 +272,7 @@ imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
 
 "" CoC
 " accept on k
-inoremap <silent><expr> <Space> coc#pum#visible() ? coc#pum#confirm() : "\<C-k>"
+" inoremap <silent><expr> <C-k> coc#pum#visible() ? coc#pum#confirm() : "\<C-k>"
 
 
 "" zfz etz

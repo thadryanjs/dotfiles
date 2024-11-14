@@ -87,3 +87,10 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
 
 # after tresorit is up-to-date
 sudo cp ~/Documents/WorkVault/Areas/Tech/Areas/GNOME/Jolly-Downloads/Jolly-Dark-Icons /usr/share/icons
+
+
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/DejaVuSansMono.zip
+
+sudo mkdir ~/.local/share/fonts/
+
+cp DejaVuSansMNerdFont*.ttf ~/.local/share/fonts

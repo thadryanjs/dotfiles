@@ -41,6 +41,7 @@
    xclip
    stow
    gcc
+   wget
    rsync
    tree
    gnumake

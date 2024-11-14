@@ -14,12 +14,11 @@ stty -ixon
 # export EDITOR="vim"
 
 alias reboot="systemctl reboot"
-alias vault="cd ~/Documents/WorkVault/"
-alias vaulth="cd ~/Documents/HomeVault/"
 alias config="cd ~/.dotfiles"
 alias mount="cd /mnt/Workspace"
-alias ta="cd /var/home/thadryan/Documents/WorkVault/Projects/TA-2024-Fall"
-
+alias vault="cd ~/Documents/WorkVault/"
+alias vaulth="cd ~/Documents/HomeVault/"
+alias ta="cd ~/Documents/WorkVault/Projects/TA-2024-Fall"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 
 alias discovery="sh ~/.scripts/discovery.sh"
