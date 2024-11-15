@@ -42,6 +42,7 @@
    stow
    gcc
    wget
+   rename
    rsync
    tree
    gnumake
@@ -59,7 +60,6 @@
    ffmpegthumbnailer
    imagemagick
    zoxide
-   rename
    cmatrix
    # seems cool but I can't find how to set the path when it's install with nix
    # atuin

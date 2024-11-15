@@ -10,12 +10,12 @@ x 2024-03-07 2023-12-27 Send in new defferment form +general due:2024-02-20
 2023-12-27 Reach out to Kilmer from RAND +pro-dev
 x 2024-03-12 2023-12-27 Exercises to "weekly" via scheduling? +wellness +workflow
 x 2024-10-22 2023-12-27 Find Mathmetica experts of interest +pro-dev due:2024-10-16
-2023-12-27 Megan O'Toole +social due:2024-11-09
-2023-12-27 Andrew from Twitter (tech solutions to regulatory problems) +social due:2024-11-09
-2023-12-27 Where is my Mind? lofi (most recent) to Discord +social due:2024-11-09
+2023-12-27 Megan O'Toole +social due:2024-11-16
+2023-12-27 Andrew from Twitter (tech solutions to regulatory problems) +social due:2024-11-16
+2023-12-27 Where is my Mind? lofi (most recent) to Discord +social due:2024-11-16
 2023-12-27 Literature dive on MDP independence +work +opioid-prediction
 2023-12-27 Github question: GLM with sensemaker +work
-2023-12-27 Say hi to Lance from bbb +social +pro-dev due:2024-11-09
+2023-12-27 Say hi to Lance from bbb +social +pro-dev due:2024-11-23
 2023-12-27 Protocols for: Discord, Solitude, Phone +workflow
 2023-12-27 Bluetooth phone calls +social +wellness
 2023-12-27 Equitable sampling paper to Steve Arnold +social +pro-dev
@@ -96,7 +96,7 @@ x 2024-03-13 2024-03-12 Review person website (simple, spelling, current) due:20
 2024-03-12 Under what circumstance would you only do always do x? +aim2
 2024-03-12 "want zero inflated pisson model to fix this" +opioid-prediction +aim1
 2024-03-12 "https://www.peow.studio/shop/a-frog-in-the-fall" +gift-ideas
-2024-03-12 This plus Hi to Lorri + Steven (conf in AD): https://onlinelibrary.wiley.com/doi/10.1002/sim.10024?af=R +social +career  due:2024-11-09
+2024-03-12 This plus Hi to Lorri + Steven (conf in AD): https://onlinelibrary.wiley.com/doi/10.1002/sim.10024?af=R +social +career  due:2024-11-23
 x 2024-03-13 2024-03-12 Message D&W, recurring? due:2024-03-12
 2024-03-13 The Facemaker ( https://www.goodreads.com/book/show/58709510-the-facemaker ) +media-books
 2024-03-13 Hometown Prison "https://www.newyorker.com/culture/the-front-row/in-hometown-prison-richard-linklater-looks-at-life-on-both-sides-of-the-wall" +media-tv
@@ -245,7 +245,7 @@ x 2024-09-05 2024-09-03 Review corner cases for final due:2024-09-04
 x 2024-09-13 2024-09-05 TA schedule? due:2024-09-09
 x 2024-10-22 2024-09-10 Basic model, eval fairness, conformal +conf-depr due:2024-10-23
 x 2024-09-13 2024-09-10 Age Group, simple insurance, unknown +aim1  due:2024-09-12
-2024-09-12 NEMSIS data dict validate Ns +aim1 due:2024-11-12
+2024-09-12 NEMSIS data dict validate Ns +aim1 due:2024-11-19
 x 2024-09-25 2024-09-16 Confirm Shannon deets due:2024-09-17
 x 2024-09-18 2024-09-18 check for B4XL gi on [ https://www.gorillagear.ca/shop/brazilian-jiu-jitsu-gear/bjj-gis/fundamentals-brazilian-jiujitsu-gi-blue/ ]  rec:1b due:2024-09-19
 x 2024-09-18 2024-09-18 check for B4XL gi on [ https://www.gorillagear.ca/shop/brazilian-jiu-jitsu-gear/bjj-gis/fundamentals-brazilian-jiujitsu-gi-blue/ ]  rec:1b due:2024-09-19
@@ -300,11 +300,12 @@ Passwordless login to server?
 x 2024-11-05 2024-11-05 Email Gifford due:2024-11-05
 x 2024-11-05 2024-11-05 Email MITRE due: 2024-11-05 due:2024-11-06
 x 2024-11-05 2024-11-05 Grading due: 2024-11-04
-Test reset GNOME to defaults on Spiral due:2024-11-09
-NEMSIS v2 integration due: 2024-11-07 due:2024-11-12
+x 2024-11-14 2024-11-14 Test reset GNOME to defaults on Spiral due:2024-11-09
+NEMSIS v2 integration due: 2024-11-07 due:2024-11-19
 Sign into COVIDENCE due: 2024-11-05 due:2024-11-20
-Grade missed stuff from the slack channel due:2024-11-12
+Grade missed stuff from the slack channel due:2024-11-19
 IDA Summer Associate Application due: monhttps://www.ida.org/en/careers/students-and-recent-graduates/internships-and-fellowships/summer-associates
-get regression summary from canvas due: 2024-11-11
-Message Hans due:2024-11-12
-Tell Priyanshu about stratified analysis idea due:2024-11-12
+get regression summary from canvas due:friday
+Message Hans due:2024-11-19
+Tell Priyanshu about stratified analysis idea due:2024-11-19
+Trello-fy again due:2024-11-15
