@@ -94,3 +94,6 @@ wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/DejaVuSans
 sudo mkdir ~/.local/share/fonts/
 
 cp DejaVuSansMNerdFont*.ttf ~/.local/share/fonts
+
+sudo sh ~/.scripts/install-kanri.sh
+sudo sh ~/.scripts/link-kanri-to-vault.sh
