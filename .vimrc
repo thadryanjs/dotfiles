@@ -193,7 +193,7 @@ inoremap <C-o> # %% [code]<CR>
 
 
 " marks
-nnoremap Q :<C-u>marks<CR>:normal! `
+nnoremap <leader>mf :<C-u>marks<CR>:normal! ``
 
 " Most autoclose functions insert when they shouldn't (adding a function the left hand side of text, ie foo()bar(x).
 " Plug 'jiangmiao/auto-pairs'
