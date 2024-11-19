@@ -16,6 +16,8 @@
 # nix-env --delete-generations +3
 # nix-collect-garbage
 # nix store optimise
+#
+# nix-env --delete-generations +3 && nix-collect-garbage && nix store optimise
 
 { config, pkgs, ... }:
 
@@ -173,8 +175,6 @@
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
-
-
-
+  programs.home-manager.path = "$HOME/src/github.com/nix-community/home-manager";
 }
 
