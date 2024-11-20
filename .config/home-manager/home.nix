@@ -57,6 +57,7 @@
    R
    jdk
    nodejs
+   quarto
    yazi
    poppler
    ffmpegthumbnailer
@@ -73,7 +74,7 @@
    # requires restart
    # gnomeExtensions.vertical-workspaces
    # going with flatpaks for these:
-   # flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
+   # flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable org.libreoffice.LibreOffice
 
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
