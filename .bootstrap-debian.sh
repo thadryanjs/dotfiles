@@ -31,6 +31,11 @@ reboot
 
 
 ## Phase 3
+
+# if you're using nix for package managment
+# install your minimal base stuff and stuff that needs sudo
+sudo apt install kitty vim-gtk3 cifs-utils openconnect flatpak fuse --yes
+
 # get vim plugin
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -38,17 +43,13 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 # get tmux plugin
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
-# get tmux
-
 # get flatpaks running
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
 
-# if you're using nix for package managment
-# install your minimal base stuff and stuff that needs sudo
-sudo apt install kitty vim-gtk3 cifs-utils openconnect flatpak fuse --yes
-# https://julianhofer.eu/blog/01-silverblue-nix/
+
 # get home-manager running:
+# https://julianhofer.eu/blog/01-silverblue-nix/
 # remove stuff that will be nixified
 # sudo apt remove stow git --yes
 # curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
@@ -83,13 +84,16 @@ micromamba create --name .dcsi-mmamba-env.yaml --yes
 sh ~/.scripts/reset-gnome.sh
 sh ~/.scripts/tweak-gnome-settings.sh
 
-# after tresorit is up-to-date (needs to be tweaked)
-# sudo cp ~/Documents/WorkVault/Areas/Tech/Areas/GNOME/Jolly-Downloads/Jolly-Dark-Icons /usr/share/icons
+# folders (after tresorit is up-to-date, should maybe see if they've been updated)j
+tar -zxvf  ~/WorkVault/Areas/Tech/GNOME/Jolly-Downloads/Jolly-Dark-Icons.tar.gz
+sudo cp -r ~/WorkVault/Areas/Tech/GNOME/Jolly-Dark-Icons /usr/share/icons/
 
+# nerd font
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/DejaVuSansMono.zip
 sudo mkdir ~/.local/share/fonts/
 cp DejaVuSansMNerdFont*.ttf ~/.local/share/fonts
 rm DejaVuSansMNerdFont*.ttf
 
+# install kanri and link to vault
 sudo sh ~/.scripts/install-kanri.sh
 sudo sh ~/.scripts/link-kanri-to-vault.sh
