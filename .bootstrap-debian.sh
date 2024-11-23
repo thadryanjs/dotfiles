@@ -2,7 +2,7 @@
 # start this running (we're gonna replace it all but switching from an outdated system makes me nervous)
 sudo apt update && sudo apt upgrade --yes
 sudo upgrade dist
-sudo apt install stow git vim-gtk3
+sudo apt install stow git vim-gtk3 python3-venv
 # make sure you're good to go with keys while it does
 ssh-keygen -t ed25519 -C "thadryan@protonmail.com"
 cat ~/.ssh/id_ed25519.pub

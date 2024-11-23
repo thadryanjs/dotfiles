@@ -1,24 +1,3 @@
-# https://julianhofer.eu/blog/01-silverblue-nix/
-# get home-manager running:
-# curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
-# . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-# nix-channel --add https://nixos.org/channels/nixpkgs-unstable
-# nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-# nix-channel --update
-# nix-shell '<home-manager>' -A install
-
-# routine maintenance:
-# frequent:
-# nix-channel --update
-# home-manager switch
-# # infrequent:
-# nix-env --list-generations
-# nix-env --delete-generations +3
-# nix-collect-garbage
-# nix store optimise
-#
-# nix-env --delete-generations +3 && nix-collect-garbage && nix store optimise
-
 { config, pkgs, ... }:
 
 {
@@ -64,6 +43,7 @@
    imagemagick
    zoxide
    cmatrix
+   neofetch
    # seems cool but I can't find how to set the path when it's install with nix
    # atuin
    # blesh
