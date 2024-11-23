@@ -52,13 +52,13 @@ flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/o
 # https://julianhofer.eu/blog/01-silverblue-nix/
 # remove stuff that will be nixified
 # sudo apt remove stow git --yes
-# curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
-# . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
-# nix-channel --add https://nixos.org/channels/nixpkgs-unstable
-# nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
-# nix-channel --update
-# nix-shell '<home-manager>' -A install
-# home-manager switch
+curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable
+nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager
+nix-channel --update
+nix-shell '<home-manager>' -A install
+home-manager switch
 
 # if not using nix
 # install your stuff (stow, vim-gtk3, and git are already here)
@@ -69,24 +69,19 @@ flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/o
 wget https://installer.tresorit.com/tresorit_installer.run
 chmod -u+xrw tresorit_installer.run
 ./tresorit_installer.run
-
 # consider not using ~/Documents and just having vaults in ~
 
 # install micromamba (it's easier to manager if it's a native install)
 "${SHELL}" <(curl -L micro.mamba.pm/install.sh)
 # basic env for data science ad LSPs
-micromamba create --name .dcsi-mmamba-env.yaml --yes
+micromamba create --file .dsci-mmamba-env.yaml --yes
 
 # this?
 # curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # If on gnome, make a few tweaks
-sh ~/.scripts/reset-gnome.sh
-sh ~/.scripts/tweak-gnome-settings.sh
-
-# folders (after tresorit is up-to-date, should maybe see if they've been updated)j
-tar -zxvf  ~/WorkVault/Areas/Tech/GNOME/Jolly-Downloads/Jolly-Dark-Icons.tar.gz
-sudo cp -r ~/WorkVault/Areas/Tech/GNOME/Jolly-Dark-Icons /usr/share/icons/
+# sh ~/.scripts/gnome-reset.sh
+sh ~/.scripts/gnome-tweak-settings.sh
 
 # nerd font
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/DejaVuSansMono.zip
@@ -97,3 +92,12 @@ rm DejaVuSansMNerdFont*.ttf
 # install kanri and link to vault
 sudo sh ~/.scripts/install-kanri.sh
 sudo sh ~/.scripts/link-kanri-to-vault.sh
+
+# remove stuff thad has been nixified
+sudo apt remove stow git --yes
+rm DejaVuSansMono.zip
+rm tresorit_installer.run
+
+# folders (after tresorit is up-to-date, should maybe see if they've been updated)j
+tar -zxvf  ~/WorkVault/Areas/Tech/GNOME/Jolly-Downloads/Jolly-Dark-Icons.tar.gz
+sudo cp -r ~/WorkVault/Areas/Tech/GNOME/Jolly-Dark-Icons /usr/share/icons/
