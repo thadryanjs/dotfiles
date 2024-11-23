@@ -5,5 +5,5 @@ sudo mv kanri_0.8.0_amd64.AppImage /usr/local/bin/kanri
 wget https://github.com/kanriapp/kanri/blob/main/src-tauri/icons/icon.png?raw=true
 mv 'icon.png?raw=true' kanri.png
 sudo mv kanri.png /usr/local/share/kanri/
-sudo cp ~/Documents/WorkVault/Areas/Tech/Kanri/kanri.desktop /usr/share/applications/kanri.desktop
+sudo cp ~/WorkVault/Areas/Tech/Kanri/kanri.desktop /usr/share/applications/kanri.desktop
 

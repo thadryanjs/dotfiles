@@ -20,10 +20,10 @@ alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 alias config="cd ~/.dotfiles"
 
 alias mount="cd /mnt/Workspace"
-alias vault="cd ~/Documents/WorkVault/"
-alias vaulth="cd ~/Documents/HomeVault/"
-alias ta="cd ~/Documents/WorkVault/Projects/TA-2024-Fall"
-alias tech="cd ~/Documents/WorkVault/Areas/Tech/"
+alias vault="cd ~/WorkVault/"
+alias vaulth="cd ~/HomeVault/"
+alias ta="cd ~/WorkVault/Projects/TA-2024-Fall"
+alias tech="cd ~/WorkVault/Areas/Tech/"
 
 alias discovery="sh ~/.scripts/discovery.sh"
 alias polaris="sh ~/.scripts/polaris.sh"
@@ -31,7 +31,7 @@ alias andes="sh ~/.scripts/andes.sh"
 alias dartfs="sh ~/.scripts/mount-dartfs.sh"
 alias vpn="sh ~/.scripts/vpn.sh"
 
-alias triforecast="cd ~/Documents/WorkVault/Projects/OpioidPredictions/triforecast"
+alias triforecast="cd ~/WorkVault/Projects/OpioidPredictions/triforecast"
 
 alias NSDUH_check="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
 alias NSDUH_report="rm -rf ~/Temp/00_NSDUH; cp -r /mnt/Workspace/triforecast/00_NSDUH/build ~/Temp/00_NSDUH/"

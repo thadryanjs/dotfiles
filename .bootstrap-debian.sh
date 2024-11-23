@@ -80,18 +80,16 @@ micromamba create --name .dcsi-mmamba-env.yaml --yes
 # curl --proto '=https' --tlsv1.2 -LsSf https://setup.atuin.sh | sh
 
 # If on gnome, make a few tweaks
-gsettings set org.gnome.mutter experimental-features "['scale-monitor-framebuffer']"
-gsettings set org.gnome.shell.app-switcher current-workspace-only true
-gsettings set org.gnome.desktop.input-sources xkb-options "['caps:swapescape']"
+sh ~/.scripts/reset-gnome.sh
+sh ~/.scripts/tweak-gnome-settings.sh
 
-# after tresorit is up-to-date
+# after tresorit is up-to-date (needs to be tweaked)
 # sudo cp ~/Documents/WorkVault/Areas/Tech/Areas/GNOME/Jolly-Downloads/Jolly-Dark-Icons /usr/share/icons
 
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/DejaVuSansMono.zip
-
 sudo mkdir ~/.local/share/fonts/
-
 cp DejaVuSansMNerdFont*.ttf ~/.local/share/fonts
+rm DejaVuSansMNerdFont*.ttf
 
 sudo sh ~/.scripts/install-kanri.sh
 sudo sh ~/.scripts/link-kanri-to-vault.sh
