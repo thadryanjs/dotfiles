@@ -43,7 +43,7 @@ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 
 # get flatpaks running
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable
+flatpak install vivaldi ferdium discord zotero obsidian gimp spotify wezterm app/org.videolan.VLC/x86_64/stable
 
 
 # get home-manager running:

@@ -34,13 +34,9 @@ config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
 -- set the font
--- config.font = wezterm.font("FiraMono Nerd Font")
--- config.font = wezterm.font("Liberation Mono")
--- config.font = wezterm.font("Ubuntu Mono")
-config.font_size = 17.0
+config.font_size = 16.0
 
 -- For example, changing the color scheme:
-config.color_scheme = "rose-pine"
 config.window_background_opacity = 1
 
 -- set the image as partially transparent
@@ -48,14 +44,16 @@ config.window_background_image_hsb = {
   brightness = 0.05,
   saturation = 0.05,
 }
+config.window_decorations = "RESIZE"
 config.default_cursor_style = "BlinkingBlock"
 config.cursor_blink_rate = 750
 config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
+-- config.color_scheme = "rose-pine"
 -- config.color_scheme = "AlienBlood"
 -- config.color_scheme = 'Dark Ocean (terminal.sexy)'
-config.color_scheme = 'Embers (base16)' -- !!!
+-- config.color_scheme = 'Embers (base16)' -- !!!
 -- config.color_scheme = 'ForestBlue'
 -- config.color_scheme = 'iceberg-dark'
 -- config.color_scheme = 'Insignificato (terminal.sexy)' -- !!!
@@ -65,14 +63,13 @@ config.color_scheme = 'Embers (base16)' -- !!!
 -- config.color_scheme = 'Kasugano (terminal.sexy)'
 -- config.color_scheme = 'Seafoam Pastel (Gogh)'
 -- config.color_scheme = 'Wryan'
--- config.color_scheme = 'Apprentice (base16)'
 -- config.color_scheme = 'Ashes (dark) (terminal.sexy)'
 -- config.color_scheme = 'Atelier Savanna (base16)'
 -- config.color_scheme = 'Azu (Gogh)'
 -- config.color_scheme = 'Bitmute (terminal.sexy)'
--- config.color_scheme = 'Black Metal (base16)'
 -- config.color_scheme = 'Black Metal (Venom) (base16)'
--- config.color_scheme = 'Cloud (terminal.sexy)'
+config.color_scheme = 'Cloud (terminal.sexy)'
+
 
 -- I can't get these to do anything even though they're copy-pasted from the docs
 -- They dont' work with Color or Ansci, with or without opacity tweaks
@@ -86,7 +83,8 @@ config.colors = {
   copy_mode_inactive_highlight_bg = { Color = '#52ad70' },
   copy_mode_inactive_highlight_fg = { Color = '#52ad70' },
   cursor_fg = "black",
-  cursor_bg = "d3d3d3"
+  cursor_bg = "d3d3d3",
+  foreground = '#999999',
 
 }
 
