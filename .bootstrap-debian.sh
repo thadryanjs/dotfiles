@@ -20,14 +20,12 @@ git config user.name "thadryanjs"
 # https://linuxiac.com/how-to-switch-from-debian-stable-to-testing/
 # sudo sed -i 's/bookworm/trixie/g' /etc/apt/sources.list
 # sudo apt update && sudo apt upgrade --yes
-
 # one or both of these? a little fuzzy
-sudo upgrade dist
-sudo upgrade dist-upgrade
-sudo apt auto-remove
-sudo apt-add-repository contrib non-free
-sudo apt update
-reboot
+# sudo upgrade dist
+# sudo upgrade dist-upgrade
+# sudo apt auto-remove
+# sudo apt update
+# reboot
 
 
 ## Phase 3
@@ -85,12 +83,14 @@ sh ~/.scripts/gnome-tweak-settings.sh
 
 # nerd font
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/DejaVuSansMono.zip
+unzip DejaVuSansMono.zip
 sudo mkdir ~/.local/share/fonts/
-cp DejaVuSansMNerdFont*.ttf ~/.local/share/fonts
+sudo cp DejaVuSansMNerdFont*.ttf ~/.local/share/fonts
 rm DejaVuSansMNerdFont*.ttf
+rm DejaVuSansMono.zip LICENSE.txt README.md
 
 # install kanri and link to vault
-sudo sh ~/.scripts/install-kanri.sh
+sudo sh ~/.scripts/kanri-install.sh
 sudo sh ~/.scripts/link-kanri-to-vault.sh
 
 # remove stuff thad has been nixified

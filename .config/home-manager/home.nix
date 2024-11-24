@@ -31,6 +31,7 @@
    ripgrep
    silver-searcher
    bat
+   unzip
    cifs-utils
    sshfs
    R
