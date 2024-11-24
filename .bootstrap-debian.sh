@@ -95,9 +95,6 @@ sudo sh ~/.scripts/link-kanri-to-vault.sh
 
 # remove stuff thad has been nixified
 sudo apt remove stow git --yes
-rm DejaVuSansMono.zip
 rm tresorit_installer.run
 
-# folders (after tresorit is up-to-date, should maybe see if they've been updated)j
-tar -zxvf  ~/WorkVault/Areas/Tech/GNOME/Jolly-Downloads/Jolly-Dark-Icons.tar.gz
-sudo cp -r ~/WorkVault/Areas/Tech/GNOME/Jolly-Dark-Icons /usr/share/icons/
+# https://www.gnome-look.org/p/1209330
