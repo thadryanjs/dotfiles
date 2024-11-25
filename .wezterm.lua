@@ -18,6 +18,7 @@ end)
 
 --[[ This is where you actually apply your config choices ]]
 
+-- window
 config.window_background_opacity = 1
 -- set an image as the background
 config.window_background_image = "/home/thadryan/HomeVault/Areas/Art/Backgrounds/rapture.jpg"
@@ -26,6 +27,8 @@ config.window_background_image_hsb = {
   brightness = 0.03,
   saturation = 0.2,
 }
+-- don't show the tab bar unless there is more than one tab
+config.hide_tab_bar_if_only_one_tab = true
 
 -- cursor
 config.default_cursor_style = "BlinkingBlock"
@@ -33,12 +36,11 @@ config.cursor_blink_rate = 750
 config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
--- set the font
+-- font
 config.font_size = 16.0
 
--- For example, changing the color scheme:
+-- background
 config.window_background_opacity = 1
-
 -- set the image as partially transparent
 config.window_background_image_hsb = {
   brightness = 0.05,
@@ -46,6 +48,8 @@ config.window_background_image_hsb = {
 }
 config.window_decorations = "RESIZE"
 config.default_cursor_style = "BlinkingBlock"
+
+-- cursor
 config.cursor_blink_rate = 750
 config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
@@ -92,8 +96,6 @@ config.colors = {
 -- warn about missing glyphs
 config.warn_about_missing_glyphs = false
 
--- don't show the tab bar unless there is more than one tab
-config.hide_tab_bar_if_only_one_tab = true
 
 -- allow mouse copy and paste
 -- copy with ctrl+c
