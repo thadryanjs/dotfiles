@@ -37,6 +37,7 @@ config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
 -- font
+config.font = wezterm.font("DejaVuSansM Nerd Font")
 config.font_size = 16.0
 
 -- background
