@@ -1,0 +1,8 @@
+[Ignore] //*.html
+[Ignore] //*.js
+[Ignore] //*.css
+[Ignore] //.pixi
+[Ignore] //.conda
+[Ignore] //.git
+[Ignore] //__build
+[Ignore] //node modules
