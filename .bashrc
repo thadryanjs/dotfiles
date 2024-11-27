@@ -22,7 +22,7 @@ alias config="cd ~/.dotfiles"
 alias mount="cd /mnt/Workspace"
 alias vault="cd ~/WorkVault/"
 alias vaulthome="cd ~/HomeVault/"
-alias projects="cd ~/WorkVault/Projects/RAND-summer-internship"
+alias projects="cd ~/WorkVault/Projects/"
 alias ta="cd ~/WorkVault/Projects/TA-2025-Winter"
 alias tech="cd ~/WorkVault/Areas/Tech/"
 
