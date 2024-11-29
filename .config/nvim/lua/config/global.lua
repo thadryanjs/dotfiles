@@ -28,7 +28,10 @@ vim.opt.conceallevel = 0
 -- vim.opt.signcolumn = 'no'
 -- vim.opt.statuscolumn = 'no'
 vim.opt.scrolloff = 5
-vim.opt.spellfile = "~/.config/spell/en.utf-8.add"
+vim.opt.spell = true
+vim.opt.spelllang = 'en_us'
+vim.opt.spellsuggest = {'fast', 20}  -- Don't show too many suggestions for spell check
+vim.opt.spellfile = vim.fn.expand("~/.config/nvim/spell/en.utf-8.add")
 vim.o.scl = "no"
 -- translating "set formatoptions-=r"
 -- doesn't work: https://www.reddit.com/r/neovim/comments/11ij7t4/how_to_set_formatoptionso_in_lua/

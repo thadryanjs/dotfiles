@@ -70,6 +70,11 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
+" Enable spell checking with specific language and suggestions
+set spell spelllang=en_us
+set spellsuggest=fast,20  " Don't show too many suggestions for spell check
+set spellfile=~/.dotfiles/.config/nvim/spell/en.utf-8.add
+
 " Undo config: https://vi.stackexchange.com/questions/6/how-can-i-use-the-undofile
 if !isdirectory($HOME."/.vim")
     call mkdir($HOME."/.vim", "", 0770)
