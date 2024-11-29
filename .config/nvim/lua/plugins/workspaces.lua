@@ -3,8 +3,7 @@ return {
         "natecraddock/workspaces.nvim",
         config = function()
             require("workspaces").setup({
-                path = "/home/thadryan/Documents/WorkVault/Resources/Templates/workspaces.txt"
-                -- path = "/home/thadryan/.config/workspaces.txt"
+                path = "/home/thadryan/.workspaces.txt"
             })
 
         vim.api.nvim_set_keymap("n", "<leader>wf", ":Telescope workspaces<CR>", { noremap = true, silent = true })
