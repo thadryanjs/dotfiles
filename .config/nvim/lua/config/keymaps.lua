@@ -93,6 +93,12 @@ function _G.check_back_space()
 end
 keyset("i", "<TAB>", 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()', opts)
 
+
+
+-- Jump to next diagnostic (any type: error, warn, info, hint, spell)
+nmap('<leader>dn', '<cmd>lua vim.diagnostic.goto_next()<CR>')
+nmap('<leader>dp', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
+
 -- sane diagnostics
 vim.api.nvim_create_user_command("DiagnosticsLight", function()
     vim.diagnostic.config {
