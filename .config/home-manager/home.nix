@@ -16,46 +16,49 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
-   git
-   neovim
-   tmux
-   xclip
-   stow
-   gcc
-   wget
-   rename
-   rsync
-   tree
-   gnumake
-   fzf
-   ripgrep
-   silver-searcher
-   bat
-   unzip
-   cifs-utils
-   sshfs
-   R
-   jdk
-   nodejs
-   quarto
-   yazi
-   poppler
-   ffmpegthumbnailer
-   imagemagick
-   zoxide
-   cmatrix
-   neofetch
-   # seems cool but I can't find how to set the path when it's install with nix
-   # atuin
-   # blesh
-   # quarto
-   # shotwell
-   # for the below I had to switch to xorg then back for the icon to show, as did some people on github
-   # gnome-tweaks
-   # requires restart
-   # gnomeExtensions.vertical-workspaces
-   # going with flatpaks for these:
-   # flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable org.libreoffice.LibreOffice
+    git
+    neovim
+    tmux
+    xclip
+    stow
+    gcc
+    wget
+    rename
+    rsync
+    tree
+    gnumake
+    fzf
+    ripgrep
+    silver-searcher
+    bat
+    unzip
+    cifs-utils
+    sshfs
+    R
+    jdk
+    nodejs
+    quarto
+    yazi
+    poppler
+    ffmpegthumbnailer
+    imagemagick
+    zoxide
+    cmatrix
+    neofetch
+    ## obsidian OCR doesn't work with flatpaks, the appimage segfaults, and the nix one doesn't work half the time
+    # obsidian
+    tesseract4
+    ## seems cool but I can't find how to set the path when it's install with nix
+    # atuin
+    # blesh
+    # quarto
+    # shotwell
+    ## for the below I had to switch to xorg then back for the icon to show, as did some people on github
+    # gnome-tweaks
+    # requires restart
+    # gnomeExtensions.vertical-workspaces
+    # going with flatpaks for these:
+    # flatpak install vivaldi ferdium discord zotero obsidian gimp spotify sleek app/org.videolan.VLC/x86_64/stable org.libreoffice.LibreOffice
 
 
     # # It is sometimes useful to fine-tune packages, for example, by applying

@@ -97,4 +97,8 @@ sudo sh ~/.scripts/link-kanri-to-vault.sh
 sudo apt remove stow git --yes
 rm tresorit_installer.run
 
+# version?
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.7/obsidian_1.7.7_amd64.deb
+sudo dpkg -i obsidian_1.7.7_amd64.deb
+
 # https://www.gnome-look.org/p/1209330
