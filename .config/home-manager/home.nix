@@ -45,6 +45,7 @@
     zoxide
     cmatrix
     neofetch
+    tomato-c
     ## obsidian OCR doesn't work with flatpaks, the appimage segfaults, and the nix one doesn't work half the time
     # obsidian
     tesseract4
