@@ -15,6 +15,12 @@ stty -ixon
 
 # export EDITOR="vim"
 
+# hack for now
+if [ -n "$(ls ~/Downloads/MarkDownload/)" ]; then
+  # If files exist, run the script
+  sh .scripts/markdownload-copy-to-vault.sh
+fi
+
 alias reboot="systemctl reboot"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 alias config="cd ~/.dotfiles"
