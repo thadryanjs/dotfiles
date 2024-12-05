@@ -11,6 +11,7 @@ return {
                     file_ignore_patterns = {
                         ".git/", ".cache", "%.pdf", "%.mkv", "%.mp4", "%.zip", ".snakemake", ".ipynb_checkpoints", ".pixi",
                         "_build/*.*", "target/*.*", "libs/*.*", "html/*.*", "node_modules/*.*", "dist/*.*", "build/*.*",
+                        ".obsidian/*.*"
                     },
                 },
                 pickers = {

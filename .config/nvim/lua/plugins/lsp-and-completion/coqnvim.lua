@@ -8,7 +8,8 @@ return {
             require("coq")
             vim.cmd("COQnow --shut-up")
             -- remap accept to ctrl-k
-
+            -- includes the files in the gitignore by default
+            -- Map Tab to accept the current autocomplete suggestion
         end
     }
 }

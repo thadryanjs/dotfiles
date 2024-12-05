@@ -21,7 +21,7 @@ return {
 
             -- https://www.reddit.com/r/neovim/comments/s24zvh/how_can_i_load_a_user_dictionary_into_ltexls/
             lspconfig.ltex.setup(coq.lsp_ensure_capabilities({
-                autostart = true,
+                autostart = false,
                 settings = {
                     ltex = {
                         dictionary = {

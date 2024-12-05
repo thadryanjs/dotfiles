@@ -29,6 +29,10 @@ nmap("<Down>", "gj")
 nmap("<C-c>", '"+y')
 nmap("<C-v>", '"+p')
 
+
+-- autocomplete accept on enter, no newline
+imap('<CR>', 'v:lua.pumvisible() ? "<C-Y>" : "<CR>"')
+
 -- home
 nmap("<leader>wo", ":e /home/thadryan/Documents/Vault/workspaces-overview.md<CR>")
 
@@ -85,15 +89,15 @@ nmap("<leader>bn", "<cmd>bnext<CR>")
 -- pipe operator
 imap("kk", "%>%")
 
-local keyset = vim.keymap.set
-local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
-function _G.check_back_space()
-    local col = vim.fn.col('.') - 1
-    return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') ~= nil
-end
-keyset("i", "<TAB>", 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()', opts)
-
-
+-- wait what is this?
+-- local keyset = vim.keymap.set
+-- local opts = {silent = true, noremap = true, expr = true, replace_keycodes = false}
+-- function _G.check_back_space()
+--     local col = vim.fn.col('.') - 1
+--     return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') ~= nil
+-- end
+-- keyset("i", "<TAB>", 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()', opts)
+imap('<CR>', 'v:lua.pumvisible() ? "<C-Y>" : "<CR>"')
 
 -- Jump to next diagnostic (any type: error, warn, info, hint, spell)
 nmap('<leader>dn', '<cmd>lua vim.diagnostic.goto_next()<CR>')
