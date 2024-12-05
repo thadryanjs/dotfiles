@@ -30,8 +30,8 @@ nmap("<C-c>", '"+y')
 nmap("<C-v>", '"+p')
 
 
--- autocomplete accept on enter, no newline
-imap('<CR>', 'v:lua.pumvisible() ? "<C-Y>" : "<CR>"')
+-- autocomplete
+vim.api.nvim_set_keymap('i', '<CR>', 'v:lua.pumvisible() ? "<C-Y>" : "<CR>"', { expr = true, noremap = true })
 
 -- home
 nmap("<leader>wo", ":e /home/thadryan/Documents/Vault/workspaces-overview.md<CR>")
@@ -97,7 +97,6 @@ imap("kk", "%>%")
 --     return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s') ~= nil
 -- end
 -- keyset("i", "<TAB>", 'coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "<TAB>" : coc#refresh()', opts)
-imap('<CR>', 'v:lua.pumvisible() ? "<C-Y>" : "<CR>"')
 
 -- Jump to next diagnostic (any type: error, warn, info, hint, spell)
 nmap('<leader>dn', '<cmd>lua vim.diagnostic.goto_next()<CR>')
