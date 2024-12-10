@@ -8,6 +8,11 @@ return {
                 syntax = 'markdown',
                 ext = '.md',
             },
+            {
+                path = '~/HomeVault/',
+                syntax = 'markdown',
+                ext = '.md',
+            },
         }
         end,
     },
