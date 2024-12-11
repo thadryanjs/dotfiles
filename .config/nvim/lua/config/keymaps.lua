@@ -70,6 +70,9 @@ nmap("<leader>ca", ":w | %bd | e# | bd#<CR>")
 -- set no conceal
 nmap("<leader>nc", ":setlocal conceallevel=0<CR>")
 
+-- insert date
+nmap("<leader>dd", ":pu=strftime('%c')<CR>")
+
 -- [ Quarto hotkeys ]
 imap("<A-r>", "```{r}\n\n```")
 imap("<A-y>", "```{python}\n\n```<esc>")

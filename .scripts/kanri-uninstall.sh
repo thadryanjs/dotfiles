@@ -1,7 +1,5 @@
 #!/bin/bash
 
-## why yes, I did outsource this to chatGPT. It's been tested though.
-
 # Uninstall script for Kanri
 
 echo "Starting uninstallation of Kanri..."
