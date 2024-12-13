@@ -71,7 +71,8 @@ nmap("<leader>ca", ":w | %bd | e# | bd#<CR>")
 nmap("<leader>nc", ":setlocal conceallevel=0<CR>")
 
 -- insert date
-nmap("<leader>dd", ":pu=strftime('%c')<CR>")
+nmap("<leader>dd", ":put=strftime('%Y-%m-%d')<CR>A ")
+-- nmap("<leader>dd", ":put=system('date +\\%Y-\\%m-\\%d')<CR>A ")
 
 -- [ Quarto hotkeys ]
 imap("<A-r>", "```{r}\n\n```")
@@ -84,6 +85,9 @@ nmap("<leader>hr", ":nohl<CR>")
 -- cd to current file directory
 nmap("<leader>cd", ":cd %:p:h<CR>")
 
+-- open todo.txt
+nmap("<leader>td", ":e ~/WorkVault/todo.txt<CR>")
+
 -- telescope buffers
 nmap("<leader>fb", "<cmd>Telescope buffers<CR>")
 nmap("<leader>bp", "<cmd>bprevious<CR>")
@@ -91,6 +95,7 @@ nmap("<leader>bn", "<cmd>bnext<CR>")
 
 -- pipe operator
 imap("kk", "%>%")
+
 
 -- wait what is this?
 -- local keyset = vim.keymap.set

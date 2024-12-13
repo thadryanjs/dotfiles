@@ -22,6 +22,7 @@ if [ -n "$(ls ~/Downloads/MarkDownload/)" ]; then
 fi
 
 alias reboot="systemctl reboot"
+alias shutdown="sudo shutdown now"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 alias config="cd ~/.dotfiles"
 
@@ -41,6 +42,8 @@ alias vpn="sh ~/.scripts/vpn.sh"
 
 alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
 
+# when you start a new project, you can make a quick topydo view for it and add an alias based on these templates
+alias t="todo.sh"
 alias tp="topydo"
 alias tp-ado="topydo columns -l .config/topydo/views/ado-moud.conf"
 alias tp-all="topydo columns -l .config/topydo/views/all-projects.conf"
