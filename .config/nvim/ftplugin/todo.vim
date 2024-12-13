@@ -1,3 +1,4 @@
+" https://github.com/freitass/todo.txt-vim/blob/master/syntax/todo.vim
 " File:        todo.txt.vim
 " Description: Todo.txt syntax settings
 " Author:      Leandro Freitas <freitass@gmail.com>
