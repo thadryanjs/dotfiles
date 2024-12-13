@@ -5,4 +5,5 @@ require "config.autocmds"
 
 vim.cmd("colorscheme kanagawa-dragon")
 vim.cmd("set scl=no")
---vim.cmd("inoremap <expr> <CR> pumvisible() ? '\\<C-Y>' : '\\<CR>'")
+-- need to make this run when opening just that file
+vim.cmd("source /home/thadryan/.config/nvim/ftplugin/todo.vim")

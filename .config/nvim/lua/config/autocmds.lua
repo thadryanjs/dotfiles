@@ -21,6 +21,12 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
   command = [[set syntax=snakemake]],
 })
 
+vim.api.nvim_create_autocmd({ "BufEnter" }, {
+  pattern = { "todo.txt" },
+  command = [[source /home/thadryan/.config/nvim/ftplugin/todo.vim]]
+})
+
+
 -- do not conceal characters in any file
 -- vim.api.nvim_create_autocmd({ "BufEnter" }, {
 --   pattern = { "*" },
