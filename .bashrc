@@ -41,6 +41,15 @@ alias vpn="sh ~/.scripts/vpn.sh"
 
 alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
 
+alias tp="topydo"
+alias tp-ado="topydo columns -l .config/topydo/views/ado-moud.conf"
+alias tp-all="topydo columns -l .config/topydo/views/all-projects.conf"
+alias tp-home="topydo columns -l .config/topydo/views/home-admin.conf"
+alias tp-tri="topydo columns -l .config/topydo/views/triforecast.conf"
+alias tp-vim="topydo columns -l .config/topydo/views/vim.conf"
+alias tp-workflow="topydo columns -l .config/topydo/views/workflow.conf"
+alias tp-work-admin="topydo columns -l .config/topydo/views/work-admin.conf"
+
 alias NSDUH_check="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
 alias NSDUH_report="rm -rf ~/Temp/00_NSDUH; cp -r /mnt/Workspace/triforecast/00_NSDUH/build ~/Temp/00_NSDUH/"
 

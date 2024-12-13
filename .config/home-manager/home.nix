@@ -19,6 +19,8 @@
     git
     neovim
     tmux
+    todo-txt-cli
+    topydo
     xclip
     stow
     gcc
@@ -46,9 +48,12 @@
     cmatrix
     neofetch
     tomato-c
+    # python311Packages.tasklib
+    # python311Packages.pynvim
+
     ## obsidian OCR doesn't work with flatpaks, the appimage segfaults, and the nix one doesn't work half the time
     # obsidian
-    tesseract4
+    # tesseract4
     ## seems cool but I can't find how to set the path when it's install with nix
     # atuin
     # blesh
