@@ -43,8 +43,8 @@ alias vpn="sh ~/.scripts/vpn.sh"
 alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
 
 # when you start a new project, you can make a quick topydo view for it and add an alias based on these templates
-alias t="todo.sh"
 alias t="topydo"
+alias t-dashboard="topydo columns -l .config/topydo/views/dashboard.conf"
 alias t-ado="topydo columns -l .config/topydo/views/ado-moud.conf"
 alias t-all="topydo columns -l .config/topydo/views/all-projects.conf"
 alias t-home="topydo columns -l .config/topydo/views/home-admin.conf"
