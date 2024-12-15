@@ -1,3 +1,6 @@
 [topydo]
 filename=~/WorkVault/todo.txt
 archive_filename=~/WorkVault/done.txt
+
+[colorscheme]
+focus_background_color = black
