@@ -90,15 +90,15 @@ rm DejaVuSansMNerdFont*.ttf
 rm DejaVuSansMono.zip LICENSE.txt README.md
 
 # install kanri and link to vault
-sudo sh ~/.scripts/kanri-install.sh
-sudo sh ~/.scripts/link-kanri-to-vault.sh
+# sudo sh ~/.scripts/kanri-install.sh
+# sudo sh ~/.scripts/link-kanri-to-vault.sh
 
 # remove stuff thad has been nixified
-sudo apt remove stow git --yes
-rm tresorit_installer.run
+# sudo apt remove stow git --yes
+# rm tresorit_installer.run
 
 # version?
-wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.7/obsidian_1.7.7_amd64.deb
-sudo dpkg -i obsidian_1.7.7_amd64.deb
+# wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.7.7/obsidian_1.7.7_amd64.deb
+# sudo dpkg -i obsidian_1.7.7_amd64.deb
 
 # https://www.gnome-look.org/p/1209330

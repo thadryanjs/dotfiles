@@ -13,7 +13,7 @@ stty -ixon
 #   tmux attach-session -t default || tmux new-session -s default
 # fi
 
-# export EDITOR="vim"
+export EDITOR="nvim"
 
 # hack for now
 if [ -n "$(ls ~/Downloads/MarkDownload/)" ]; then
