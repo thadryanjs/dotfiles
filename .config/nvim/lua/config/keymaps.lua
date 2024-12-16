@@ -96,6 +96,7 @@ nmap("<leader>bn", "<cmd>bnext<CR>")
 -- pipe operator
 imap("kk", "%>%")
 
+nmap('gf', ':e <cfile><cr>')
 
 -- wait what is this?
 -- local keyset = vim.keymap.set
