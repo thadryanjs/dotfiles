@@ -44,6 +44,7 @@ alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
 
 # when you start a new project, you can make a quick topydo view for it and add an alias based on these templates
 alias t="topydo"
+alias t-archive="todo.sh archive"
 alias t-dashboard="topydo columns -l ~/.config/topydo/views/dashboard.conf"
 alias t-dashboard-home-split="topydo columns -l ~/.config/topydo/views/dashboard-home-full.conf"
 alias t-qc="topydo columns -l ~/.config/topydo/views/qc.conf"
