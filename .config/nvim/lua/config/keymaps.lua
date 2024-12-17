@@ -96,7 +96,10 @@ nmap("<leader>bn", "<cmd>bnext<CR>")
 -- pipe operator
 imap("kk", "%>%")
 
+-- when I ask to open a file, make it if it doesn't exist
 nmap('gf', ':e <cfile><cr>')
+
+nmap('<leader>wd', '<CR>')
 
 -- wait what is this?
 -- local keyset = vim.keymap.set
