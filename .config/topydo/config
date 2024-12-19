@@ -1,7 +1,11 @@
 [topydo]
-filename=~/WorkVault/todo.txt
+identifiers = text
+filename = ~/WorkVault/todo.txt
 # archive_filename=~/WorkVault/done.txt
-archive_filename=
+archive_filename =
 
 [colorscheme]
 focus_background_color = black
+
+[edit]
+editor = nvim
