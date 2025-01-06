@@ -9,3 +9,7 @@ focus_background_color = black
 
 [edit]
 editor = nvim
+
+[column_keymap]
+D = cmd del {}
+d =

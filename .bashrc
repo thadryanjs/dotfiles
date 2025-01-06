@@ -23,6 +23,8 @@ fi
 
 alias reboot="systemctl reboot"
 alias shutdown="sudo shutdown now"
+
+alias shutdown="sudo shutdown now"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 alias config="cd ~/.dotfiles"
 

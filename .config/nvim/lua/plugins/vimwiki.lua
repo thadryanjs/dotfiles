@@ -13,6 +13,11 @@ return {
                 syntax = 'markdown',
                 ext = '.md',
             },
+            {
+                path = '~/HomeVault/Projects/RPGs/Newhale',
+                syntax = 'markdown',
+                ext = '.md',
+            },
         }
         end,
     },
