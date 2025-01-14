@@ -22,6 +22,12 @@ config.initial_rows = 100
 config.initial_cols = 205
 
 -- window
+config.window_padding = {
+    left = 0,
+    right = 0,
+    top = 0,
+    bottom = 0,
+}
 config.window_background_opacity = 1
 -- set an image as the background
 config.window_background_image = "/home/thadryan/HomeVault/Areas/Art/Backgrounds/rapture.jpg"
@@ -41,9 +47,11 @@ config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
 -- font
-config.font = wezterm.font("DejaVuSansM Nerd Font")
-config.font_size = 16.0
 
+-- Nice but causes an annoying extra space below the tmux bar
+--config.font = wezterm.font("DejaVuSansM Nerd Font")
+config.font_size = 16.0
+config.harfbuzz_features = { 'calt=0' }
 -- background
 config.window_background_opacity = 1
 -- set the image as partially transparent
