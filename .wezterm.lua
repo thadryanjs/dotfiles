@@ -15,8 +15,11 @@ wezterm.on('gui-startup', function(cmd)
   window:gui_window():maximize()
 end)
 
-
 --[[ This is where you actually apply your config choices ]]
+-- not sure if this will work on my work monitor
+-- https://stackoverflow.com/questions/78738575/how-to-maximize-wezterm-on-startup
+config.initial_rows = 100
+config.initial_cols = 205
 
 -- window
 config.window_background_opacity = 1
@@ -27,6 +30,7 @@ config.window_background_image_hsb = {
   brightness = 0.03,
   saturation = 0.2,
 }
+
 -- don't show the tab bar unless there is more than one tab
 config.hide_tab_bar_if_only_one_tab = true
 
@@ -110,4 +114,5 @@ config.keys = {
 
 }
 -- -- and finally, return the configuration to wezterm
+
 return config

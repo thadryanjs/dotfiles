@@ -1,4 +1,3 @@
-
 test -s ~/.alias && . ~/.alias || true
 
 eval "$(fzf --bash)"
@@ -13,6 +12,7 @@ stty -ixon
 #   tmux attach-session -t default || tmux new-session -s default
 # fi
 
+export GREETING="echo Hello World!"
 export EDITOR="nvim"
 
 # hack for now
@@ -57,6 +57,7 @@ alias t-tri="topydo columns -l ~/.config/topydo/views/triforecast.conf"
 alias t-vim="topydo columns -l ~/.config/topydo/views/vim.conf"
 alias t-workflow="topydo columns -l .~/.config/topydo/views/workflow.conf"
 alias t-work-admin="topydo columns -l ~/.config/topydo/views/work-admin.conf"
+alias t-tui-overview="micromamba run -n python-general todo-txt-tui ~/WorkVault/todo.txt"
 
 alias NSDUH_check="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
 alias NSDUH_report="rm -rf ~/Temp/00_NSDUH; cp -r /mnt/Workspace/triforecast/00_NSDUH/build ~/Temp/00_NSDUH/"
@@ -68,7 +69,8 @@ alias NCHS_check="tail /mnt/Workspace/triforecast/02_NCHS/_log.out"
 alias NCHS_report="rm -rf ~/Temp/02_NCHS; cp -r /mnt/Workspace/triforecast/02_NCHS/build ~/Temp/02_NCHS/"
 
 alias ado_mat_check="tail /mnt/Workspace/adolescent-MAT/_log.out"
-alias ado_mat_report="rm -rf ~/Temp/ado-MAT; cp -r /mnt/Workspace/adolescent-MAT/build ~/Temp/ado-MAT/"
+alias ado_mat_report="rm -rf ~/Temp/ado-MAT-report; cp -r /mnt/Workspace/adolescent-MAT/build ~/Temp/ado-MAT-report/"
+alias ado_mat_outputs="rm -rf ~/Temp/ado-MAT-outputs; cp -r /mnt/Workspace/adolescent-MAT/outputs ~/Temp/ado-MAT-outputs/"
 
 alias dev="distrobox enter --root dev-fedora"
 

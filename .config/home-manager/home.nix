@@ -41,13 +41,13 @@
     nodejs
     quarto
     yazi
-    poppler
-    ffmpegthumbnailer
-    imagemagick
+      poppler
+      ffmpegthumbnailer
+      imagemagick
     zoxide
-    cmatrix
-    neofetch
-    tomato-c
+    # cmatrix
+    # neofetch
+    # tomato-c
     # python311Packages.tasklib
     # python311Packages.pynvim
 
