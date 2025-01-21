@@ -37,15 +37,17 @@
     cifs-utils
     sshfs
     R
+    poetry
     jdk
     nodejs
+    pixi
     quarto
     yazi
       poppler
       ffmpegthumbnailer
       imagemagick
     zoxide
-    # cmatrix
+    cmatrix
     # neofetch
     # tomato-c
     # python311Packages.tasklib

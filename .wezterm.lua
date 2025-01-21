@@ -10,18 +10,22 @@ if wezterm.config_builder then
   config = wezterm.config_builder()
 end
 
+
+
+--[[ This is where you actually apply your config choices ]]
+
+--[[ size ]]
 wezterm.on('gui-startup', function(cmd)
   local tab, pane, window = mux.spawn_window(cmd or {})
   window:gui_window():maximize()
 end)
 
---[[ This is where you actually apply your config choices ]]
 -- not sure if this will work on my work monitor
 -- https://stackoverflow.com/questions/78738575/how-to-maximize-wezterm-on-startup
 config.initial_rows = 100
 config.initial_cols = 205
 
--- window
+-- [[ window ]]
 config.window_padding = {
     left = 0,
     right = 0,
@@ -40,17 +44,18 @@ config.window_background_image_hsb = {
 -- don't show the tab bar unless there is more than one tab
 config.hide_tab_bar_if_only_one_tab = true
 
--- cursor
+-- [[ cursor ]]
 config.default_cursor_style = "BlinkingBlock"
 config.cursor_blink_rate = 750
 config.cursor_blink_ease_in = 'Constant'
 config.cursor_blink_ease_out = 'Constant'
 
--- font
+-- [[ font ]]
 
 -- Nice but causes an annoying extra space below the tmux bar
---config.font = wezterm.font("DejaVuSansM Nerd Font")
-config.font_size = 16.0
+-- or does it happen anyway? Some combo of font size and font
+-- config.font = wezterm.font("DejaVuSansM Nerd Font")
+config.font_size = 16
 config.harfbuzz_features = { 'calt=0' }
 -- background
 config.window_background_opacity = 1
