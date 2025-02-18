@@ -23,8 +23,8 @@ fi
 
 alias reboot="systemctl reboot"
 alias shutdown="sudo shutdown now"
+alias update="sh .scripts/debian-nix-update.sh"
 
-alias shutdown="sudo shutdown now"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 alias config="cd ~/.dotfiles"
 
@@ -46,6 +46,7 @@ alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
 
 # when you start a new project, you can make a quick topydo view for it and add an alias based on these templates
 alias t="topydo"
+alias tp="topydo prompt"
 alias t-archive="todo.sh archive"
 alias t-dashboard="topydo columns -l ~/.config/topydo/views/dashboard.conf"
 alias t-dashboard-home-split="topydo columns -l ~/.config/topydo/views/dashboard-home-full.conf"
@@ -59,14 +60,17 @@ alias t-workflow="topydo columns -l .~/.config/topydo/views/workflow.conf"
 alias t-work-admin="topydo columns -l ~/.config/topydo/views/work-admin.conf"
 alias t-tui-overview="micromamba run -n python-general todo-txt-tui ~/WorkVault/todo.txt"
 
-alias NSDUH_check="tail /mnt/Workspace/triforecast/00_NSDUH/_log.out"
-alias NSDUH_report="rm -rf ~/Temp/00_NSDUH; cp -r /mnt/Workspace/triforecast/00_NSDUH/build ~/Temp/00_NSDUH/"
+alias projections_check="tail /mnt/Workspace/triforecast/00_CensusAndProjections/_log.out"
+alias projections_report="rm -rf ~/Temp/00_CensusAndProjections; cp -r /mnt/Workspace/triforecast/00_CensusAndProjections/build ~/Temp/CensusAndProjections/"
 
-alias NEMSIS_check="tail /mnt/Workspace/triforecast/01_NEMSIS/_log.out"
-alias NEMSIS_report="rm -rf ~/Temp/01_NEMSIS; cp -r /mnt/Workspace/triforecast/01_NEMSIS/build ~/Temp/01_NEMSIS/"
+alias NSDUH_check="tail /mnt/Workspace/triforecast/01_NSDUH/_log.out"
+alias NSDUH_report="rm -rf ~/Temp/01_NSDUH; cp -r /mnt/Workspace/triforecast/01_NSDUH/build ~/Temp/01_NSDUH/"
 
-alias NCHS_check="tail /mnt/Workspace/triforecast/02_NCHS/_log.out"
-alias NCHS_report="rm -rf ~/Temp/02_NCHS; cp -r /mnt/Workspace/triforecast/02_NCHS/build ~/Temp/02_NCHS/"
+alias NEMSIS_check="tail /mnt/Workspace/triforecast/02_NEMSIS/_log.out"
+alias NEMSIS_report="rm -rf ~/Temp/02_NEMSIS; cp -r /mnt/Workspace/triforecast/02_NEMSIS/build ~/Temp/02_NEMSIS/"
+
+alias NCHS_check="tail /mnt/Workspace/triforecast/03_NCHS/_log.out"
+alias NCHS_report="rm -rf ~/Temp/03_NCHS; cp -r /mnt/Workspace/triforecast/03_NCHS/build ~/Temp/03_NCHS/"
 
 alias ado_mat_check="tail /mnt/Workspace/adolescent-MAT/_log.out"
 alias ado_mat_report="rm -rf ~/Temp/ado-MAT-report; cp -r /mnt/Workspace/adolescent-MAT/build ~/Temp/ado-MAT-report/"

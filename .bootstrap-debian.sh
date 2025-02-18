@@ -102,3 +102,13 @@ rm DejaVuSansMono.zip LICENSE.txt README.md
 # sudo dpkg -i obsidian_1.7.7_amd64.deb
 
 # https://www.gnome-look.org/p/1209330
+
+
+curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | sudo gpg --dearmor --yes -o /etc/apt/trusted.gpg.d/spotify.gpg
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update && sudo apt-get install spotify-client
+
+
+wget "https://discord.com/api/download?platform=linux&format=deb" -O discord.deb
+sudo apt install ./discord.deb
+rm discord.deb
