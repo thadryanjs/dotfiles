@@ -12,7 +12,6 @@ stty -ixon
 #   tmux attach-session -t default || tmux new-session -s default
 # fi
 
-export GREETING="echo Hello World!"
 export EDITOR="nvim"
 
 # hack for now
@@ -26,7 +25,8 @@ alias shutdown="sudo shutdown now"
 alias update="sh .scripts/debian-nix-update.sh"
 
 alias nvimconfig="cd ~/.dotfiles/.config/nvim"
-alias config="cd ~/.dotfiles"
+alias dotfiles="cd ~/.dotfiles"
+alias config="cd ~/.dotfiles/.config"
 
 alias mount="cd /mnt/Workspace"
 alias vault="cd ~/WorkVault/"
