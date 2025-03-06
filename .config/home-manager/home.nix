@@ -42,6 +42,7 @@
     nodejs
     pixi
     quarto
+    superfile
     yazi
       poppler
       ffmpegthumbnailer
