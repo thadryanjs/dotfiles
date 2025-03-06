@@ -1,9 +1,7 @@
-# This is maintain by github.com/nonepork
-# I know this is not really that "vim", but the control flow is different.
 # =================================================================================================
 # Global hotkeys (cannot conflict with other hotkeys)
-confirm = ['enter', '']
-quit = ['ctrl+x', ''] # also know as, theprimeagen troller
+confirm = ['enter', 'right', 'l']
+quit = ['q', 'esc']
 # movement
 list_up = ['k', '']
 list_down = ['j', '']
@@ -50,7 +48,7 @@ confirm_typing = ['enter', '']
 cancel_typing = ['esc', '']
 # =================================================================================================
 # Normal mode hotkeys (can conflict with other modes, cannot conflict with global hotkeys)
-parent_directory = ['-', '']
+parent_directory = ['h', 'left', 'backspace']
 search_bar = ['/', '']
 # =================================================================================================
 # Select mode hotkeys (can conflict with other modes, cannot conflict with global hotkeys)
