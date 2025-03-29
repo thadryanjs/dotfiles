@@ -68,7 +68,11 @@ decman.packages += [
     "nvim",
     "stow",
     "fzf",
-    "tmux"
+    "tmux",
+    "xclip",
+    "bat",
+    "the_silver_searcher",
+    "ripgrep"
 ]
 
 # my aur packages
