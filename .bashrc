@@ -27,6 +27,7 @@ alias update="sh .scripts/debian-nix-update.sh"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 alias dotfiles="cd ~/.dotfiles"
 alias config="cd ~/.dotfiles/.config"
+alias dec="sudo decman --source ~/.config/decman/decman.py"
 
 alias mount="cd /mnt/Workspace"
 alias vault="cd ~/WorkVault/"

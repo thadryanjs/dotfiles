@@ -27,17 +27,19 @@ decman.packages += [
     "ripgrep",
     "discord",
     "vlc",
-    "gimp"
+    "gimp",
+    "fuse3" # for tresorit
 ]
 
 decman.aur_packages += [
     "decman",
     "ferdium-bin",
-    # add:
-    # ???
+    # fails - cursed to use the downloaded installer forever I think.
+    # "tresorit"
 
-    # pgp issue:
-    # "spotify"
+    # first run:
+    # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
+    "spotify"
 ]
 
 # mostly (entirely?) untouched cachy system derived from running decman and seeing what it said would be erased
