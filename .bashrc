@@ -1,7 +1,7 @@
 test -s ~/.alias && . ~/.alias || true
 
 eval "$(fzf --bash)"
-eval "$(zoxide init bash)"
+# eval "$(zoxide init bash)"
 
 stty -ixon
 
