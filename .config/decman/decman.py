@@ -9,6 +9,10 @@ from decman import UserPackage, File, Directory, UserRaisedError
 
 # my normal packages
 decman.packages += [
+    "cachyos-snapper-support",
+    "grub-btrfs-support",
+    "btrfs-assistant", # <-- this is the config ui
+    "grub-customizer",
     "vivaldi",
     "git",
     "python",
@@ -21,13 +25,17 @@ decman.packages += [
     "bat",
     "the_silver_searcher",
     "ripgrep",
-    "discord"
+    "discord",
+    "vlc",
+    "gimp"
 ]
 
 decman.aur_packages += [
     "decman",
     "ferdium-bin",
     # add:
+    # ???
+
     # pgp issue:
     # "spotify"
 ]
@@ -38,7 +46,9 @@ base_cachy_packages = [
     "adobe-source-han-sans-kr-fonts", "adwaita-icon-theme", "alacritty", "alsa-firmware",
     "alsa-plugins", "alsa-utils", "awesome-terminal-fonts", "baobab", "base", "base-devel",
     "bash-completion", "bind", "bluez", "bluez-hid2hci", "bluez-libs", "bluez-utils", "btop",
-    "btrfs-assistant", "btrfs-progs", "cachy-browser", "cachyos-fish-config", "cachyos-hello",
+    "btrfs-assistant", "btrfs-progs",
+    # "cachy-browser",
+    "cachyos-fish-config", "cachyos-hello",
     "cachyos-hooks", "cachyos-kernel-manager", "cachyos-keyring", "cachyos-micro-settings",
     "cachyos-mirrorlist", "cachyos-packageinstaller", "cachyos-plymouth-theme", "cachyos-rate-mirrors",
     "cachyos-settings", "cachyos-v3-mirrorlist", "cachyos-v4-mirrorlist", "cachyos-wallpapers",
@@ -124,13 +134,6 @@ decman.config.makepkg_user = "thadryan"
 
 # I could add certain packages only on my home machine, for instance, so I'm leaving this example
 
-# # Most powerful feature of decman are modules.
-# # In this file you see how to include your module, but to really see what modules are capable of
-# # look at the MyModule class.
-# from my_module import MyModule
-#
-# my_own_mod = MyModule()
-#
 # # You have full access to python, which makes your configuration very dynamic.
 # # For example: do something if the computers hostname is arch-1
 # if socket.gethostname() == "arch-1":
@@ -141,5 +144,3 @@ decman.config.makepkg_user = "thadryan"
 # else:
 #     # If you want to abort running decman from your config because something is wrong, raise a UserRaisedError
 #     raise UserRaisedError("Unknown hostname!")
-#
-# decman.modules += [my_own_mod]
