@@ -15,9 +15,9 @@ stty -ixon
 export EDITOR="nvim"
 
 # hack for now
-if [ -n "$(ls ~/Downloads/MarkDownload/)" ]; then
-  # If files exist, run the script
-  sh .scripts/markdownload-copy-to-vault.sh
+if [ -n "$(ls ~/Downloads/MarkDownload/)" ] && \
+   [ -d ~/WorkVault/Resources/WebClips ]; then
+  mv ~/Downloads/MarkDownload/* ~/WorkVault/Resources/WebClips
 fi
 
 alias reboot="systemctl reboot"
