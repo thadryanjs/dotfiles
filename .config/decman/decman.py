@@ -28,12 +28,16 @@ decman.packages += [
     "discord",
     "vlc",
     "gimp",
-    "fuse3" # for tresorit
+    "fuse3", # for tresorit
+    "signal-desktop",
+
 ]
 
 decman.aur_packages += [
     "decman",
     "ferdium-bin",
+    "surfshark-client",
+    "viber",
     # fails - cursed to use the downloaded installer forever I think.
     # "tresorit"
 
@@ -92,6 +96,23 @@ base_cachy_packages = [
 
 decman.packages += base_cachy_packages
 
+# I could add certain packages only on my home machine, for instance, so I'm leaving this example
+
+# # You have full access to python, which makes your configuration very dynamic.
+# # For example: do something if the computers hostname is arch-1
+# if socket.gethostname() == "leon":
+#     decman.aur_packages += [
+#         "decman",
+#         "ferdium-bin",
+#         "surfshark-client",
+#         # fails - cursed to use the downloaded installer forever I think.
+#         # "tresorit"
+#         # first run:
+#         # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
+#         "spotify"
+#     ]
+#
+
 # Ignored packages can be normal packages or aur packages.
 decman.ignored_packages += [
     # per the docs
@@ -134,15 +155,3 @@ os.environ["GNUPGHOME"] = "/home/thadryan/.gnupg/"
 # You then must set the user that builds the packages to the owner of the GPG home.
 decman.config.makepkg_user = "thadryan"
 
-# I could add certain packages only on my home machine, for instance, so I'm leaving this example
-
-# # You have full access to python, which makes your configuration very dynamic.
-# # For example: do something if the computers hostname is arch-1
-# if socket.gethostname() == "arch-1":
-#     # Modules make dynamic configuration easy.
-#     # This executes code defined in MyModule which can affect for example what packages are
-#     # installed as a part of this module.
-#     my_own_mod.enable_my_custom_feature(True)
-# else:
-#     # If you want to abort running decman from your config because something is wrong, raise a UserRaisedError
-#     raise UserRaisedError("Unknown hostname!")
