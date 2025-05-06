@@ -42,81 +42,15 @@ alias discovery="sh ~/.scripts/discovery.sh"
 alias polaris="sh ~/.scripts/polaris.sh"
 alias andes="sh ~/.scripts/andes.sh"
 alias dartfs="sh ~/.scripts/mount-dartfs.sh"
-alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
 alias vpn="sh ~/.scripts/vpn.sh"
 
 alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
 
-# Generalized sync function with a third argument
-sync_project_files() {
-  local workspace_base=$1       # e.g. /mnt/Workspace or /mnt/Workspace/triforecast
-  local project_dir=$2          # e.g. adolescent-MAT or 01_NSDUH
-  local target=$3               # 'report', 'outputs', or 'notebooks'
-  local source_dir="$workspace_base/$project_dir"
-  local target_base=~/Temp/$project_dir
-
-  mkdir -p "$target_base"
-
-  case "$target" in
-    report)
-      if [ -d "$source_dir/build" ]; then
-        rm -rf "$target_base/report"
-        cp -r "$source_dir/build" "$target_base/report"
-      fi
-      ;;
-    outputs)
-      if [ -d "$source_dir/outputs" ]; then
-        rm -rf "$target_base/outputs"
-        cp -r "$source_dir/outputs" "$target_base/outputs"
-      fi
-      ;;
-    notebooks)
-      mkdir -p "$target_base/notebooks"
-      shopt -s nullglob
-      local notebooks=("$source_dir"/*.ipynb)
-      if [ ${#notebooks[@]} -gt 0 ]; then
-        rm -f "$target_base/notebooks"/*.ipynb
-        cp "${notebooks[@]}" "$target_base/notebooks/"
-      fi
-      shopt -u nullglob
-      ;;
-    *)
-      echo "Unknown target: $target (must be: report, outputs, notebooks)"
-      return 1
-      ;;
-  esac
-}
+alias ado_mat_sync="sh ~/.scripts/ado-mat-sync.sh"
+alias oud_predictors_ml_sync="sh ~/.scripts/oud-predictors-ml.sh"
 
 
-# adolescent-MAT
-alias ado_mat_sync_report='sync_project_files /mnt/Workspace adolescent-MAT report'
-alias ado_mat_sync_outputs='sync_project_files /mnt/Workspace adolescent-MAT outputs'
-alias ado_mat_sync_notebooks='sync_project_files /mnt/Workspace adolescent-MAT notebooks'
-
-# ind-oud
-alias ind_oud_sync_report='sync_project_files /mnt/Workspace ind-oud report'
-alias ind_oud_sync_outputs='sync_project_files /mnt/Workspace ind-oud outputs'
-alias ind_oud_sync_notebooks='sync_project_files /mnt/Workspace ind-oud notebooks'
-
-# triforecast - 00_CensusAndProjections
-alias projections_sync_report='sync_project_files /mnt/Workspace/triforecast 00_CensusAndProjections report'
-alias projections_sync_outputs='sync_project_files /mnt/Workspace/triforecast 00_CensusAndProjections outputs'
-alias projections_sync_notebooks='sync_project_files /mnt/Workspace/triforecast 00_CensusAndProjections notebooks'
-
-# triforecast - 01_NSDUH
-alias NSDUH_sync_report='sync_project_files /mnt/Workspace/triforecast 01_NSDUH report'
-alias NSDUH_sync_outputs='sync_project_files /mnt/Workspace/triforecast 01_NSDUH outputs'
-alias NSDUH_sync_notebooks='sync_project_files /mnt/Workspace/triforecast 01_NSDUH notebooks'
-
-# triforecast - 02_NEMSIS
-alias NEMSIS_sync_report='sync_project_files /mnt/Workspace/triforecast 02_NEMSIS report'
-alias NEMSIS_sync_outputs='sync_project_files /mnt/Workspace/triforecast 02_NEMSIS outputs'
-alias NEMSIS_sync_notebooks='sync_project_files /mnt/Workspace/triforecast 02_NEMSIS notebooks'
-
-# triforecast - 03_NCHS
-alias NCHS_sync_report='sync_project_files /mnt/Workspace/triforecast 03_NCHS report'
-alias NCHS_sync_outputs='sync_project_files /mnt/Workspace/triforecast 03_NCHS outputs'
-alias NCHS_sync_notebooks='sync_project_files /mnt/Workspace/triforecast 03_NCHS notebooks'
+alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
 
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
