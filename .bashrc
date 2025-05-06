@@ -1,7 +1,7 @@
 test -s ~/.alias && . ~/.alias || true
 
 eval "$(fzf --bash)"
-eval "$(zoxide init bash)"
+# eval "$(zoxide init bash)"
 
 stty -ixon
 
@@ -15,9 +15,9 @@ stty -ixon
 export EDITOR="nvim"
 
 # hack for now
-if [ -n "$(ls ~/Downloads/MarkDownload/)" ]; then
-  # If files exist, run the script
-  sh .scripts/markdownload-copy-to-vault.sh
+if [ -n "$(ls ~/Downloads/MarkDownload/)" ] && \
+   [ -d ~/WorkVault/Resources/WebClips ]; then
+  mv ~/Downloads/MarkDownload/* ~/WorkVault/Resources/WebClips
 fi
 
 alias reboot="systemctl reboot"
@@ -27,6 +27,8 @@ alias update="sh .scripts/debian-nix-update.sh"
 alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 alias dotfiles="cd ~/.dotfiles"
 alias config="cd ~/.dotfiles/.config"
+# alias dec="sudo decman --source ~/.config/decman/decman.py"
+alias dec="sudo decman"
 
 alias mount="cd /mnt/Workspace"
 alias vault="cd ~/WorkVault/"
