@@ -1,7 +1,7 @@
 # =================================================================================================
 # Global hotkeys (cannot conflict with other hotkeys)
 confirm = ['enter', 'right', 'l']
-quit = ['q', 'esc']
+quit = ['ctrl+q', 'esc']
 # movement
 list_up = ['k', '']
 list_down = ['j', '']
@@ -53,5 +53,3 @@ search_bar = ['/', '']
 # =================================================================================================
 # Select mode hotkeys (can conflict with other modes, cannot conflict with global hotkeys)
 file_panel_select_mode_items_select_down = ['J', '']
-file_panel_select_mode_items_select_up = ['K', '']
-file_panel_select_all_items = ['A', '']
