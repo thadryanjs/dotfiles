@@ -13,7 +13,7 @@ decman.packages += [
     "grub-btrfs-support",
     # config ui for snapshots
     "btrfs-assistant",
-    "grub-customizer",
+    # "grub-customizer",
     "vivaldi",
     "git",
     "python",
