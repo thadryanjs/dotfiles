@@ -11,7 +11,8 @@ from decman import UserPackage, File, Directory, UserRaisedError
 decman.packages += [
     "cachyos-snapper-support",
     "grub-btrfs-support",
-    "btrfs-assistant", # <-- this is the config ui
+    # config ui for snapshots
+    "btrfs-assistant",
     "grub-customizer",
     "vivaldi",
     "git",
@@ -28,9 +29,10 @@ decman.packages += [
     "discord",
     "vlc",
     "gimp",
-    "fuse3", # for tresorit
+    # for tresorit
+    "fuse3",
     "signal-desktop",
-
+    "obs-studio",
 ]
 
 decman.aur_packages += [
@@ -38,6 +40,8 @@ decman.aur_packages += [
     "ferdium-bin",
     "surfshark-client",
     "viber",
+    "etcher-bin",
+
     # fails - cursed to use the downloaded installer forever I think.
     # "tresorit"
 
