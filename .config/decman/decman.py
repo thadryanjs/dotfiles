@@ -29,6 +29,7 @@ decman.packages += [
     "discord",
     # for tresorit
     "fuse3",
+    "signal-desktop",
 ]
 
 decman.aur_packages += [
@@ -45,7 +46,6 @@ decman.aur_packages += [
 if socket.gethostname() != "tyrell-work":
     # personal system stuff
     decman.packages += [
-        "signal-desktop",
         "vlc",
         "obs-studio",
         "gimp",
@@ -57,9 +57,9 @@ if socket.gethostname() != "tyrell-work":
 else:
     # work system stuff
     decman.packages += [
+        "openconnect",
         "cifs-utils"
     ]
-
 
 # mostly (entirely?) untouched cachy system derived from running decman and seeing what it said would be erased
 base_cachy_packages = [
@@ -111,23 +111,6 @@ base_cachy_packages = [
 
 decman.packages += base_cachy_packages
 
-# I could add certain packages only on my home machine, for instance, so I'm leaving this example
-
-# # You have full access to python, which makes your configuration very dynamic.
-# # For example: do something if the computers hostname is arch-1
-# if socket.gethostname() == "leon":
-#     decman.aur_packages += [
-#         "decman",
-#         "ferdium-bin",
-#         "surfshark-client",
-#         # fails - cursed to use the downloaded installer forever I think.
-#         # "tresorit"
-#         # first run:
-#         # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
-#         "spotify"
-#     ]
-#
-
 # Ignored packages can be normal packages or aur packages.
 decman.ignored_packages += [
     # per the docs
@@ -169,4 +152,3 @@ decman.config.pacman_output_keywords = [
 os.environ["GNUPGHOME"] = "/home/thadryan/.gnupg/"
 # You then must set the user that builds the packages to the owner of the GPG home.
 decman.config.makepkg_user = "thadryan"
-
