@@ -61,16 +61,14 @@ else:
         "cifs-utils"
     ]
 
-# mostly (entirely?) untouched cachy system derived from running decman and seeing what it said would be erased
+# mostly untouched cachy system derived from running decman and seeing what it said would be erased
 base_cachy_packages = [
     "accountsservice", "adobe-source-han-sans-cn-fonts", "adobe-source-han-sans-jp-fonts",
     "adobe-source-han-sans-kr-fonts", "adwaita-icon-theme", "alacritty", "alsa-firmware",
     "alsa-plugins", "alsa-utils", "awesome-terminal-fonts", "baobab", "base", "base-devel",
     "bash-completion", "bind", "bluez", "bluez-hid2hci", "bluez-libs", "bluez-utils", "btop",
     "btrfs-assistant", "btrfs-progs",
-    # "cachy-browser",
-    "cachyos-fish-config", "cachyos-hello",
-    "cachyos-hooks", "cachyos-kernel-manager", "cachyos-keyring", "cachyos-micro-settings",
+    "cachyos-hooks", "cachyos-kernel-manager", "cachyos-keyring",
     "cachyos-mirrorlist", "cachyos-packageinstaller", "cachyos-plymouth-theme", "cachyos-rate-mirrors",
     "cachyos-settings", "cachyos-v3-mirrorlist", "cachyos-v4-mirrorlist", "cachyos-wallpapers",
     "cachyos-zsh-config", "chwd", "cpupower", "cryptsetup", "decibels", "device-mapper", "dhclient",
@@ -91,7 +89,8 @@ base_cachy_packages = [
     "less", "lib32-libva-intel-driver", "lib32-mesa", "lib32-opencl-rusticl-mesa", "lib32-vulkan-intel",
     "libdvdcss", "libgsf", "libnma", "libopenraw", "libva-intel-driver", "libwnck3", "linux-cachyos",
     "linux-cachyos-headers", "linux-firmware", "logrotate", "loupe", "lsb-release", "lsscsi", "lvm2",
-    "malcontent", "man-db", "man-pages", "mdadm", "meld", "mesa-utils", "micro", "mkinitcpio",
+    "malcontent", "man-db", "man-pages", "mdadm", "meld", "mesa-utils",
+    "mkinitcpio",
     "modemmanager", "mtools", "nano", "nano-syntax-highlighting", "nautilus", "neovim", "netctl",
     "networkmanager-openvpn", "nfs-utils", "nilfs-utils", "noto-color-emoji-fontconfig", "noto-fonts",
     "noto-fonts-cjk", "noto-fonts-emoji", "nss-mdns", "ntp", "octopi", "opencl-rusticl-mesa",
