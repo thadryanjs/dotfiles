@@ -27,28 +27,39 @@ decman.packages += [
     "the_silver_searcher",
     "ripgrep",
     "discord",
-    "vlc",
-    "gimp",
     # for tresorit
     "fuse3",
-    "signal-desktop",
-    "obs-studio",
 ]
 
 decman.aur_packages += [
     "decman",
     "ferdium-bin",
-    "surfshark-client",
-    "viber",
     "etcher-bin",
-
     # fails - cursed to use the downloaded installer forever I think.
     # "tresorit"
-
     # first run:
     # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
     "spotify"
 ]
+
+if socket.gethostname() != "tyrell-work":
+    # personal system stuff
+    decman.packages += [
+        "signal-desktop",
+        "vlc",
+        "obs-studio",
+        "gimp",
+    ]
+    decman.aur_packages += [
+        "surfshark-client",
+        "viber",
+    ]
+else:
+    # work system stuff
+    decman.packages += [
+        "cifs-utils"
+    ]
+
 
 # mostly (entirely?) untouched cachy system derived from running decman and seeing what it said would be erased
 base_cachy_packages = [
