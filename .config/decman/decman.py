@@ -15,6 +15,7 @@ decman.packages += [
     "btrfs-assistant",
     # "grub-customizer",
     "vivaldi",
+    "firefox",
     "git",
     "python",
     "kitty",
@@ -34,6 +35,7 @@ decman.packages += [
     "discord",
     # for tresorit
     "fuse3",
+    "libreoffice-still",
     "signal-desktop",
 ]
 
@@ -41,6 +43,10 @@ decman.aur_packages += [
     "decman",
     "ferdium-bin",
     "etcher-bin",
+    "zotero-bin",
+    # need to run `quarto install tinytex`
+    "quarto-cli-bin",
+    # "r-tinytex",
     # fails - cursed to use the downloaded installer forever I think.
     # "tresorit"
     # first run:
