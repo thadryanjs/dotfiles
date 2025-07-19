@@ -18,6 +18,10 @@ set $term kitty
 # Your preferred application launcher
 set $menu wofi --show run
 
+### Colors
+client.focused          #3E2A54 #3E2A54 #FFFFFF #E0B0E8
+# client.unfocused        #2B1A4D #BFA0C7 #2B1A4D
+
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
@@ -153,6 +157,13 @@ input * {
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
+    # Use Alt+Tab to switch to the next workspace
+    bindsym Mod1+Tab workspace next
+    # Use Alt+Shift+Tab to switch to the previous workspace
+    bindsym Mod1+Shift+Tab workspace prev
+    bindsym Mod1+Shift+h workspace prev
+    bindsym Mod1+Shift+l workspace next
+
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
@@ -218,16 +229,27 @@ bindsym $mod+r mode "resize"
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
+# bar {
+#     position top
+#
+#     # When the status_command prints a new line to stdout, swaybar updates.
+#     # The default just shows the current date and time.
+#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+#
+#     colors {
+#         statusline #ffffff
+#         background #323232
+#         inactive_workspace #32323200 #32323200 #5c5c5c
+#     }
+# }
 bar {
     position top
 
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
     colors {
-        statusline #ffffff
-        background #323232
+        statusline #f8f8f2
+        background #282a36
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
