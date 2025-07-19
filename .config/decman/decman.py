@@ -35,6 +35,8 @@ decman.packages += [
     # for tresorit
     "fuse3",
     "signal-desktop",
+    "sway",
+    "wofi"
 ]
 
 decman.aur_packages += [
