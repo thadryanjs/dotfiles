@@ -1,8 +1,9 @@
-# Default config for sway
-#
-# Copy this to ~/.config/sway/config and edit it to your liking.
-#
-# Read `man 5 sway` for a complete reference.
+# To-do:
+#   - Background
+#   - How to screeshare?
+#   - Scroll right bug:
+#       - Full stop in windows
+#       - One press stop in workspaces
 
 ### Variables
 #
@@ -18,6 +19,10 @@ set $term kitty
 # Your preferred application launcher
 set $menu wofi --show run
 
+### GTK theme
+# Set GTK theme to dark
+# just use gnome-tweaks
+
 ### Colors
 client.focused          #3E2A54 #3E2A54 #FFFFFF #E0B0E8
 # client.unfocused        #2B1A4D #BFA0C7 #2B1A4D
@@ -25,7 +30,10 @@ client.focused          #3E2A54 #3E2A54 #FFFFFF #E0B0E8
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output * bg /home/thadryan/Downloads/cachy2.png fill
+
 #
 # Example configuration:
 #
@@ -106,7 +114,7 @@ input * {
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
     # doesn't quite do what I want yet
-    bindsym Mod1+Tab focus next
+    # bindsym Mod1+Tab focus next
 
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
@@ -229,24 +237,9 @@ bindsym $mod+r mode "resize"
     # Area screenshot
     bindsym Ctrl+Mod1+p exec sway-screenshot --mode region
 
-
 #
 # Status Bar:
 #
-# Read `man 5 sway-bar` for more information about this section.
-# bar {
-#     position top
-#
-#     # When the status_command prints a new line to stdout, swaybar updates.
-#     # The default just shows the current date and time.
-#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-#
-#     colors {
-#         statusline #ffffff
-#         background #323232
-#         inactive_workspace #32323200 #32323200 #5c5c5c
-#     }
-# }
 bar {
     position top
 
@@ -260,3 +253,4 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
