@@ -18,6 +18,7 @@ set $term foot
 # Your preferred application launcher
 set $menu wmenu-run
 
+focus_wrapping yes|no|force|workspace
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
