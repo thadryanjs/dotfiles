@@ -22,7 +22,6 @@ set $term kitty
 # Your preferred application launcher
 set $menu wofi --show run
 
-
 #
 # GTK theme
 #
@@ -35,6 +34,7 @@ set $menu wofi --show run
 
 #
 # Colors
+#
 
 # the windows (not the workspaces)
 client.focused          #3E2A54 #3E2A54 #FFFFFF
@@ -240,4 +240,3 @@ bindsym Ctrl+Mod1+p exec sway-screenshot --mode region
 
 
 include /etc/sway/config.d/*
-
