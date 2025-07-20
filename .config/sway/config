@@ -1,6 +1,8 @@
 # To-do:
 #   - Background
 #   - How to screeshare?
+#       - https://wiki.archlinux.org/title/PipeWire
+#       - https://soyuka.me/make-screen-sharing-wayland-sway-work/
 #   - Scroll right bug:
 #       - Done! Not sure why there is an 'extra' when going through workspaces but w/e
 
