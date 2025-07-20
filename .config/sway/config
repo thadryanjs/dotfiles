@@ -48,10 +48,10 @@ bar {
         # statusline #f8f8f2
         # overall workspace bar background
         background #282a36
-        inactive_workspace #32323200 #32323200 #800080
+        inactive_workspace #32323200 #32323200 #f8f8f2
         # the active workspace
         # focused_workspace #32323200 #32323200 #800080
-        focused_workspace #323232ff #323232ff #f8f8f2
+        focused_workspace #323232ff #6a5acdff #f8f8f2
         # ???
         # active_workspace #32323200 #32323200 #800080
     }
