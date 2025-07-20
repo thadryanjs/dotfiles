@@ -36,11 +36,13 @@ decman.packages += [
     "fuse3",
     "signal-desktop",
     "sway",
-    "wofi"
+        "wofi",
+        "grim"
 ]
 
 decman.aur_packages += [
     "decman",
+    "sway-screenshot",
     "ferdium-bin",
     "etcher-bin",
     # fails - cursed to use the downloaded installer forever I think.
@@ -48,6 +50,7 @@ decman.aur_packages += [
     # first run:
     # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
     "spotify"
+
 ]
 
 if socket.gethostname() != "tyrell-work":

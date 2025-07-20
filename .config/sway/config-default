@@ -14,13 +14,9 @@ set $down j
 set $up k
 set $right l
 # Your preferred terminal emulator
-set $term kitty
+set $term foot
 # Your preferred application launcher
-set $menu wofi --show run
-
-### Colors
-client.focused          #3E2A54 #3E2A54 #FFFFFF #E0B0E8
-# client.unfocused        #2B1A4D #BFA0C7 #2B1A4D
+set $menu wmenu-run
 
 ### Output configuration
 #
@@ -59,11 +55,8 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 #   input type:keyboard {
 #       xkb_layout "eu"
+#   }
 #
-#
-input * {
-    xkb_options caps:swapescape
-}
 # You can also configure each device individually.
 # Read `man 5 sway-input` for more information about this section.
 
@@ -105,8 +98,6 @@ input * {
     bindsym $mod+Down focus down
     bindsym $mod+Up focus up
     bindsym $mod+Right focus right
-    # doesn't quite do what I want yet
-    bindsym Mod1+Tab focus next
 
     # Move the focused window with the same, but add Shift
     bindsym $mod+Shift+$left move left
@@ -159,14 +150,6 @@ input * {
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
 
-    # Use Alt+Tab to switch to the next workspace
-    # bindsym Mod1+Tab workspace next
-
-    # Use Alt+Shift+Tab to switch to the previous workspace
-    bindsym Mod1+Shift+Tab workspace prev
-    bindsym Mod1+Shift+h workspace prev
-    bindsym Mod1+Shift+l workspace next
-
     # Make the current focus fullscreen
     bindsym $mod+f fullscreen
 
@@ -213,7 +196,6 @@ mode "resize" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-
 bindsym $mod+r mode "resize"
 #
 # Utilities:
@@ -226,35 +208,23 @@ bindsym $mod+r mode "resize"
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-    # Area screenshot
-    bindsym Ctrl+Mod1+p exec sway-screenshot --mode region
-
+    # Special key to take a screenshot with grim
+    bindsym Print exec grim
 
 #
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
-# bar {
-#     position top
-#
-#     # When the status_command prints a new line to stdout, swaybar updates.
-#     # The default just shows the current date and time.
-#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-#
-#     colors {
-#         statusline #ffffff
-#         background #323232
-#         inactive_workspace #32323200 #32323200 #5c5c5c
-#     }
-# }
 bar {
     position top
 
+    # When the status_command prints a new line to stdout, swaybar updates.
+    # The default just shows the current date and time.
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
 
     colors {
-        statusline #f8f8f2
-        background #282a36
+        statusline #ffffff
+        background #323232
         inactive_workspace #32323200 #32323200 #5c5c5c
     }
 }
