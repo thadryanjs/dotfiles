@@ -27,12 +27,13 @@ vim.opt.conceallevel = 0
 -- also no signcolumn
 -- vim.opt.signcolumn = 'no'
 -- vim.opt.statuscolumn = 'no'
+vim.opt.signcolumn = 'yes'
 vim.opt.scrolloff = 5
 vim.opt.spell = false
 vim.opt.spelllang = 'en_us'
 vim.opt.spellsuggest = {'fast', 20}  -- Don't show too many suggestions for spell check
 vim.opt.spellfile = vim.fn.expand("~/.config/nvim/spell/en.utf-8.add")
-vim.o.scl = "no"
+-- vim.opt.signcolumn = "yes"im.o.scl = "no"
 -- translating "set formatoptions-=r"
 -- doesn't work: https://www.reddit.com/r/neovim/comments/11ij7t4/how_to_set_formatoptionso_in_lua/
 --vim.opt.formatoptions:remove({ 'o' })
@@ -52,7 +53,6 @@ vim.o.updatetime = 500
 
 -- how lsp diagnostics are displayed
 --
-vim.opt.signcolumn = 'yes'
 -- making these toggleable would be nice
 vim.diagnostic.config {
   virtual_text = false,

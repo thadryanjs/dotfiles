@@ -5,7 +5,20 @@ return {
         config = function()
             vim.g.slime_cell_delimiter = "# %%"
             vim.g.slime_target = "tmux"
-            vim.g.slime_python_ipython = 1
+            vim.g.slime_python_ipython = 0
+
+            function ToggleSlimeIPython()
+              if vim.g.slime_python_ipython == 1 then
+                vim.g.slime_python_ipython = 0
+                print("slime_python_ipython = 0")
+              else
+                vim.g.slime_python_ipython = 1
+                print("slime_python_ipython = 1")
+              end
+            end
+
+            -- Optional: create a command for easy use
+            vim.api.nvim_create_user_command("ToggleSlimeIPython", ToggleSlimeIPython, {})
             -- don't ask for target pane
             vim.g.slime_default_config = { socket_name = "default", target_pane = ".2" }
             vim.api.nvim_set_keymap("n", "<leader>ss", ":SlimeSendCurrentLine<cr><cr>", { noremap = true, silent = true })

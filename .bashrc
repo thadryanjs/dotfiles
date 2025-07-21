@@ -143,3 +143,4 @@ fi
 unset __mamba_setup
 # <<< mamba initialize <<<
 
+export PATH="/home/thadryan/.pixi/bin:$PATH"

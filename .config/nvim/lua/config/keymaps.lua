@@ -126,7 +126,7 @@ end, {})
 -- heavy duty, once-in-a-while diagnostics
 vim.api.nvim_create_user_command("DiagnosticsHeavy", function()
     vim.diagnostic.config {
-        virtual_text = false,
+        virtual_text = true,
         signs = true,
         underline = true,
     }
