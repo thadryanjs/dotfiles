@@ -3,8 +3,6 @@
 #   - How to screeshare?
 #       - https://wiki.archlinux.org/title/PipeWire
 #       - https://soyuka.me/make-screen-sharing-wayland-sway-work/
-#   - Scroll right bug:
-#       - Done! Not sure why there is an 'extra' when going through workspaces but w/e
 
 #
 # Variables
@@ -31,7 +29,6 @@ set $menu wofi --show run
 #   gsettings set org.gnome.desktop.interface gtk-theme "Adwaita-dark"
 # }
 
-
 #
 # Colors
 #
@@ -43,7 +40,7 @@ client.focused          #3E2A54 #3E2A54 #FFFFFF
 
 # Status Bar:
 bar {
-    position top
+    position bottom
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
     colors {
         # statusline #f8f8f2
@@ -63,8 +60,8 @@ bar {
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-# output * bg /home/thadryan/Downloads/cachy2.png fill
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/thadryan/Downloads/cachy.jpeg fill
 
 #
 # Input configuration

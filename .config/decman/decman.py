@@ -37,7 +37,9 @@ decman.packages += [
     "signal-desktop",
     "sway",
         "wofi",
-        "grim"
+        # still needed for sway-screenshot
+        "grim",
+        "swaybg"
 ]
 
 decman.aur_packages += [
