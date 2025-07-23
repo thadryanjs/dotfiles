@@ -7,11 +7,6 @@ stty -ixon
 
 # shopt -s histappend
 
-# https://www.baeldung.com/linux/tmux-startup-default-shell
-# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-#   tmux attach-session -t default || tmux new-session -s default
-# fi
-
 # Start tmux if not already in a session
 if command -v tmux &> /dev/null; then
     if [ -z "$TMUX" ]; then
@@ -140,7 +135,7 @@ function y() {
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'micromamba shell init' !!
 export MAMBA_EXE='/home/thadryan/.local/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/home/thadryan/Micromamba';
+export MAMBA_ROOT_PREFIX='/home/thadryan/micromamba';
 __mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__mamba_setup"
