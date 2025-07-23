@@ -12,6 +12,13 @@ stty -ixon
 #   tmux attach-session -t default || tmux new-session -s default
 # fi
 
+# Start tmux if not already in a session
+if command -v tmux &> /dev/null; then
+    if [ -z "$TMUX" ]; then
+        tmux attach -t default || tmux new -s default
+    fi
+fi
+
 export EDITOR="nvim"
 
 # hack for now

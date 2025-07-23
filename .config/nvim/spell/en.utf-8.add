@@ -144,4 +144,8 @@ micromamba
 setup
 dotfile
 dotfiles
+<<<<<<< HEAD
 laparoscopic
+=======
+Neovim
+>>>>>>> leon-home

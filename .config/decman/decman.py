@@ -13,7 +13,7 @@ decman.packages += [
     "grub-btrfs-support",
     # config ui for snapshots
     "btrfs-assistant",
-    "grub-customizer",
+    # "grub-customizer",
     "vivaldi",
     "git",
     "python",
@@ -26,14 +26,25 @@ decman.packages += [
     "bat",
     "the_silver_searcher",
     "ripgrep",
+    "pixi",
+    "yazi",
+        "poppler",
+        "ffmpegthumbnailer",
+        "imagemagick",
     "discord",
     # for tresorit
     "fuse3",
     "signal-desktop",
+    "sway",
+        "wofi",
+        # still needed for sway-screenshot
+        "grim",
+        "swaybg"
 ]
 
 decman.aur_packages += [
     "decman",
+    "sway-screenshot",
     "ferdium-bin",
     "etcher-bin",
     # fails - cursed to use the downloaded installer forever I think.
@@ -41,6 +52,7 @@ decman.aur_packages += [
     # first run:
     # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
     "spotify"
+
 ]
 
 if socket.gethostname() != "tyrell-work":
@@ -61,16 +73,14 @@ else:
         "cifs-utils"
     ]
 
-# mostly (entirely?) untouched cachy system derived from running decman and seeing what it said would be erased
+# mostly untouched cachy system derived from running decman and seeing what it said would be erased
 base_cachy_packages = [
     "accountsservice", "adobe-source-han-sans-cn-fonts", "adobe-source-han-sans-jp-fonts",
     "adobe-source-han-sans-kr-fonts", "adwaita-icon-theme", "alacritty", "alsa-firmware",
     "alsa-plugins", "alsa-utils", "awesome-terminal-fonts", "baobab", "base", "base-devel",
     "bash-completion", "bind", "bluez", "bluez-hid2hci", "bluez-libs", "bluez-utils", "btop",
     "btrfs-assistant", "btrfs-progs",
-    # "cachy-browser",
-    "cachyos-fish-config", "cachyos-hello",
-    "cachyos-hooks", "cachyos-kernel-manager", "cachyos-keyring", "cachyos-micro-settings",
+    "cachyos-hooks", "cachyos-kernel-manager", "cachyos-keyring",
     "cachyos-mirrorlist", "cachyos-packageinstaller", "cachyos-plymouth-theme", "cachyos-rate-mirrors",
     "cachyos-settings", "cachyos-v3-mirrorlist", "cachyos-v4-mirrorlist", "cachyos-wallpapers",
     "cachyos-zsh-config", "chwd", "cpupower", "cryptsetup", "decibels", "device-mapper", "dhclient",
@@ -88,13 +98,19 @@ base_cachy_packages = [
     "gst-plugins-ugly", "gvfs", "gvfs-afc", "gvfs-dnssd", "gvfs-goa", "gvfs-google", "gvfs-gphoto2",
     "gvfs-mtp", "gvfs-nfs", "gvfs-onedrive", "gvfs-smb", "gvfs-wsdd", "haveged", "hdparm", "hwdetect",
     "hwinfo", "inetutils", "intel-media-driver", "intel-ucode", "iptables-nft", "iwd", "jfsutils",
-    "less", "lib32-libva-intel-driver", "lib32-mesa", "lib32-opencl-rusticl-mesa", "lib32-vulkan-intel",
+    "less", "lib32-libva-intel-driver", "lib32-mesa",
+    # removing these two fixed the install/remove dependency thing I was having
+    # "lib32-opencl-rusticl-mesa", "opencl-rusticl-mesa",
+    "lib32-vulkan-intel",
     "libdvdcss", "libgsf", "libnma", "libopenraw", "libva-intel-driver", "libwnck3", "linux-cachyos",
     "linux-cachyos-headers", "linux-firmware", "logrotate", "loupe", "lsb-release", "lsscsi", "lvm2",
-    "malcontent", "man-db", "man-pages", "mdadm", "meld", "mesa-utils", "micro", "mkinitcpio",
-    "modemmanager", "mtools", "nano", "nano-syntax-highlighting", "nautilus", "neovim", "netctl",
+    "malcontent", "man-db", "man-pages", "mdadm", "meld", "mesa-utils",
+    "mkinitcpio",
+    "modemmanager", "mtools",
+    # "nano", "nano-syntax-highlighting",
+    "nautilus", "neovim", "netctl",
     "networkmanager-openvpn", "nfs-utils", "nilfs-utils", "noto-color-emoji-fontconfig", "noto-fonts",
-    "noto-fonts-cjk", "noto-fonts-emoji", "nss-mdns", "ntp", "octopi", "opencl-rusticl-mesa",
+    "noto-fonts-cjk", "noto-fonts-emoji", "nss-mdns", "ntp", "octopi",
     "opendesktop-fonts", "openssh", "orca", "os-prober", "pacman-contrib", "paru", "pavucontrol",
     "perl", "pipewire-alsa", "pipewire-pulse", "plocate", "plymouth", "poppler-glib", "power-profiles-daemon",
     "pv", "python-defusedxml", "python-packaging", "qt6-wayland", "rebuild-detector", "reflector",
