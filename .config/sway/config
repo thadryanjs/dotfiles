@@ -7,6 +7,10 @@
 # Variables
 #
 
+exec --no-startup-id swaymsg 'workspace 1; exec --no-startup-id spotify'
+exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id kitty'
+exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id vivaldi'
+
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -237,3 +241,4 @@ bindsym Ctrl+Mod1+p exec sway-screenshot --mode region
 
 
 include /etc/sway/config.d/*
+
