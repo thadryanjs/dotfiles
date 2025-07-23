@@ -7,9 +7,9 @@
 # Variables
 #
 
-exec --no-startup-id swaymsg 'workspace 1; exec --no-startup-id spotify'
-exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id vivaldi'
-exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id kitty'
+# exec --no-startup-id swaymsg 'workspace 1; exec --no-startup-id spotify'
+# exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id vivaldi'
+# exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id kitty'
 
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -64,8 +64,8 @@ bar {
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-output * bg /home/thadryan/Downloads/cachy.jpeg fill
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output * bg /home/thadryan/Downloads/cachy.jpeg fill
 
 #
 # Input configuration
