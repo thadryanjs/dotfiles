@@ -67,26 +67,26 @@ client.focused          #3E2A54 #3E2A54 #FFFFFF
 # Status Bar:
 
 # good default:
-bar {
-    position top
-    status_command while date +'%Y-%m-%d %X'; do sleep 1; done
-    colors {
-        # statusline #f8f8f2
-        # overall workspace bar background
-        background #282a36
-        inactive_workspace #32323200 #32323200 #f8f8f2
-        # the active workspace
-        # focused_workspace #32323200 #32323200 #800080
-        focused_workspace #323232ff #6a5acdff #f8f8f2
-        # urgent_workspace #008080 #008080 #f8f8f2
-        # ???
-        # active_workspace #32323200 #32323200 #800080
-    }
-}
+# bar {
+#     position top
+#     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
+#     colors {
+#         # statusline #f8f8f2
+#         # overall workspace bar background
+#         background #282a36
+#         inactive_workspace #32323200 #32323200 #f8f8f2
+#         # the active workspace
+#         # focused_workspace #32323200 #32323200 #800080
+#         focused_workspace #323232ff #6a5acdff #f8f8f2
+#         # urgent_workspace #008080 #008080 #f8f8f2
+#         # ???
+#         # active_workspace #32323200 #32323200 #800080
+#     }
+# }
 
 # works, but not customized (too bright but actually pretty sick)
 # have darcula but turns out it's for hyperland, colors are good might mess with it
-# bar swaybar_command waybar
+bar swaybar_command waybar
 
 #
 # Output configuration
