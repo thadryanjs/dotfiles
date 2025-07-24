@@ -39,6 +39,8 @@ decman.packages += [
         # still needed for sway-screenshot
         "grim",
         "swaybg",
+        "waybar",
+        # "swaylock"
         "xdg-desktop-portal-wlr"
 ]
 
@@ -49,10 +51,10 @@ decman.aur_packages += [
     "sway-screenshot",
     "ferdium-bin",
     "etcher-bin",
-#     # fails - cursed to use the downloaded installer forever I think.
-#     # "tresorit"
-#     # first run:
-#     # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
+    # fails - cursed to use the downloaded installer forever I think.
+    # "tresorit"
+    # first run:
+    # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
     "spotify",
     "zotero"
     # "swaysettings-git"

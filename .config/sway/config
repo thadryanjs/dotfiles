@@ -68,6 +68,8 @@ client.focused          #3E2A54 #3E2A54 #FFFFFF
 # client.unfocused        #2B1A4D #BFA0C7 #2B1A4D
 
 # Status Bar:
+
+# good default:
 bar {
     position top
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
@@ -84,6 +86,9 @@ bar {
         # active_workspace #32323200 #32323200 #800080
     }
 }
+
+# works, but not customized (too bright but actually pretty sick)
+# bar swaybar_command waybar
 
 #
 # Output configuration
