@@ -146,3 +146,8 @@ unset __mamba_setup
 # <<< mamba initialize <<<
 
 export PATH="/home/thadryan/.pixi/bin:$PATH"
+# export PATH="/home/.local/share/tresorit:$PATH"
+
+
+
+export PATH="$HOME/.local/share/tresorit:$PATH"

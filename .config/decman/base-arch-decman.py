@@ -13,6 +13,7 @@ decman.packages += [
     # config ui for snapshots
     # "grub-customizer",
     "vivaldi",
+    "firefox",
     "git",
     "python",
     "kitty",
