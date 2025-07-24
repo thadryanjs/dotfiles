@@ -66,7 +66,7 @@ client.focused          #3E2A54 #3E2A54 #FFFFFF
 
 # Status Bar:
 bar {
-    position bottom
+    position top
     status_command while date +'%Y-%m-%d %X'; do sleep 1; done
     colors {
         # statusline #f8f8f2
