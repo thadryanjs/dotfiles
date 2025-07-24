@@ -10,18 +10,25 @@
 #
 
 exec --no-startup-id ~/.local/share/tresorit/tresorit-daemon
+exec_always /home/thadryan/.dotfiles/.config/sway/manage-closed-lid-refresh.sh
+
 # experimental
 # exec --no-startup-id swaymsg 'workspace 1; exec --no-startup-id spotify'
 # exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id vivaldi'
 # exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id kitty'
+workspace_layout tabbed
 
 #
 # Display
 #
 
 # Use "swaymsg -t get_outputs" to get diplays (eDP-1 in this case)
-bindswitch lid:on output eDP-1 disable
-bindswitch lid:off output eDP-1 enable
+set $laptop eDP-1
+bindswitch --reload --locked lid:on output $laptop disable
+bindswitch --reload --locked lid:off output $laptop enable
+
+# bindswitch lid:on output eDP-1 disable
+# bindswitch lid:off output eDP-1 enable
 
 #
 # Variables
@@ -80,8 +87,9 @@ bar {
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
-# output * bg /home/thadryan/Downloads/cachy.jpeg fill
+# output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+# output * bg /home/thadryan/HomeVault/Areas/Art/Backgrounds/BluefinDinos/autumn-night.jpeg fill
+output * bg /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock1.jpg fill
 
 #
 # Input configuration
@@ -98,7 +106,7 @@ input * {
 # Start a terminal
 bindsym $mod+Return exec $term
 # Kill focused window
-bindsym $mod+Shift+q kill
+bindsym $mod+Mod1+x kill
 # Start your launcher
 bindsym $mod+d exec $menu
 
@@ -130,9 +138,6 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 # Intuitive switch between focus tabs with alt tab
 bindsym Mod1+Tab focus prev
-# Gnome-style switch between workspaces
-bindsym Ctrl+Mod1+l focus next
-bindsym Ctrl+Mod1+h focus prev
 
 # Move the focused window with the same, but add Shift
 bindsym $mod+Shift+$left move left
@@ -170,6 +175,10 @@ bindsym $mod+Shift+9 move container to workspace number 9
 bindsym $mod+Shift+0 move container to workspace number 10
 # Note: workspaces can have any name you want, not just numbers.
 # We just use 1-10 as the default.
+
+# Gnome-style switch between workspaces
+bindsym Ctrl+Mod1+l workspace next
+bindsym Ctrl+Mod1+h workspace prev
 
 #
 # Layout stuff:

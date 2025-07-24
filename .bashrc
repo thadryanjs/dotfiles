@@ -7,12 +7,10 @@ stty -ixon
 
 # shopt -s histappend
 
-# Start tmux if not already in a session
-if command -v tmux &> /dev/null; then
-    if [ -z "$TMUX" ]; then
-        tmux attach -t default || tmux new -s default
-    fi
-fi
+# If not running interactively, do not do anything
+[[ $- != *i* ]] && return
+# Otherwise start tmux
+[[ -z "$TMUX" ]] && exec tmux
 
 export EDITOR="nvim"
 
