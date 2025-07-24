@@ -2,7 +2,7 @@
 #   - How to screeshare?
 #       - https://wiki.archlinux.org/title/PipeWire
 #       - https://soyuka.me/make-screen-sharing-wayland-sway-work/
-#       - Urgent workspace vs urgent tab (nice teal color in config for ws already)
+#   - Urgent workspace vs urgent tab (nice teal color in config for ws already)
 
 
 #
@@ -105,10 +105,11 @@ input * {
 
 # Start a terminal
 bindsym $mod+Return exec $term
+bindsym Mod1+q exec $term
 # Kill focused window
 bindsym $mod+Mod1+x kill
 # Start your launcher
-bindsym $mod+d exec $menu
+bindsym $mod+c exec $menu
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
