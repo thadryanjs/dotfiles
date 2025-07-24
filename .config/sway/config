@@ -27,6 +27,9 @@ set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
 
+output DP-1 scale 2
+
+
 # bindswitch lid:on output eDP-1 disable
 # bindswitch lid:off output eDP-1 enable
 

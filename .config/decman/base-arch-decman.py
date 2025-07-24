@@ -38,7 +38,8 @@ decman.packages += [
         "wofi",
         # still needed for sway-screenshot
         "grim",
-        "swaybg"
+        "swaybg",
+        "xdg-desktop-portal-wlr"
 ]
 
 decman.aur_packages += [
@@ -52,7 +53,9 @@ decman.aur_packages += [
 #     # "tresorit"
 #     # first run:
 #     # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
-    "spotify"
+    "spotify",
+    "zotero"
+    # "swaysettings-git"
 ]
 
 if socket.gethostname() == "tyrell-work":
