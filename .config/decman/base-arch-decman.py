@@ -114,7 +114,7 @@ base_packages = [
     "gnome-settings-daemon", "gnome-shell", "gnome-shell-extensions",
     "gnome-system-monitor", "gnome-terminal", "gnome-text-editor", "gnome-themes-extra",
     "gnome-tweaks", "gnome-usage", "gnome-user-docs", "gnome-user-share",
-
+    "network-manager-applet",
     "grilo-plugins", "grub", "gvfs",
     "gvfs-afc", "gvfs-dnssd", "gvfs-goa", "gvfs-google", "gvfs-gphoto2",
     "gvfs-mtp", "gvfs-nfs", "gvfs-onedrive", "gvfs-smb", "gvfs-wsdd",

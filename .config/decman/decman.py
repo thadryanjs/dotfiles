@@ -86,7 +86,8 @@ base_cachy_packages = [
     "cachyos-zsh-config", "chwd", "cpupower", "cryptsetup", "decibels", "device-mapper", "dhclient",
     "diffutils", "dmidecode", "dmraid", "dnsmasq", "dosfstools", "duf", "e2fsprogs", "efibootmgr",
     "efitools", "eog", "epiphany", "ethtool", "evince", "exfatprogs", "f2fs-tools", "ffmpegthumbnailer",
-    "file-roller", "fsarchiver", "gdm", "gedit", "glances", "gnome-backgrounds", "gnome-calculator",
+    "file-roller", "fsarchiver", "gdm", "gedit", "glances",
+    "gnome-backgrounds", "gnome-calculator",
     "gnome-calendar", "gnome-characters", "gnome-clocks", "gnome-color-manager", "gnome-connections",
     "gnome-console", "gnome-contacts", "gnome-control-center", "gnome-disk-utility", "gnome-font-viewer",
     "gnome-keyring", "gnome-logs", "gnome-maps", "gnome-menus", "gnome-music", "gnome-nettool",
@@ -94,6 +95,7 @@ base_cachy_packages = [
     "gnome-settings-daemon", "gnome-shell", "gnome-shell-extensions", "gnome-software",
     "gnome-system-monitor", "gnome-terminal", "gnome-text-editor", "gnome-themes-extra", "gnome-tour",
     "gnome-tweaks", "gnome-usage", "gnome-user-docs", "gnome-user-share", "gnome-weather",
+
     "grilo-plugins", "grub", "grub-hook", "gst-libav", "gst-plugin-pipewire", "gst-plugins-bad",
     "gst-plugins-ugly", "gvfs", "gvfs-afc", "gvfs-dnssd", "gvfs-goa", "gvfs-google", "gvfs-gphoto2",
     "gvfs-mtp", "gvfs-nfs", "gvfs-onedrive", "gvfs-smb", "gvfs-wsdd", "haveged", "hdparm", "hwdetect",
@@ -122,7 +124,7 @@ base_cachy_packages = [
     "xdg-user-dirs-gtk", "xf86-input-libinput", "xfsprogs", "xl2tpd", "xorg-server", "xorg-xdpyinfo",
     "xorg-xinit", "xorg-xinput", "xorg-xkill", "xorg-xrandr", "yelp",
     # added these manually after it asked to delete them:
-    "libndp", "libnewt", "libteam", "networkmanager"
+    "libndp", "libnewt", "libteam", "networkmanager", "network-manager-applet"
 ]
 
 decman.packages += base_cachy_packages
