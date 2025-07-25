@@ -41,7 +41,9 @@ decman.packages += [
         "swaybg",
         "waybar",
         # "swaylock"
-        "xdg-desktop-portal-wlr"
+        # for screensharing to work
+        "xdg-desktop-portal-wlr",
+        "nm-connection-editor"
 ]
 
 decman.aur_packages += [
@@ -86,16 +88,34 @@ base_packages = [
     "xf86-video-ati", "xf86-video-nouveau",
     "zram-generator",
     "baobab", "base", "base-devel", "brightnessctl", "btrfs-progs", "decibels",
-    "efibootmgr", "epiphany", "evince", "gdm", "gnome-backgrounds",
-    "gnome-calculator", "gnome-calendar", "gnome-characters",
-    "gnome-clocks", "gnome-color-manager", "gnome-connections",
+    "efibootmgr", "epiphany", "evince", "gdm",
+
+    "gnome-backgrounds", "gnome-calculator",
+    "gnome-calendar", "gnome-characters", "gnome-clocks", "gnome-color-manager", "gnome-connections",
+    "gnome-console", "gnome-contacts", "gnome-control-center", "gnome-disk-utility", "gnome-font-viewer",
+    "gnome-keyring", "gnome-logs",
+    "gnome-menus",
+    "gnome-nettool", "gnome-power-manager",
+    "gnome-backgrounds",
+    "gnome-calculator",
+    "gnome-characters",
+    "gnome-clocks", "gnome-color-manager",
     "gnome-console", "gnome-contacts", "gnome-control-center",
     "gnome-disk-utility", "gnome-font-viewer", "gnome-keyring",
-    "gnome-logs", "gnome-maps", "gnome-menus", "gnome-music",
+    "gnome-logs",
+    "gnome-menus",
     "gnome-remote-desktop", "gnome-session", "gnome-settings-daemon",
     "gnome-shell", "gnome-software", "gnome-system-monitor",
-    "gnome-text-editor", "gnome-tour", "gnome-tweaks", "gnome-user-docs",
-    "gnome-user-share", "gnome-weather", "grilo-plugins", "grub", "gvfs",
+    "gnome-text-editor",
+    "gnome-tweaks",
+    "gnome-user-docs",
+    "gnome-user-share",
+    "gnome-remote-desktop", "gnome-screenshot", "gnome-session",
+    "gnome-settings-daemon", "gnome-shell", "gnome-shell-extensions",
+    "gnome-system-monitor", "gnome-terminal", "gnome-text-editor", "gnome-themes-extra",
+    "gnome-tweaks", "gnome-usage", "gnome-user-docs", "gnome-user-share",
+
+    "grilo-plugins", "grub", "gvfs",
     "gvfs-afc", "gvfs-dnssd", "gvfs-goa", "gvfs-google", "gvfs-gphoto2",
     "gvfs-mtp", "gvfs-nfs", "gvfs-onedrive", "gvfs-smb", "gvfs-wsdd",
     "intel-media-driver", "intel-ucode", "iwd", "libva-intel-driver",
