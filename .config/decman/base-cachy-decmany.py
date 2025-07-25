@@ -19,13 +19,15 @@ decman.packages += [
     "python",
     "kitty",
     "neovim",
+        "xclip",
+    "nodejs",
     "stow",
     "fzf",
+        "bat",
+        "the_silver_searcher",
+        "ripgrep",
     "tmux",
     "xclip",
-    "bat",
-    "the_silver_searcher",
-    "ripgrep",
     "pixi",
     "yazi",
         "poppler",
@@ -39,7 +41,10 @@ decman.packages += [
         "wofi",
         # still needed for sway-screenshot
         "grim",
-        "swaybg"
+        "swaybg",
+    "r",
+        "gcc-fortran"
+
 ]
 
 decman.aur_packages += [
@@ -96,6 +101,8 @@ base_cachy_packages = [
     "gnome-system-monitor", "gnome-terminal", "gnome-text-editor", "gnome-themes-extra", "gnome-tour",
     "gnome-tweaks", "gnome-usage", "gnome-user-docs", "gnome-user-share", "gnome-weather",
 
+    "grilo-plugins", "grub", "grub-hook", "gst-libav", "gst-plugin-pipewire", "gst-plugins-bad",
+    "gst-plugins-ugly", "gvfs", "gvfs-afc", "gvfs-dnssd", "gvfs-goa", "gvfs-google", "gvfs-gphoto2",
     "grilo-plugins", "grub", "grub-hook", "gst-libav", "gst-plugin-pipewire", "gst-plugins-bad",
     "gst-plugins-ugly", "gvfs", "gvfs-afc", "gvfs-dnssd", "gvfs-goa", "gvfs-google", "gvfs-gphoto2",
     "gvfs-mtp", "gvfs-nfs", "gvfs-onedrive", "gvfs-smb", "gvfs-wsdd", "haveged", "hdparm", "hwdetect",
@@ -166,7 +173,5 @@ decman.config.pacman_output_keywords = [
     # "note",
     # They might cause too many highlights however.
 ]
-
-os.environ["GNUPGHOME"] = "/home/thadryan/.gnupg/"
 # You then must set the user that builds the packages to the owner of the GPG home.
 decman.config.makepkg_user = "thadryan"

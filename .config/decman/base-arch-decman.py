@@ -18,13 +18,13 @@ decman.packages += [
     "python",
     "kitty",
     "neovim",
+        "xclip",
     "stow",
     "fzf",
+        "bat",
+        "the_silver_searcher",
+        "ripgrep",
     "tmux",
-    "xclip",
-    "bat",
-    "the_silver_searcher",
-    "ripgrep",
     "pixi",
     "yazi",
         "poppler",
@@ -43,7 +43,10 @@ decman.packages += [
         # "swaylock"
         # for screensharing to work
         "xdg-desktop-portal-wlr",
-        "nm-connection-editor"
+        "nm-connection-editor",
+    "r",
+    "nodejs",
+    "npm"
 ]
 
 decman.aur_packages += [
