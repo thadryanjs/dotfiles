@@ -133,7 +133,7 @@ button:hover {
 
 #battery {
     background-color: #38203e;
-    color: #000000;
+    color: #A9A9A9;
 }
 
 #battery.charging, #battery.plugged {
@@ -247,7 +247,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    background-color: #38203e;
 }
 
 #tray > .passive {
