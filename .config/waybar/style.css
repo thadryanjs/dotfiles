@@ -3,6 +3,7 @@
     border-radius: 4px;
     font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
+    padding: 1 5px;
 }
 
 window#waybar {
@@ -14,7 +15,7 @@ window#waybar {
 }
 
 window#waybar.hidden {
-    opacity: 0.2;
+    opacity: 0.1;
 }
 
 /*
@@ -56,8 +57,7 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
+    color: #FFFFF0;
 }
 
 #workspaces button:hover {
@@ -78,22 +78,35 @@ button:hover {
     box-shadow: inset 0 -3px #ffffff;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
+#clock {
+    color: #A9A9A9;
+}
+#battery {
+    color: #A9A9A9;
+}
+#cpu {
+    color: #A9A9A9;
+
+}
+#memory {
+    color: #A9A9A9;
+}
 #disk,
 #temperature,
 #backlight,
-#network,
-#pulseaudio,
+#network {
+    color: #A9A9A9;
+}
+#pulseaudio {
+    color: #A9A9A9;
+}
 #wireplumber,
 #custom-media,
 #tray,
 #mode,
 #idle_inhibitor,
 #scratchpad,
-#power-profiles-daemon,
+#power-profiles-daemon
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -124,7 +137,7 @@ button:hover {
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
+    color: #A9A9A9;
     background-color: #38203e;
 }
 
