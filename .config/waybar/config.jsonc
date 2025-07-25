@@ -1,5 +1,10 @@
 // -*- mode: jsonc -*-
 {
+
+    // the pulse audio does something that makes me have to run "pulseaudio -k" every time I log in
+    // the padding on the buttons are off when I removed it
+
+
     // "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
@@ -214,9 +219,4 @@
 			"hibernate": "systemctl hibernate"
 		}
     },
-    "custom/nm-applet": {
-        "format" : "⏻ ",
-		"tooltip": false,
-		"menu": "on-click",
-    }
 }

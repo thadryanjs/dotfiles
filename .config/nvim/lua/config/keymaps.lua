@@ -133,3 +133,12 @@ vim.api.nvim_create_user_command("DiagnosticsHeavy", function()
 end, {})
 
 
+-- Remove ANSI escape codes from the current buffer
+vim.api.nvim_create_user_command("RemoveAnsi", function()
+    local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)  -- Get all lines in the current buffer
+    for i, line in ipairs(lines) do
+        -- Remove ANSI escape codes using Lua pattern matching
+        lines[i] = line:gsub("\x1B%[[0-9;]*m", "")
+    end
+    vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)  -- Set modified lines back to the buffer
+end, {})

@@ -8,12 +8,11 @@
 #   - Power settings
 #   - Lockscreen
 
-
 #
 # Startup
 #
 
-exec --no-startup-id ~/.local/share/tresorit/tresorit-daemon
+exec_always --no-startup-id ~/.local/share/tresorit/tresorit-daemon
 exec_always /home/thadryan/.dotfiles/.config/sway/manage-closed-lid-refresh.sh
 
 # experimental
@@ -21,6 +20,7 @@ exec_always /home/thadryan/.dotfiles/.config/sway/manage-closed-lid-refresh.sh
 # exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id vivaldi'
 # exec --no-startup-id swaymsg 'workspace 3; exec --no-startup-id kitty'
 workspace_layout tabbed
+
 
 #
 # Display
@@ -95,10 +95,8 @@ client.focused          #3E2A54 #3E2A54 #FFFFFF
 #         # active_workspace #32323200 #32323200 #800080
 #     }
 # }
-
-# works, but not customized (too bright but actually pretty sick)
-# have darcula but turns out it's for hyperland, colors are good might mess with it
-bar swaybar_command waybar
+# makes me need to run pulseaudio -k every time I startup
+# bar swaybar_command waybar
 
 #
 # Output configuration
@@ -125,7 +123,7 @@ input * {
 bindsym $mod+Return exec $term
 bindsym Mod1+q exec $term
 # Kill focused window
-bindsym $mod+Mod1+x kill
+bindsym $mod+x kill
 # Start your launcher
 bindsym $mod+c exec $menu
 
