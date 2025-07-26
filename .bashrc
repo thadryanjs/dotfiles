@@ -49,8 +49,11 @@ alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
 alias ado_mat_sync="sh ~/.scripts/ado-mat-sync.sh"
 alias oud_predictors_ml_sync="sh ~/.scripts/oud-predictors-ml.sh"
 
-
 alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
+
+alias lock="swaylock --ignore-empty-password --image /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock2.jpg"
+
+
 
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."

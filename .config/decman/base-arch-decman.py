@@ -39,7 +39,7 @@ decman.packages += [
         # still needed for sway-screenshot
         "grim",
         "swaybg",
-        "waybar",
+        # "waybar",
         # "swaylock"
         # for screensharing to work
         "xdg-desktop-portal-wlr",
@@ -87,7 +87,10 @@ else:
 
 # mostly untouched base system derived from running decman and seeing what it said would be erased
 base_packages = [
-    "grub-btrfs", "htop", "linux", "nano", "pulseaudio", "slurp", "snap-pac",
+    "grub-btrfs", "htop", "linux", "nano",
+    # "pulseaudio",
+    "pipewire-pulse", "pipewire-audio", "pipewire", "wireplumber",
+    "slurp", "snap-pac",
     "swayidle", "swaylock", "vulkan-nouveau", "vulkan-radeon", "waybar",
     "wireless_tools", "wmenu", "xdg-utils", "xf86-video-amdgpu",
     "xf86-video-ati", "xf86-video-nouveau",
