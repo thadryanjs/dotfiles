@@ -1,3 +1,5 @@
+[general]
+font_family DejaVuSansM Nerd Font Mono
 allow_images=true
 image_size=64
 width=600
