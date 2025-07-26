@@ -1,11 +1,10 @@
 [general]
-font_family DejaVuSansM Nerd Font Mono
 allow_images=true
 image_size=64
-width=600
-height=200
+width=1200
+height=1200
 insensitive=true
 mode=drun,run
 columns=1
 padding:5
-lines=6
+lines=10

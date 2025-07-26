@@ -25,6 +25,8 @@ workspace_layout tabbed
 # Display
 #
 
+font pango:DejaVuSansM Nerd Font Mono 12
+
 # Use "swaymsg -t get_outputs" to get diplays (eDP-1 in this case)
 set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable

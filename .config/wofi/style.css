@@ -1,52 +1,53 @@
-// https://draculatheme.com/wofi
 window {
-
+    background-color: rgba(40, 42, 54, 0.5);
 }
 
 #input {
-    margin: 5px;
     border: none;
     background-color: rgba(68, 71, 90, 0.5); /* 50% opacity */
+    color: grey;
+    font-size: 30px;
 }
 
 #inner-box {
     margin: 5px;
     border: none;
-    background-color: #282a36;
+    background-color: rgba(40, 42, 54, 0.5);
+    font-size: 30px;
 }
 
 #outer-box {
     margin: 5px;
-    border: 5px solid #3E2A54; /*#3E2A54 #FFFFFF*/
-    background-color: #282a36; /* Background color */
-    border-radius: 5px; /* Rounds the corners */
+    background-color: rgba(40, 42, 54, 0.5);
+    border-radius: 5px;
 }
 
 #scroll {
     margin: 0px;
     border: none;
-
 }
 
 #text {
-    margin: 5px;
+    margin: 2.5px;
     border: none;
-    color: #BFA0C7;
+    color: rgba(191, 160, 199, 0.5); /* 50% transparent text color */
     font-family: "DejaVuSansM Nerd Font Mono";
 }
 
 #entry.activatable #text {
-    color: #282a36;
+    color: rgba(40, 42, 54, 1); /* Fully opaque */
 }
 
 #entry > * {
-    color: #f8f8f2;
+    /* Style for all child elements of entry */
+    color: rgba(248, 248, 242, 1); /* Fully opaque */
 }
 
 #entry:selected {
-    background-color: #44475a;
+    background-color: rgba(100, 50, 200, 0.5); /* Slightly less bright purple with some transparency */
 }
 
 #entry:selected #text {
     font-weight: bold;
+    color: rgba(180, 180, 180, 1); /* Slightly greyer text color for contrast */
 }
