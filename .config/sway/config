@@ -12,7 +12,14 @@
 
 exec_always --no-startup-id ~/.local/share/tresorit/tresorit-daemon
 exec_always /home/thadryan/.dotfiles/.config/sway/manage-closed-lid-refresh.sh
-exec_always systemctl --user restart pulseaudio.service
+
+input type:touchpad {
+       natural_scroll enabled
+}
+# try this when at desk lol
+# input type:mouse {
+#        natural_scroll enabled
+# }
 
 # experimental
 # exec --no-startup-id swaymsg 'workspace 1; exec --no-startup-id spotify'

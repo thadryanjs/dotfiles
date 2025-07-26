@@ -141,7 +141,6 @@ base_packages = [
     "gnome-tweaks",
     "gnome-usage",
     "gnome-user-share",
-    "ttf-font-awesome",
     "adwaita-icon-theme",
     "network-manager-applet",
     "grilo-plugins", "grub", "gvfs",
