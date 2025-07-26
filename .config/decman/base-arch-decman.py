@@ -44,9 +44,11 @@ decman.packages += [
         # for screensharing to work
         "xdg-desktop-portal-wlr",
         "nm-connection-editor",
+        "swaylock",
     "r",
     "nodejs",
-    "npm"
+    "npm",
+    "cmatrix"
 ]
 
 decman.aur_packages += [
@@ -69,7 +71,7 @@ if socket.gethostname() == "tyrell-work":
     # work system stuff
     decman.packages += [
         "openconnect",
-        "cifs-utils"
+        "cifs-utils",
     ]
 else:
     # personal system stuff
