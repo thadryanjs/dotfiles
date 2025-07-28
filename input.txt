@@ -1,0 +1,272 @@
+[
+  {
+    "identifier": "6058:20564:ThinkPad_Extra_Buttons",
+    "name": "ThinkPad Extra Buttons",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 6058,
+    "product": 20564
+  },
+  {
+    "identifier": "1:1:AT_Translated_Set_2_keyboard",
+    "name": "AT Translated Set 2 keyboard",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 1,
+    "product": 1
+  },
+  {
+    "identifier": "1267:32:Elan_Touchpad",
+    "name": "Elan Touchpad",
+    "type": "touchpad",
+    "scroll_factor": 1.0,
+    "libinput": {
+      "send_events": "enabled",
+      "tap": "disabled",
+      "tap_button_map": "lrm",
+      "tap_drag": "enabled",
+      "tap_drag_lock": "enabled_sticky",
+      "accel_speed": 0.0,
+      "accel_profile": "adaptive",
+      "natural_scroll": "enabled",
+      "left_handed": "disabled",
+      "click_method": "button_areas",
+      "clickfinger_button_map": "lrm",
+      "middle_emulation": "disabled",
+      "scroll_method": "two_finger",
+      "dwt": "enabled",
+      "dwtp": "enabled"
+    },
+    "vendor": 1267,
+    "product": 32
+  },
+  {
+    "identifier": "1267:32:Elan_TrackPoint",
+    "name": "Elan TrackPoint",
+    "type": "pointer",
+    "scroll_factor": 1.0,
+    "libinput": {
+      "send_events": "enabled",
+      "accel_speed": 0.0,
+      "accel_profile": "adaptive",
+      "natural_scroll": "disabled",
+      "left_handed": "disabled",
+      "middle_emulation": "disabled",
+      "scroll_method": "on_button_down",
+      "scroll_button": 274,
+      "scroll_button_lock": "disabled"
+    },
+    "vendor": 1267,
+    "product": 32
+  },
+  {
+    "identifier": "10730:258:Kinesis_Freestyle_Edge_Keyboard_System_Control",
+    "name": "Kinesis Freestyle Edge Keyboard System Control",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 10730,
+    "product": 258
+  },
+  {
+    "identifier": "10730:258:Kinesis_Freestyle_Edge_Keyboard_Consumer_Control",
+    "name": "Kinesis Freestyle Edge Keyboard Consumer Control",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 10730,
+    "product": 258
+  },
+  {
+    "identifier": "10730:258:Kinesis_Freestyle_Edge_Keyboard",
+    "name": "Kinesis Freestyle Edge Keyboard",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 10730,
+    "product": 258
+  },
+  {
+    "identifier": "10730:258:Kinesis_Freestyle_Edge_Keyboard",
+    "name": "Kinesis Freestyle Edge Keyboard",
+    "type": "pointer",
+    "scroll_factor": 1.0,
+    "libinput": {
+      "send_events": "enabled",
+      "accel_speed": 0.0,
+      "accel_profile": "adaptive",
+      "natural_scroll": "disabled",
+      "left_handed": "disabled",
+      "middle_emulation": "disabled",
+      "scroll_method": "none",
+      "scroll_button": 274,
+      "scroll_button_lock": "disabled"
+    },
+    "vendor": 10730,
+    "product": 258
+  },
+  {
+    "identifier": "1133:16500:Logitech_G305",
+    "name": "Logitech G305",
+    "type": "pointer",
+    "scroll_factor": 1.0,
+    "libinput": {
+      "send_events": "enabled",
+      "accel_speed": 0.0,
+      "accel_profile": "adaptive",
+      "natural_scroll": "disabled",
+      "left_handed": "disabled",
+      "middle_emulation": "disabled",
+      "scroll_method": "none",
+      "scroll_button": 274,
+      "scroll_button_lock": "disabled"
+    },
+    "vendor": 1133,
+    "product": 16500
+  },
+  {
+    "identifier": "1133:16500:Logitech_G305",
+    "name": "Logitech G305",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled",
+      "accel_speed": 0.0,
+      "accel_profile": "adaptive",
+      "natural_scroll": "disabled",
+      "left_handed": "disabled",
+      "middle_emulation": "disabled",
+      "scroll_method": "none",
+      "scroll_button": 274,
+      "scroll_button_lock": "disabled"
+    },
+    "vendor": 1133,
+    "product": 16500
+  },
+  {
+    "identifier": "31:2849:Generic_USB_Audio",
+    "name": "Generic USB Audio",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 31,
+    "product": 2849
+  },
+  {
+    "identifier": "0:3:Sleep_Button",
+    "name": "Sleep Button",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 0,
+    "product": 3
+  },
+  {
+    "identifier": "0:5:Lid_Switch",
+    "name": "Lid Switch",
+    "type": "switch",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 0,
+    "product": 5
+  },
+  {
+    "identifier": "0:6:Video_Bus",
+    "name": "Video Bus",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 0,
+    "product": 6
+  },
+  {
+    "identifier": "0:1:Power_Button",
+    "name": "Power Button",
+    "type": "keyboard",
+    "repeat_delay": 600,
+    "repeat_rate": 25,
+    "xkb_layout_names": [
+      "English (US)"
+    ],
+    "xkb_active_layout_index": 0,
+    "xkb_active_layout_name": "English (US)",
+    "libinput": {
+      "send_events": "enabled"
+    },
+    "vendor": 0,
+    "product": 1
+  }
+]
