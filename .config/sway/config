@@ -134,7 +134,7 @@ bindsym Mod1+q exec $term
 # Kill focused window
 bindsym $mod+x kill
 # Start your launcher
-bindsym $mod+c exec $menu
+bindsym $mod+c fullscreen disable; exec $menu
 
 # Drag floating windows by holding down $mod and left mouse button.
 # Resize them with right mouse button + $mod.
@@ -229,8 +229,6 @@ bindsym $mod+Mod1+l workspace next
 
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen
-# doesn't work yet
-
 
 # Toggle the current focus between tiling and floating mode
 bindsym $mod+Shift+space floating toggle
