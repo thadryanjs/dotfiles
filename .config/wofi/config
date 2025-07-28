@@ -1,5 +1,11 @@
 [general]
+# no icons
+show=run
+# icons
+# show=drun
+normal_window=true
 allow_images=true
+key_expand=end
 image_size=64
 width=1200
 height=1200

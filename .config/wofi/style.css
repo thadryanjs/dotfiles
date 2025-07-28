@@ -49,5 +49,5 @@ window {
 
 #entry:selected #text {
     font-weight: bold;
-    color: rgba(180, 180, 180, 1); /* Slightly greyer text color for contrast */
+    color: rgba(220, 220, 220, 1); /* Light gray text color for contrast */
 }

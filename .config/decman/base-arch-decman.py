@@ -87,7 +87,7 @@ else:
 
 # mostly untouched base system derived from running decman and seeing what it said would be erased
 base_packages = [
-    "grub-btrfs", "htop", "linux", "nano",
+    "grub-btrfs", "htop", "linux", "man-db",
     "pipewire-pulse", "pipewire-audio", "pipewire", "wireplumber",
     "slurp", "snap-pac",
     "swayidle", "swaylock", "vulkan-nouveau", "vulkan-radeon", "waybar",
