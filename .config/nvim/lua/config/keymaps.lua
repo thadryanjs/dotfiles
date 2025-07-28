@@ -142,3 +142,25 @@ vim.api.nvim_create_user_command("RemoveAnsi", function()
     end
     vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)  -- Set modified lines back to the buffer
 end, {})
+
+
+vim.api.nvim_create_user_command("ToggleCell", function()
+    local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)  -- Get all lines in the current buffer
+    local modified = false  -- Flag to check if any modification is made
+
+    for i, line in ipairs(lines) do
+        if line:find("%% ") then
+            -- Replace %% [code] with (cell) [code]
+            lines[i] = line:gsub("%% ", "(cell) ")
+            modified = true
+        elseif line:find("%(cell%) ") then
+            -- Replace (cell) [code] with %% [code]
+            lines[i] = line:gsub("%(cell%) ", "%% ")
+            modified = true
+        end
+    end
+
+    if modified then
+        vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)  -- Set modified lines back to the buffer
+    end
+end, {})
