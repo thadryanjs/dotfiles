@@ -59,7 +59,7 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 # Your preferred application launcher
-set $menu wofi
+set $menu wofi run
 
 #
 # GTK theme
@@ -79,6 +79,9 @@ set $menu wofi
 
 # the windows (not the workspaces)
 client.focused          #3E2A54 #3E2A54 #FFFFFF
+# want to hide it from wofi, doesn't work yet
+for_window [app_id="wofi"] border none
+
 # unfocused window
 # client.unfocused        #2B1A4D #BFA0C7 #2B1A4D
 
