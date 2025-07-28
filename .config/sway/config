@@ -14,7 +14,7 @@ exec_always --no-startup-id ~/.local/share/tresorit/tresorit-daemon
 exec_always /home/thadryan/.dotfiles/.config/sway/manage-closed-lid-refresh.sh
 
 input type:touchpad {
-       natural_scroll enabled
+    natural_scroll enabled
 }
 # try this when at desk lol
 input type:pointer {
@@ -79,8 +79,8 @@ set $menu wofi run
 
 # the windows (not the workspaces)
 client.focused          #3E2A54 #3E2A54 #FFFFFF
-# want to hide it from wofi, doesn't work yet
 for_window [app_id="wofi"] border none
+for_window [app_id="kitty"] border none
 
 # unfocused window
 # client.unfocused        #2B1A4D #BFA0C7 #2B1A4D
@@ -163,8 +163,8 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 # Intuitive switch between focus tabs with alt tab
-bindsym Mod1+Tab focus prev
-
+# bindsym Mod1+Tab focus prev
+bindsym Mod1+Tab fullscreen disable; focus prev
 # Move the focused window with the same, but add Shift
 bindsym $mod+Shift+$left move left
 bindsym $mod+Shift+$down move down
@@ -229,6 +229,8 @@ bindsym $mod+Mod1+l workspace next
 
 # Make the current focus fullscreen
 bindsym $mod+f fullscreen
+# doesn't work yet
+
 
 # Toggle the current focus between tiling and floating mode
 bindsym $mod+Shift+space floating toggle
