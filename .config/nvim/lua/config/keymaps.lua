@@ -114,6 +114,11 @@ nmap('gf', ':e <cfile><cr>')
 nmap('<leader>dn', '<cmd>lua vim.diagnostic.goto_next()<CR>')
 nmap('<leader>dp', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
 
+
+nmap("<leader>nw", "<cmd>Navbuddy<CR>")
+
+
+-- these might not be working anymore
 -- sane diagnostics
 vim.api.nvim_create_user_command("DiagnosticsLight", function()
     vim.diagnostic.config {

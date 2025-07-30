@@ -48,7 +48,8 @@ decman.packages += [
     "r",
     "nodejs",
     "npm",
-    "cmatrix"
+    "cmatrix",
+    "ollama"
 ]
 
 decman.aur_packages += [

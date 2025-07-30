@@ -13,6 +13,7 @@ stty -ixon
 [[ -z "$TMUX" ]] && exec tmux
 
 export EDITOR="nvim"
+export LLM_KEY=NONE
 
 # hack for now
 if [ -n "$(ls ~/Downloads/MarkDownload/)" ] && \
@@ -58,6 +59,8 @@ alias lock="swaylock --ignore-empty-password --image /home/thadryan/HomeVault/Ar
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
 alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
+# the Chuck command
+alias lss='ls -ltrh'
 alias open='xdg-open'
 
 parse_git_branch() {
