@@ -40,11 +40,9 @@ decman.packages += [
         "grim",
         "swaybg",
         # "waybar",
-        # "swaylock"
-        # for screensharing to work
-        "xdg-desktop-portal-wlr",
         "nm-connection-editor",
         "swaylock",
+        "swayidle",
     "r",
     "nodejs",
     "npm",
@@ -74,6 +72,9 @@ if socket.gethostname() == "tyrell-work":
         "openconnect",
         "cifs-utils",
     ]
+    decman.aur_packages += [
+        "zoom",
+    ]
 else:
     # personal system stuff
     decman.packages += [
@@ -88,14 +89,30 @@ else:
 
 # mostly untouched base system derived from running decman and seeing what it said would be erased
 base_packages = [
-    "grub-btrfs", "htop", "linux", "man-db",
+    "grub-btrfs",
+    "htop",
+    "linux",
+    "man-db",
     "pipewire-pulse", "pipewire-audio", "pipewire", "wireplumber",
     "slurp", "snap-pac",
-    "swayidle", "swaylock", "vulkan-nouveau", "vulkan-radeon", "waybar",
-    "wireless_tools", "wmenu", "xdg-utils", "xf86-video-amdgpu",
-    "xf86-video-ati", "xf86-video-nouveau",
-    "zram-generator", "baobab", "base", "base-devel", "brightnessctl",
-    "btrfs-progs", "decibels", "efibootmgr", "epiphany", "evince", "gdm",
+    "vulkan-nouveau", "vulkan-radeon",
+    "wireless_tools",
+    "wmenu",
+    "xdg-utils",
+    "xf86-video-amdgpu",
+    "xf86-video-ati",
+    "xf86-video-nouveau",
+    "zram-generator",
+    "baobab",
+    "base",
+    "base-devel",
+    "brightnessctl",
+    "btrfs-progs",
+    "decibels",
+    "efibootmgr",
+    "epiphany",
+    "evince",
+    "gdm",
     "gnome-calendar",
     "gnome-characters",
     "gnome-clocks",
@@ -144,15 +161,36 @@ base_packages = [
     "gnome-user-share",
     "adwaita-icon-theme",
     "network-manager-applet",
-    "grilo-plugins", "grub", "gvfs",
-    "gvfs-afc", "gvfs-dnssd", "gvfs-goa", "gvfs-google", "gvfs-gphoto2",
-    "gvfs-mtp", "gvfs-nfs", "gvfs-onedrive", "gvfs-smb", "gvfs-wsdd",
-    "intel-media-driver", "intel-ucode", "iwd", "libva-intel-driver",
-    "linux-firmware", "loupe", "malcontent", "nautilus", "networkmanager",
-    "openssh", "orca", "pavucontrol", "rygel", "simple-scan", "smartmontools",
-    "snapper", "snapshot", "sushi", "tecla", "totem", "vim", "vulkan-intel", "wget",
-    "wpa_supplicant", "xdg-desktop-portal-gnome", "xdg-user-dirs-gtk",
-    "xorg-server", "xorg-xinit", "yelp"
+    "grilo-plugins",
+    "grub",
+    "gvfs", "gvfs-afc", "gvfs-dnssd", "gvfs-goa", "gvfs-google", "gvfs-gphoto2","gvfs-mtp", "gvfs-nfs", "gvfs-onedrive", "gvfs-smb", "gvfs-wsdd",
+    "intel-media-driver", "intel-ucode",
+    "iwd",
+    "libva-intel-driver",
+    "linux-firmware",
+    "loupe",
+    "malcontent",
+    "nautilus",
+    "networkmanager",
+    "openssh",
+    "orca",
+    "pavucontrol",
+    "rygel",
+    "simple-scan",
+    "smartmontools",
+    "snapper",
+    "snapshot",
+    "sushi",
+    "tecla",
+    "totem",
+    "vim",
+    "vulkan-intel",
+    "wget",
+    "wpa_supplicant",
+    # -wlr is needed for screensharing to work
+    "xdg-desktop-portal-gnome", "xdg-user-dirs-gtk", "xdg-desktop-portal-wlr",
+    "xorg-server", "xorg-xinit",
+    "yelp"
 ]
 
 decman.packages += base_packages
