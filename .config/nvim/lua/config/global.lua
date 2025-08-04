@@ -33,6 +33,7 @@ vim.opt.spell = false
 vim.opt.spelllang = 'en_us'
 vim.opt.spellsuggest = {'fast', 20}  -- Don't show too many suggestions for spell check
 vim.opt.spellfile = vim.fn.expand("~/.config/nvim/spell/en.utf-8.add")
+vim.o.timeoutlen = 30000  -- Increase timeout length to 30 seconds
 -- vim.opt.signcolumn = "yes"im.o.scl = "no"
 -- translating "set formatoptions-=r"
 -- doesn't work: https://www.reddit.com/r/neovim/comments/11ij7t4/how_to_set_formatoptionso_in_lua/
@@ -73,4 +74,3 @@ vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {f
 
 -- python provider
 vim.g.python3_host_prog = '/usr/bin/python3'
-
