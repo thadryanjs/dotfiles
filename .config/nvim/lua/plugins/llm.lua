@@ -6,50 +6,54 @@ return {
     config = function()
         local tools = require("llm.tools")
         require("llm").setup({
+            model = "codegemma:latest",
+            api_type = "ollama",
             url = "http://127.0.0.1:11434/api/chat",
             -- https://github.com/Kurama622/llm.nvim/issues/52
-            model = "codegemma:latest",
             enable_thinking = false,
-            api_type = "ollama",
             timeout = 90,
             max_tokens = 10000,
-            --app_handler = {
-            --    Completion = {
-            --        handler = tools.completion_handler,
-            --        opts = {
-            --          timeout = 10,
-            --          context_window = 12800,
-            --          context_ratio = 0.75,
-            --          throttle = 400,
-            --          debounce = 200,
-            --          filetypes = {},
-            --          default_filetype_enabled = true,
-            --          auto_trigger = true,
-            --          only_trigger_by_keywords = true,
-            --          style = "virtual_text",
-            --          keymap = {
-            --            virtual_text = {
-            --              accept = {
-            --                mode = "i",
-            --                keys = "<A-a>",
-            --              },
-            --              next = {
-            --                mode = "i",
-            --                keys = "<A-n>",
-            --              },
-            --              prev = {
-            --                mode = "i",
-            --                keys = "<A-p>",
-            --              },
-            --            },
-            --            toggle = {
-            --              mode = "n",
-            --              keys = "<leader>cp",
-            --            },
-            --          },
-            --        },
-            --    },
-            --}
+            app_handler = {
+                Completion = {
+                    handler = tools.completion_handler,
+                    opts = {
+                        model = "codegemma:latest",
+                        api_type = "ollama",
+                        url = "http://127.0.0.1:11434/api/generate",
+                      -- timeout = 10,
+
+                      -- context_window = 12800,
+                      -- context_ratio = 0.75,
+                      -- throttle = 400,
+                      -- debounce = 200,
+                      -- filetypes = {},
+                      -- default_filetype_enabled = true,
+                      -- auto_trigger = true,
+                      -- only_trigger_by_keywords = true,
+                      -- style = "virtual_text",
+                      -- keymap = {
+                      --   virtual_text = {
+                      --     accept = {
+                      --       mode = "i",
+                      --       keys = "<A-a>",
+                      --     },
+                      --     next = {
+                      --       mode = "i",
+                      --       keys = "<A-n>",
+                      --     },
+                      --     prev = {
+                      --       mode = "i",
+                      --       keys = "<A-p>",
+                      --     },
+                      --   },
+                      --   toggle = {
+                      --     mode = "n",
+                      --     keys = "<leader>cp",
+                      --   },
+
+                      },
+                    },
+                },
         })
     end,
     keys = {
