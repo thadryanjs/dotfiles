@@ -7,10 +7,40 @@ stty -ixon
 
 # shopt -s histappend
 
-# If not running interactively, do not do anything
+# Check if not running interactively
 [[ $- != *i* ]] && return
-# Otherwise start tmux
-[[ -z "$TMUX" ]] && exec tmux
+
+# Check if inside a tmux session
+if [[ -z "$TMUX" ]]; then
+    # List existing tmux sessions
+    sessions=$(tmux list-sessions 2>/dev/null)
+
+    if [[ -n "$sessions" ]]; then
+        # Display existing sessions and prompt for selection
+        echo "Existing tmux sessions found:"
+        echo "$sessions"
+        echo "Enter the name of the session you want to join (or 'x' for none):"
+
+        # Read user input
+        read -r session_name
+
+        if [[ "$session_name" == "x" ]]; then
+            # Create a new session if 'x' is chosen
+            tmux new-session
+        elif tmux has-session -t "$session_name" 2>/dev/null; then
+            # Attach to the specified session if it exists
+            tmux attach-session -t "$session_name"
+        else
+            echo "Session '$session_name' does not exist. Creating a new session."
+            tmux new-session
+        fi
+    else
+        # No existing sessions, create a new one
+        tmux new-session
+    fi
+else
+    echo "You are already inside a tmux session."
+fi
 
 export EDITOR="nvim"
 export LLM_KEY=NONE
