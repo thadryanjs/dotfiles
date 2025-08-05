@@ -17,6 +17,7 @@ decman.packages += [
     "git",
     "python",
     "kitty",
+    "tree",
     "neovim",
         "xclip",
     "stow",
@@ -30,6 +31,8 @@ decman.packages += [
         "poppler",
         "ffmpegthumbnailer",
         "imagemagick",
+    "zoxide",
+    "atuin",
     "discord",
     # for tresorit
     "fuse3",
@@ -45,9 +48,11 @@ decman.packages += [
         "swayidle",
     "r",
     "nodejs",
-    "npm",
+        "yarn",
+        "npm",
     "cmatrix",
-    "ollama"
+    "ollama",
+    "gimp"
 ]
 
 decman.aur_packages += [
