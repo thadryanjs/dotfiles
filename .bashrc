@@ -10,7 +10,7 @@ stty -ixon
 # Check if not running interactively
 [[ $- != *i* ]] && return
 
-# Check if inside a tmux session
+# check for tmux sessions, optionally join
 if [[ -z "$TMUX" ]]; then
     # List existing tmux sessions
     sessions=$(tmux list-sessions 2>/dev/null)
@@ -38,9 +38,8 @@ if [[ -z "$TMUX" ]]; then
         # No existing sessions, create a new one
         tmux new-session
     fi
-else
-    echo "You are already inside a tmux session."
 fi
+
 
 export EDITOR="nvim"
 export LLM_KEY=NONE
