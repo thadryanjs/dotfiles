@@ -52,7 +52,31 @@ decman.packages += [
         "npm",
     "cmatrix",
     "ollama",
-    "gimp"
+    "gimp",
+    # "texlive",
+        "texlive-basic",
+        "texlive-bibtexextra",
+        "texlive-binextra",
+        "texlive-context",
+        "texlive-fontsextra",
+        "texlive-fontsrecommended",
+        "texlive-fontutils",
+        "texlive-formatsextra",
+        "texlive-games",
+        "texlive-humanities",
+        "texlive-latex",
+        "texlive-latexextra",
+        "texlive-latexrecommended",
+        "texlive-luatex",
+        "texlive-mathscience",
+        "texlive-metapost",
+        "texlive-music",
+        "texlive-pictures",
+        "texlive-plaingeneric",
+        "texlive-pstricks",
+        "texlive-publishers",
+        "texlive-xetex",
+    "pandoc"
 ]
 
 decman.aur_packages += [
@@ -71,7 +95,7 @@ decman.aur_packages += [
     # "swaysettings-git"
 ]
 
-if socket.gethostname() == "tyrell-work":
+if "work" in socket.gethostname():
     # work system stuff
     decman.packages += [
         "openconnect",
