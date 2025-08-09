@@ -184,3 +184,4 @@ export PATH="/home/thadryan/.pixi/bin:$PATH"
 
 
 export PATH="$HOME/.local/share/tresorit:$PATH"
+eval "$(atuin init bash)"

@@ -26,6 +26,7 @@ decman.packages += [
         "the_silver_searcher",
         "ripgrep",
     "tmux",
+    "atuin",
     "pixi",
     "yazi",
         "poppler",
@@ -76,7 +77,9 @@ decman.packages += [
         "texlive-pstricks",
         "texlive-publishers",
         "texlive-xetex",
-    "pandoc"
+    # "pandoc",
+    "pandoc-cli",
+    "rclone"
 ]
 
 decman.aur_packages += [
@@ -91,7 +94,7 @@ decman.aur_packages += [
     # first run:
     # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
     "spotify",
-    "zotero"
+    "zotero",
     # "swaysettings-git"
 ]
 

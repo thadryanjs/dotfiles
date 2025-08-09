@@ -16,7 +16,12 @@ return {
             }))
 
             lspconfig.pyright.setup(coq.lsp_ensure_capabilities({
-                autostart = false
+                autostart = false,
+                settings = {
+                    python = {
+                        pythonPath = vim.fn.exepath("python3")
+                    },
+                },
             }))
 
             -- https://www.reddit.com/r/neovim/comments/s24zvh/how_can_i_load_a_user_dictionary_into_ltexls/
