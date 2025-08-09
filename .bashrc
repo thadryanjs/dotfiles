@@ -182,7 +182,9 @@ unset __mamba_setup
 export PATH="/home/thadryan/.pixi/bin:$PATH"
 # export PATH="/home/.local/share/tresorit:$PATH"
 
-
-
 export PATH="$HOME/.local/share/tresorit:$PATH"
+
+# export ATUIN_NOBIND=1
+# eval "$(atuin init bash)"
 eval "$(atuin init bash --disable-up-arrow)"
+# bind '"\C-a": "atuin history list --cmd-only | sort | uniq | fzf\n"'
