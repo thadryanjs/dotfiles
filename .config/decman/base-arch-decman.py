@@ -27,13 +27,15 @@ decman.packages += [
         "ripgrep",
     "tmux",
     "atuin",
+        # may need a command as arch doesn't create this file I don't think
+        # https://github.com/atuinsh/atuin/issues/380
+        "bash-preexec",
     "pixi",
     "yazi",
         "poppler",
         "ffmpegthumbnailer",
         "imagemagick",
     "zoxide",
-    "atuin",
     "discord",
     # for tresorit
     "fuse3",

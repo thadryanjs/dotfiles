@@ -10,7 +10,7 @@ stty -ixon
 # Check if not running interactively
 [[ $- != *i* ]] && return
 
-export TMUX_CONF=~/.config/tmux/tmux.conf
+# export TMUX_CONF=~/.config/tmux/tmux.conf
 # check for tmux sessions, optionally join
 if [[ -z "$TMUX" ]]; then
     # List existing tmux sessions
@@ -186,5 +186,7 @@ export PATH="$HOME/.local/share/tresorit:$PATH"
 
 # export ATUIN_NOBIND=1
 # eval "$(atuin init bash)"
+# eval "$(atuin init bash --disable-up-arrow)"
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash --disable-up-arrow)"
-# bind '"\C-a": "atuin history list --cmd-only | sort | uniq | fzf\n"'
+bind '"\C-a": "atuin history list --cmd-only | sort | uniq | fzf\n"'
