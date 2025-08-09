@@ -10,6 +10,7 @@ stty -ixon
 # Check if not running interactively
 [[ $- != *i* ]] && return
 
+export TMUX_CONF=~/.config/tmux/tmux.conf
 # check for tmux sessions, optionally join
 if [[ -z "$TMUX" ]]; then
     # List existing tmux sessions
@@ -184,4 +185,4 @@ export PATH="/home/thadryan/.pixi/bin:$PATH"
 
 
 export PATH="$HOME/.local/share/tresorit:$PATH"
-eval "$(atuin init bash)"
+eval "$(atuin init bash --disable-up-arrow)"
