@@ -229,14 +229,14 @@ fzf_ripgrep() {
 bind -x '"\C-g": fzf_ripgrep'
 
 ## atuin
-export ATUIN_NOBIND="true"
+# export ATUIN_NOBIND="true"
 # may need a command as arch doesn't create this file I don't think
 # https://github.com/atuinsh/atuin/issues/380
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 # eval "$(atuin init bash --disable-up-arrow)"
 eval "$(atuin init bash)"
-bind -x '"\e[H": __atuin_history --shell-up-key-binding'
-bind -x '"\eOH": __atuin_history --shell-up-key-binding'
-bind '"\C-h": "__atuin_history\n"'
+# bind -x '"\e[H": __atuin_history --shell-up-key-binding'
+# bind -x '"\eOH": __atuin_history --shell-up-key-binding'
+# bind '"\C-h": "__atuin_history\n"'
 
 eval "$(zoxide init bash)"
