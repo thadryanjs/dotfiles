@@ -170,18 +170,17 @@ export PATH="$HOME/.local/share/tresorit:$PATH"
 ## atuin
 # if you make a typo, you can't scroll up and fix it so it's not a 'command'
 # optional: https://docs.atuin.sh/configuration/config/#store_failed
-# export ATUIN_NOBIND="true"
+export ATUIN_NOBIND="true"
 # may need a command as arch doesn't create this file I don't think
 # https://github.com/atuinsh/atuin/issues/380
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-# eval "$(atuin init bash --disable-up-arrow)"
-eval "$(atuin init bash --disable-ctrl-r)"
+eval "$(atuin init bash --disable-up-arrow)"
 # bind '"\C-h": "__atuin_history"'
-# bind '"\C-h": "__atuin_history\n"'
+# bind '"\C-a": "__atuin_history\n"'
 
 
 ## fzf
-# apparently you can't disable the ctrl R one?
+# apparently you can't disable the ctrl R one? (overwritten later)
 FZF_CTRL_T_COMMAND= FZF_ALT_C_COMMAND= eval "$(fzf --bash)"
 
 # defaults
@@ -238,6 +237,10 @@ fzf_ripgrep() {
 
 # bind that to c-g
 bind -x '"\C-g": fzf_ripgrep'
-bind '"\C-r": reverse-search-history'
 
+bind '"\C-r": reverse-search-history'
+# bind '"\C-a": atuin history list --cmd-only | uniq | fzf'
+bind '"\C-a": "atuin history list --cmd-only | uniq | fzf\n"'
+
+## zoxide
 eval "$(zoxide init bash)"
