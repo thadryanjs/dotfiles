@@ -1,6 +1,5 @@
 test -s ~/.alias && . ~/.alias || true
 
-eval "$(fzf --bash)"
 # eval "$(zoxide init bash)"
 
 stty -ixon
@@ -139,23 +138,6 @@ if (env | grep -Fq 'DISTROBOX'); then
 fi
 
 
-# Preview file content using bat (https://github.com/sharkdp/bat)
-export FZF_CTRL_T_OPTS="
-  --preview 'bat -n --color=always {}'
-  --bind 'ctrl-/:change-preview-window(down|hidden|)'"
-
-# CTRL-/ to toggle small preview window to see the full command
-# CTRL-Y to copy the command into clipboard using pbcopy
-export FZF_CTRL_R_OPTS="
-  --preview 'echo {}' --preview-window up:3:hidden:wrap
-  --bind 'ctrl-/:toggle-preview'
-  --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort'
-  --color header:italic
-  --header 'Press CTRL-Y to copy command into clipboard'"
-
-# Print tree structure in the preview window
-export FZF_ALT_C_OPTS="
-  --preview 'tree -C {}'"
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
@@ -184,9 +166,75 @@ export PATH="/home/thadryan/.pixi/bin:$PATH"
 
 export PATH="$HOME/.local/share/tresorit:$PATH"
 
-# export ATUIN_NOBIND=1
-# eval "$(atuin init bash)"
-# eval "$(atuin init bash --disable-up-arrow)"
+
+
+## fzf
+# apparently you can't disable the ctrl R one?
+FZF_CTRL_R_COMMAND= FZF_CTRL_T_COMMAND= FZF_ALT_C_COMMAND= eval "$(fzf --bash)"
+
+# color scheme
+# https://vitormv.github.io/fzf-themes/
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+    --color=pointer:#00d692,info:#8642c9
+    --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
+    --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
+
+# custom file search
+fzf_files() {
+    fzf \
+    --tmux \
+    --preview 'bat -n --color=always {}' \
+    --bind 'ctrl-/:change-preview-window(down|hidden|)'
+}
+bind -x '"\C-f": fzf_history'
+
+# history search
+# if you end up liking this interface better you can set
+# atuin history list --cmd-only | uniq | fzf
+# to get atuin memory into the fzf interface
+fzf_history() {
+  fzf \
+    --tmux \
+    --preview 'echo {}' \
+    --preview-window up:3:hidden:wrap \
+    --bind 'ctrl-/:toggle-preview' \
+    --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort' \
+    --color header:italic \
+    --header 'Press CTRL-Y to copy command into clipboard'
+}
+# bind -x '"\C-h": fzf_history'
+
+# custom tree search
+fzf_tree() {
+    fzf --tmux --preview 'tree -C {}'
+}
+bind -x '"\C-t": fzf_tree'
+
+# custom ripgrep search
+fzf_ripgrep() {
+    RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
+    INITIAL_QUERY="${*:-}"
+    fzf --ansi --disabled --query "$INITIAL_QUERY" \
+        --bind "start:reload:$RG_PREFIX {q}" \
+        --bind "change:reload:sleep 0.1; $RG_PREFIX {q} || true" \
+        --delimiter : \
+        --preview 'bat --color=always {1} --highlight-line {2}' \
+        --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' \
+        --bind 'enter:become(nvim {1} +{2})'
+}
+
+# bind that to c-g
+bind -x '"\C-g": fzf_ripgrep'
+
+## atuin
+export ATUIN_NOBIND="true"
+# may need a command as arch doesn't create this file I don't think
+# https://github.com/atuinsh/atuin/issues/380
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-eval "$(atuin init bash --disable-up-arrow)"
-bind '"\C-a": "atuin history list --cmd-only | sort | uniq | fzf\n"'
+# eval "$(atuin init bash --disable-up-arrow)"
+eval "$(atuin init bash)"
+bind -x '"\e[H": __atuin_history --shell-up-key-binding'
+bind -x '"\eOH": __atuin_history --shell-up-key-binding'
+bind '"\C-h": "__atuin_history\n"'
+
+eval "$(zoxide init bash)"
