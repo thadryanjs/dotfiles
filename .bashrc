@@ -167,6 +167,18 @@ export PATH="/home/thadryan/.pixi/bin:$PATH"
 export PATH="$HOME/.local/share/tresorit:$PATH"
 
 
+## atuin
+# if you make a typo, you can't scroll up and fix it so it's not a 'command'
+# optional: https://docs.atuin.sh/configuration/config/#store_failed
+# export ATUIN_NOBIND="true"
+# may need a command as arch doesn't create this file I don't think
+# https://github.com/atuinsh/atuin/issues/380
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+# eval "$(atuin init bash --disable-up-arrow)"
+eval "$(atuin init bash --disable-ctrl-r)"
+# bind '"\C-h": "__atuin_history"'
+# bind '"\C-h": "__atuin_history\n"'
+
 
 ## fzf
 # apparently you can't disable the ctrl R one?
@@ -189,14 +201,14 @@ fzf_files() {
     --preview 'bat -n --color=always {}' \
     --bind 'ctrl-/:change-preview-window(down|hidden|)'
 }
-bind -x '"\C-f": fzf_history'
+bind -x '"\C-f": fzf_files'
 
 # history search
 # if you end up liking this interface better you can set
 # atuin history list --cmd-only | uniq | fzf
 # to get atuin memory into the fzf interface
 fzf_history() {
-  fzf \
+  history | fzf \
     --tmux \
     --preview 'echo {}' \
     --preview-window up:3:hidden:wrap \
@@ -205,7 +217,7 @@ fzf_history() {
     --color header:italic \
     --header 'Press CTRL-Y to copy command into clipboard'
 }
-# bind -x '"\C-h": fzf_history'
+bind -x '"\C-h": fzf_history'
 
 # custom tree search
 fzf_tree() {
@@ -228,15 +240,5 @@ fzf_ripgrep() {
 # bind that to c-g
 bind -x '"\C-g": fzf_ripgrep'
 
-## atuin
-# export ATUIN_NOBIND="true"
-# may need a command as arch doesn't create this file I don't think
-# https://github.com/atuinsh/atuin/issues/380
-[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
-# eval "$(atuin init bash --disable-up-arrow)"
-eval "$(atuin init bash)"
-# bind -x '"\e[H": __atuin_history --shell-up-key-binding'
-# bind -x '"\eOH": __atuin_history --shell-up-key-binding'
-# bind '"\C-h": "__atuin_history\n"'
 
 eval "$(zoxide init bash)"
