@@ -172,6 +172,9 @@ export PATH="$HOME/.local/share/tresorit:$PATH"
 # apparently you can't disable the ctrl R one?
 FZF_CTRL_R_COMMAND= FZF_CTRL_T_COMMAND= FZF_ALT_C_COMMAND= eval "$(fzf --bash)"
 
+# defaults
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
+
 # color scheme
 # https://vitormv.github.io/fzf-themes/
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
@@ -210,10 +213,12 @@ fzf_tree() {
 }
 bind -x '"\C-t": fzf_tree'
 
-# custom ripgrep search
+# custom ripgrep search (this fails on empty dir or only dotfiles)
 fzf_ripgrep() {
 : | rg_prefix='rg --column --line-number --no-heading --color=always --smart-case' \
-    fzf --bind 'start:reload:$rg_prefix ""' \
+    fzf \
+        --tmux \
+        --bind 'start:reload:$rg_prefix ""' \
         --bind 'change:reload:$rg_prefix {q} || true' \
         --bind 'enter:become(vim {1} +{2})' \
         --ansi --disabled \
