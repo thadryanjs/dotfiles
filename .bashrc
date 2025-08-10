@@ -182,7 +182,7 @@ eval "$(atuin init bash --disable-ctrl-r)"
 
 ## fzf
 # apparently you can't disable the ctrl R one?
-FZF_CTRL_R_COMMAND= FZF_CTRL_T_COMMAND= FZF_ALT_C_COMMAND= eval "$(fzf --bash)"
+FZF_CTRL_T_COMMAND= FZF_ALT_C_COMMAND= eval "$(fzf --bash)"
 
 # defaults
 export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""'
@@ -208,16 +208,15 @@ bind -x '"\C-f": fzf_files'
 # atuin history list --cmd-only | uniq | fzf
 # to get atuin memory into the fzf interface
 fzf_history() {
-  history | fzf \
+    history | fzf \
     --tmux \
     --preview 'echo {}' \
     --preview-window up:3:hidden:wrap \
     --bind 'ctrl-/:toggle-preview' \
-    --bind 'ctrl-y:execute-silent(echo -n {2..} | pbcopy)+abort' \
-    --color header:italic \
-    --header 'Press CTRL-Y to copy command into clipboard'
+    --bind 'enter:execute-silent(echo -n {2..} | pbcopy | bash)+abort'
 }
-bind -x '"\C-h": fzf_history'
+
+bind -x '"\C-h": __fzf_history__'
 
 # custom tree search
 fzf_tree() {
@@ -239,6 +238,6 @@ fzf_ripgrep() {
 
 # bind that to c-g
 bind -x '"\C-g": fzf_ripgrep'
-
+bind '"\C-r": reverse-search-history'
 
 eval "$(zoxide init bash)"
