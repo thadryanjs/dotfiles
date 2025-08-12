@@ -118,9 +118,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1='\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\W\[\033[00m\]$(parse_git_branch)\n~:) '
+    PS1='\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\w\[\033[00m\]$(parse_git_branch)\n~:) '
 else
-    PS1='\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\W\[\033[00m\]$(parse_git_branch)\n~:) '
+    PS1='\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\w\[\033[00m\]$(parse_git_branch)\n~:) '
 fi
 unset color_prompt force_color_prompt
 
@@ -133,10 +133,9 @@ xterm*|rxvt*)
     ;;
 esac
 
-if (env | grep -Fq 'DISTROBOX'); then
-    PS1='📦\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\W\[\033[00m\]$(parse_git_branch)\n~:) '
-fi
-
+# if (env | grep -Fq 'DISTROBOX'); then
+#     PS1='📦\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\W\[\033[00m\]$(parse_git_branch)\n~:) '
+# fi
 
 
 function y() {
@@ -175,8 +174,6 @@ export ATUIN_NOBIND="true"
 # https://github.com/atuinsh/atuin/issues/380
 [[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash --disable-up-arrow)"
-# bind '"\C-h": "__atuin_history"'
-# bind '"\C-a": "__atuin_history\n"'
 
 
 ## fzf

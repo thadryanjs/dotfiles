@@ -169,3 +169,20 @@ vim.api.nvim_create_user_command("ToggleCell", function()
         vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)  -- Set modified lines back to the buffer
     end
 end, {})
+
+local function toggle_spell()
+  -- Check if spellcheck is currently on
+  if vim.opt.spell:get() then
+    -- Turn it off and disable the highlight
+    vim.opt.spell = false
+    vim.cmd("highlight Underlined gui=underline")
+    print("Spellcheck and underline are now OFF")
+  else
+    -- Turn it on and enable the highlight
+    vim.opt.spell = true
+    vim.cmd("highlight Underlined gui=none")
+    print("Spellcheck and underline are now ON")
+  end
+end
+
+vim.api.nvim_create_user_command("ToggleSpell", toggle_spell, {})
