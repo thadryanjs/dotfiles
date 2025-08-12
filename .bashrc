@@ -239,8 +239,17 @@ fzf_ripgrep() {
 bind -x '"\C-g": fzf_ripgrep'
 
 bind '"\C-r": reverse-search-history'
-# bind '"\C-a": atuin history list --cmd-only | uniq | fzf'
-bind '"\C-a": "atuin history list --cmd-only | uniq | fzf\n"'
+# bind '"\C-a": "atuin history list --cmd-only | uniq | fzf\n"'
+
+function atuin_search() {
+    selected_command=$(atuin history list --cmd-only | uniq | fzf)
+    if [ -n "$selected_command" ]; then
+        eval "$selected_command"
+    fi
+}
+
+bind '"\C-a": "atuin_search\n"'
+
 
 ## zoxide
 eval "$(zoxide init bash)"
