@@ -71,9 +71,11 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
 " Enable spell checking with specific language and suggestions
+" start with it off
 set spell spelllang=en_us
 set spellsuggest=fast,20  " Don't show too many suggestions for spell check
 set spellfile=~/.dotfiles/.config/nvim/spell/en.utf-8.add
+set spell!
 
 " Undo config: https://vi.stackexchange.com/questions/6/how-can-i-use-the-undofile
 if !isdirectory($HOME."/.vim")
@@ -210,13 +212,14 @@ nnoremap <leader>mf :<C-u>marks<CR>:normal! ``
 call plug#begin('~/.vim/plugged')
 
     Plug 'preservim/nerdtree'
-    " Plug 'flazz/vim-colorschemes'
+    Plug 'flazz/vim-colorschemes'
     Plug 'preservim/nerdcommenter'
     Plug 'tpope/vim-surround'
     Plug 'jpalardy/vim-slime'
     Plug 'Townk/vim-autoclose'
     Plug 'cohama/lexima.vim'
-    Plug 'github/copilot.vim'
+    " Plug 'github/copilot.vim'
+    Plug 'Exafunction/windsurf.vim', { 'branch': 'main' }
     Plug 'wellle/tmux-complete.vim'
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'dense-analysis/ale'
@@ -271,8 +274,24 @@ nnoremap <Leader>an :ALENext<CR>
 nnoremap <Leader>ap :ALEPrevious<CR>
 
 "" Copilot
-let g:copilot_no_tab_map = v:true
-imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
+" let g:copilot_no_tab_map = v:true
+" imap <silent><script><expr> <C-l> copilot#Accept("\<CR>")
+
+"" WindSurf
+" Clear current suggestion
+inoremap <C-]> <C-r>=codeium#Clear()<CR>
+" Next suggestion
+inoremap <M-]> <C-r>=codeium#CycleCompletions(1)<CR>
+" Previous suggestion
+inoremap <M-[> <C-r>=codeium#CycleCompletions(-1)<CR>
+" Insert suggestion
+inoremap <C-j> <C-r>=codeium#Accept()<CR>
+" Accept word from suggestion
+inoremap <C-k> <C-r>=codeium#AcceptNextWord()<CR>
+" Accept line from suggestion
+inoremap <C-l> <C-r>=codeium#AcceptNextLine()<CR>
+" Manually trigger suggestion
+inoremap <M-Bslash> <C-r>=codeium#Complete()<CR>
 
 
 "" CoC
@@ -339,6 +358,7 @@ nnoremap <Leader>fm :Maps<CR>
 " highlight Constant term=underline ctermfg=13 guifg=#868C91
 " highlight Constant term=underline cterm=none ctermfg=13 gui=none guifg=#868C91
 " highlight Comment term=bold cterm=none ctermfg=14 gui=none guifg=#6E6763
+
 
 " https://vimcolors.org
 set termguicolors
@@ -477,6 +497,11 @@ endfunction
 " Command to call the function
 command! MoveComments call MoveComments()
 
+function! ToggleSpellcheck()
+    setlocal spell!
+endfunction
+
+command! ToggleSpellcheck call ToggleSpellcheck()
 
 """ Commands
 " search buffer and put into quickfix list
