@@ -51,6 +51,10 @@ imap("<A-m>", "# %% [markdown]<CR><Esc>O\n\n# %% [code]<Esc>2ki# ")
 nmap("<leader>jc", "i# %% [code]")
 nmap("<leader>jm", "O# %% [markdown]<CR><Esc>O\n\n# %% [code]<Esc>2ki# ")
 
+-- toggle code blocks
+nmap("<leader>jt", ":ToggleCell<CR>")
+--nmap("<leader>jp", ":ToggleCell<CR>")
+
 
 -- remove all code tags
 imap("<A-e>", ":%s/# %% \\[code\\]<CR>")
@@ -60,6 +64,7 @@ nmap("<A-f>", "/# %% \\[code\\]<CR>")
 
 -- nmap("<leader>je", ":%s/# %% \\[code\\]<CR>")
 nmap("<leader>jf", "/# %% \\[code\\]<CR>")
+
 
 -- close all buffers except current
 -- :w | %bd | e# | bd
@@ -149,6 +154,7 @@ vim.api.nvim_create_user_command("RemoveAnsi", function()
 end, {})
 
 
+-- messes up code with "%" operator
 vim.api.nvim_create_user_command("ToggleCell", function()
     local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)  -- Get all lines in the current buffer
     local modified = false  -- Flag to check if any modification is made
@@ -170,19 +176,17 @@ vim.api.nvim_create_user_command("ToggleCell", function()
     end
 end, {})
 
-local function toggle_spell()
-  -- Check if spellcheck is currently on
-  if vim.opt.spell:get() then
-    -- Turn it off and disable the highlight
-    vim.opt.spell = false
-    vim.cmd("highlight Underlined gui=underline")
-    print("Spellcheck and underline are now OFF")
-  else
-    -- Turn it on and enable the highlight
-    vim.opt.spell = true
-    vim.cmd("highlight Underlined gui=none")
-    print("Spellcheck and underline are now ON")
-  end
-end
-
-vim.api.nvim_create_user_command("ToggleSpell", toggle_spell, {})
+vim.api.nvim_create_user_command("ToggleSpell", function ()
+      -- Check if spellcheck is currently on
+      if vim.opt.spell:get() then
+        -- Turn it off and disable the highlight
+        vim.opt.spell = false
+        vim.cmd("highlight Underlined gui=underline")
+        print("Spellcheck and underline are now OFF")
+      else
+        -- Turn it on and enable the highlight
+        vim.opt.spell = true
+        vim.cmd("highlight Underlined gui=none")
+        print("Spellcheck and underline are now ON")
+      end
+end, {})
