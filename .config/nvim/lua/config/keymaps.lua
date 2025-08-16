@@ -55,15 +55,34 @@ nmap("<leader>jm", "O# %% [markdown]<CR><Esc>O\n\n# %% [code]<Esc>2ki# ")
 nmap("<leader>jt", ":ToggleCell<CR>")
 --nmap("<leader>jp", ":ToggleCell<CR>")
 
-
--- remove all code tags
-imap("<A-e>", ":%s/# %% \\[code\\]<CR>")
--- search for code tags
-nmap("<A-f>", "/# %% \\[code\\]<CR>")
-
-
--- nmap("<leader>je", ":%s/# %% \\[code\\]<CR>")
+-- find code tags
 nmap("<leader>jf", "/# %% \\[code\\]<CR>")
+-- remove all code tags
+
+imap("<A-e>", ":%s/# %% \\[code\\]<CR>")
+-- toggle code tags for Jupyter/IDE cells
+vim.api.nvim_create_user_command("ToggleCell", function()
+    local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)
+    local modified = false
+
+    for i, line in ipairs(lines) do
+        -- Check for a standard cell marker
+        if line:find("^# %%%% ") then
+            -- Replace with the inactive delimiter
+            lines[i] = "# [inactive delimiter] [code]"
+            modified = true
+        -- Check for the inactive delimiter
+        elseif line:find("^# %[inactive delimiter%] ") then
+            -- Replace with the standard cell marker
+            lines[i] = "# %% [code]"
+            modified = true
+        end
+    end
+
+    if modified then
+        vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)
+    end
+end, {})
 
 
 -- close all buffers except current
@@ -154,29 +173,7 @@ vim.api.nvim_create_user_command("RemoveAnsi", function()
 end, {})
 
 
--- messes up code with "%" operator
-vim.api.nvim_create_user_command("ToggleCell", function()
-    local lines = vim.api.nvim_buf_get_lines(0, 0, -1, false)  -- Get all lines in the current buffer
-    local modified = false  -- Flag to check if any modification is made
-
-    for i, line in ipairs(lines) do
-        if line:find("%% ") then
-            -- Replace %% [code] with (cell) [code]
-            lines[i] = line:gsub("%% ", "(cell) ")
-            modified = true
-        elseif line:find("%(cell%) ") then
-            -- Replace (cell) [code] with %% [code]
-            lines[i] = line:gsub("%(cell%) ", "%% ")
-            modified = true
-        end
-    end
-
-    if modified then
-        vim.api.nvim_buf_set_lines(0, 0, -1, false, lines)  -- Set modified lines back to the buffer
-    end
-end, {})
-
-vim.api.nvim_create_user_command("ToggleSpell", function ()
+vim.api.nvim_create_user_command("ToggleSpellcheck", function ()
       -- Check if spellcheck is currently on
       if vim.opt.spell:get() then
         -- Turn it off and disable the highlight
