@@ -117,6 +117,9 @@ set laststatus=0
 let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
+" Disable auto-commenting when starting a new line
+autocmd FileType * setlocal formatoptions-=r formatoptions-=o
+
 " reset the cursor on start (for older versions of vim, usually not required)
 " augroup myCmds
 " au!
@@ -198,6 +201,43 @@ inoremap <C-o> # %% [code]<CR>
 " this on is weird but I don't use it that much
 "inoremap <C-m> # %% [markdown]<CR><Esc>O<CR><CR># %% [code]<Esc>2ki#
 
+" Toggle between standard and inactive cell delimiters
+function! ToggleCell()
+    " Get all lines from the current buffer
+    let lines = getline(1, '$')
+    let modified = 0
+    let new_lines = []
+
+    for line in lines
+        " Check for a standard cell marker at the start of the line
+        if line =~ '^# %%\s'
+            " Replace with the inactive delimiter
+            let new_line = '# [inactive delimiter] [code]'
+            let modified = 1
+        " Check for the inactive delimiter at the start of the line
+        elseif line =~ '^# \[inactive delimiter\] '
+            " Replace with the standard cell marker
+            let new_line = '# %% [code]'
+            let modified = 1
+        else
+            " No change, keep the original line
+            let new_line = line
+        endif
+
+        " Add the (possibly modified) line to the new list
+        call add(new_lines, new_line)
+    endfor
+
+    " If any lines were modified, replace the buffer content
+    if modified
+        call setline(1, new_lines)
+    endif
+endfunction
+
+" Create a user command to execute the function
+command! ToggleCell call ToggleCell()
+" map the command to a key
+nnoremap <Leader>tc :ToggleCell<CR>
 
 " marks
 nnoremap <leader>mf :<C-u>marks<CR>:normal! ``
@@ -313,53 +353,6 @@ nnoremap <Leader>fm :Maps<CR>
 
 
 """ Colors
-" I just let it use my terminal colors, but make a few tweaks
-" colorscheme default
-" " these complement 'Embers (base16)' from wezterm
-" highlight Special ctermfg=cyan guifg=cyan
-" " highlight Delimiter ctermfg=cyan guifg=cyan
-" highlight Comment ctermfg=darkgrey guifg=darkgrey
-" "highlight Search term=bold ctermfg=2 gui=bold guifg=SeaGreen
-" highlight Operator term=bold ctermfg=4 guifg=Blue
-" highlight Search term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
-" highlight SignColumn ctermbg=none
-" " the hover menu for autocomplete is too bright
-" highlight Pmenu ctermbg=8 ctermfg=7
-
-" I just let it use my terminal colors, but make a few tweaks
-" colorscheme candle-grey
-" highlight Normal guibg=NONE ctermbg=NONE
-
-" colorscheme photon
-" highlight Normal guibg=NONE ctermbg=NONE guifg=#c0c0c0 ctermfg=250
-" highlight Search guifg=#262626 guibg=#008080 ctermfg=235 ctermbg=37
-" highlight Normal guibg=NONE ctermbg=NONE
-" highlight Comment guibg=NONE ctermbg=NONE
-" highlight Constant guibg=NONE ctermbg=NONE
-" highlight Identifier guibg=NONE ctermbg=NONE
-" highlight Function guibg=NONE ctermbg=NONE
-" highlight Statement guibg=NONE ctermbg=NONE
-" highlight Type guibg=NONE ctermbg=NONE
-" highlight Special guibg=NONE ctermbg=NONE
-" highlight Keyword guibg=NONE ctermbg=NONE
-" highlight Operator guibg=NONE ctermbg=NONE
-" highlight PreProc guibg=NONE ctermbg=NONE
-" highlight NonText guibg=NONE ctermbg=NONE
-" highlight Title guibg=NONE ctermbg=NONE
-" highlight MsgArea guibg=NONE ctermbg=NONE
-" highlight ModeMsg guibg=NONE ctermbg=NONE
-" highlight MoreMsg guibg=NONE ctermbg=NONE
-" highlight Question guibg=NONE ctermbg=NONE
-
-" set termguicolors
-" set background=dark
-" colorscheme zenbones
-" highlight Normal guibg=NONE ctermbg=NONE
-" highlight Constant term=underline ctermfg=13 guifg=#868C91
-" highlight Constant term=underline cterm=none ctermfg=13 gui=none guifg=#868C91
-" highlight Comment term=bold cterm=none ctermfg=14 gui=none guifg=#6E6763
-
-
 " https://vimcolors.org
 set termguicolors
 hi clear
@@ -448,6 +441,19 @@ highlight MsgArea guibg=NONE ctermbg=NONE
 highlight ModeMsg guibg=NONE ctermbg=NONE
 highlight MoreMsg guibg=NONE ctermbg=NONE
 highlight Question guibg=NONE ctermbg=NONE
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 " https://vi.stackexchange.com/questions/25456/how-can-i-change-the-colorscheme-of-the-vim-terminal-buffer
 let g:terminal_ansi_colors = [

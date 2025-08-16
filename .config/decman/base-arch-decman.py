@@ -217,7 +217,8 @@ base_packages = [
     "sushi",
     "tecla",
     "totem",
-    "vim",
+    # regular ones doesn't have clipboard
+    "gvim",
     "vulkan-intel",
     "wget",
     "wpa_supplicant",
