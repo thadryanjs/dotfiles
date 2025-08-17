@@ -9,9 +9,6 @@ from decman import UserPackage, File, Directory, UserRaisedError
 
 # my normal packages
 decman.packages += [
-    # "grub-btrfs-support",
-    # config ui for snapshots
-    # "grub-customizer",
     "libpulse",
     "vivaldi",
     "firefox",
@@ -190,8 +187,8 @@ base_packages = [
     # "gnome-shell-extensions",
     # "gnome-system-monitor",
     # "gnome-terminal",
-    # "gnome-themes-extra",
-    # "gnome-tweaks",
+    "gnome-themes-extra",
+    "gnome-tweaks",
     # "gnome-usage",
     # "gnome-user-share",
     # "adwaita-icon-theme",
