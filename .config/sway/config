@@ -7,7 +7,6 @@
 #
 
 set $GTK_THEME "Adwaita:dark"
-exec --no-startup-id env GTK_THEME=$GTK_THEME pavucontrol
 exec_always --no-startup-id ~/.local/share/tresorit/tresorit-daemon
 exec_always /home/thadryan/.dotfiles/.config/sway/manage-closed-lid-refresh.sh
 

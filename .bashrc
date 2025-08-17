@@ -177,6 +177,8 @@ eval "$(atuin init bash --disable-up-arrow)"
 
 
 ## fzf
+# to see commands
+# nvim /usr/share/fzf/key-bindings.bash
 # apparently you can't disable the ctrl R one? (overwritten later)
 FZF_CTRL_T_COMMAND= FZF_ALT_C_COMMAND= eval "$(fzf --bash)"
 
@@ -237,15 +239,23 @@ bind -x '"\C-g": fzf_ripgrep'
 
 bind '"\C-r": reverse-search-history'
 # bind '"\C-a": "atuin history list --cmd-only | uniq | fzf\n"'
-
 function atuin_search() {
     selected_command=$(atuin history list --cmd-only | uniq | fzf)
     if [ -n "$selected_command" ]; then
         eval "$selected_command"
     fi
 }
+# experimental
+function atuin_search_and_edit() {
+  local selected_command
+  selected_command=$(atuin history list --cmd-only | uniq | fzf)
+  if [ -n "$selected_command" ]; then
+    READLINE_LINE=$selected_command
+    READLINE_POINT=${#READLINE_LINE}
+  fi
+}
 
-bind '"\C-a": "atuin_search\n"'
+bind -x '"\C-a": atuin_search_and_edit'
 
 
 ## zoxide
