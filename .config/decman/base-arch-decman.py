@@ -9,7 +9,9 @@ from decman import UserPackage, File, Directory, UserRaisedError
 
 # my normal packages
 decman.packages += [
-    "libpulse",
+    # "grub-btrfs-support",
+    # config ui for snapshots
+    # "grub-customizer",
     "vivaldi",
     "firefox",
     "git",
@@ -116,11 +118,12 @@ else:
     ]
     decman.aur_packages += [
         "surfshark-client",
-        # "viber",
+        "viber",
     ]
 
 # mostly untouched base system derived from running decman and seeing what it said would be erased
 base_packages = [
+    "libpulse",
     "grub-btrfs",
     "htop",
     "linux",
@@ -144,7 +147,6 @@ base_packages = [
     "efibootmgr",
     "epiphany",
     "evince",
-    "libpulse",
     "gdm",
     # "gnome-calendar",
     # "gnome-characters",
@@ -179,6 +181,7 @@ base_packages = [
     # "gnome-shell",
     # "gnome-system-monitor",
     # "gnome-text-editor",
+    # "gnome-tweaks",
     # "gnome-user-share",
     # "gnome-remote-desktop",
     # "gnome-session",
