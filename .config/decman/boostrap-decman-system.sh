@@ -16,6 +16,7 @@ In minimal arch install:
 
     # if you forgot to do it
     sudo pacman -S git gvim stow gdm
+
     git clone https://github.com/thadryanjs/dotfiles.git ~/.dotfiles
     # you should have this guide locally now
 
