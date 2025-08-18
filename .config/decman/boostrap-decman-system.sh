@@ -53,6 +53,10 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 git config --global user.email "thadryan@protonmail.com"
 git config --global user.name "thadryanjs"
 
+cd ~/.dotfiles
+git remote set-url origin git@github.com:thadryanjs/dotfiles.git
+cd
+
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 # to install plugins
 # ctrl-b I, or strl-space if my config is there
@@ -85,6 +89,7 @@ rm DejaVuSansMNerdFont*.ttf
 rm DejaVuSansMono.zip LICENSE.txt README.md
 
 sh .scripts/import-spotify-gpg-keys.sh
+
 
 """
 Set up git keys:
