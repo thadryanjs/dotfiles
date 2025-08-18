@@ -9,6 +9,7 @@ from decman import UserPackage, File, Directory, UserRaisedError
 
 # my normal packages
 decman.packages += [
+    ### user-level stuff
     "vivaldi",
     "firefox",
     "git",
@@ -54,6 +55,7 @@ decman.packages += [
         "npm",
     "cmatrix",
     "ollama",
+    "vlc",
     "gimp",
     # "texlive",
         "texlive-basic",
@@ -80,56 +82,20 @@ decman.packages += [
         "texlive-xetex",
     # "pandoc",
     "pandoc-cli",
-    "rclone"
-]
+    "rclone",
 
-decman.aur_packages += [
-    "decman",
-    "yay",
-    "btrfs-assistant",
-    "sway-screenshot",
-    "ferdium-bin",
-    # fails - cursed to use the downloaded installer forever I think.
-    # "tresorit"
-    "etcher-bin",
-    # first run:
-    # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
-    # or
-    # sh ~/.scripts/import-spotify-gpg-keys.sh
-    "spotify",
-    "zotero",
-    # "swaysettings-git"
-]
-
-if "work" in socket.gethostname():
-    # work system stuff
-    decman.packages += [
-        "openconnect",
-        "cifs-utils",
-    ]
-    decman.aur_packages += [
-        "zoom",
-    ]
-else:
-    # personal system stuff
-    decman.packages += [
-        "vlc",
-        "obs-studio",
-        "gimp",
-    ]
-    decman.aur_packages += [
-        "surfshark-client",
-        "viber",
-    ]
-
-# mostly untouched base system derived from running decman and seeing what it said would be erased
-base_packages = [
+    ### system-level stuff
+    "foot",
+    "nano",
+    "sof-firmware",
+    "waybar",
+    "xorg-xwayland",
     "libpulse",
     "grub-btrfs",
     "htop",
     "linux",
     "man-db",
-    "pipewire-pulse", "pipewire-audio", "pipewire", "wireplumber",
+    "pipewire-pulse", "pipewire-audio", "pipewire", "wireplumber", "gst-plugin-pipewire", "pipewire-jack",
     "slurp", "snap-pac",
     "vulkan-nouveau", "vulkan-radeon",
     "wireless_tools",
@@ -183,7 +149,42 @@ base_packages = [
     "yelp"
 ]
 
-decman.packages += base_packages
+decman.aur_packages += [
+    "decman",
+    "yay",
+    "btrfs-assistant",
+    "sway-screenshot",
+    "ferdium-bin",
+    # fails - cursed to use the downloaded installer forever I think.
+    # "tresorit"
+    "etcher-bin",
+    # first run:
+    # curl -sS https://download.spotify.com/debian/pubkey_C85668DF69375001.gpg | gpg --import -
+    # or
+    # sh ~/.scripts/import-spotify-gpg-keys.sh
+    "spotify",
+    "zotero",
+    # "swaysettings-git"
+]
+
+if socket.gethostname() == "darlene":
+    # work system stuff
+    decman.packages += [
+        "openconnect",
+        "cifs-utils",
+    ]
+    decman.aur_packages += [
+        "zoom",
+    ]
+else:
+    # personal system stuff
+    decman.packages += [
+        "obs-studio"
+    ]
+    decman.aur_packages += [
+        "surfshark-client",
+        "viber"
+    ]
 
 # Ignored packages can be normal packages or aur packages.
 decman.ignored_packages += [
