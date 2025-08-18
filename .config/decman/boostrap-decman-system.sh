@@ -97,6 +97,8 @@ Set up git keys:
     ssh-keygen -t ed25519 -C "thadryan@protonmail.com"
     cat ~/.ssh/id_ed25519.pub
 
+Set boot order with efibootmgr
+
 - Open Neovim:
     - Run :COQdeps
     - Run :COQsnips compile
