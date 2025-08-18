@@ -96,5 +96,9 @@ sh .scripts/import-spotify-gpg-keys.sh
 Set up git keys:
     ssh-keygen -t ed25519 -C "thadryan@protonmail.com"
     cat ~/.ssh/id_ed25519.pub
-"""
 
+- Open Neovim:
+    - Run :COQdeps
+    - Run :COQsnips compile
+    - Mason to install LSPs if desired.
+"""
