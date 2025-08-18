@@ -56,6 +56,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 git config --global user.email "thadryan@protonmail.com"
 git config --global user.name "thadryanjs"
 
+# did have to do manually for some reason
+cd
 cd ~/.dotfiles
 git remote set-url origin git@github.com:thadryanjs/dotfiles.git
 cd
