@@ -50,8 +50,11 @@ chmod -u+xrw /home/thadryan/.dotfiles/.config/sway/manage-closed-lid-refresh.sh
 sudo systemctl start gdm.service
 sudo systemctl enable gdm.service
 
-systemctl --user stop pipewire.socket pipewire.service
-systemctl --user start pipewire.socket pipewire.service
+sudo systemctl enable bluetooth.service
+sudo systemctl start bluetooth.service
+
+sudo systemctl stop pipewire.socket pipewire.service
+sudo systemctl start pipewire.socket pipewire.service
 
 sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -107,3 +110,4 @@ rm DejaVuSansMono.zip LICENSE.txt README.md
 # Discord
 #    Linux settings > disable open on start and minimize to tray
 #
+

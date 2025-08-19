@@ -83,6 +83,7 @@ decman.packages += [
     # "pandoc",
     "pandoc-cli",
     "rclone",
+    "blueman",
 
     ### system-level stuff
     "foot",
