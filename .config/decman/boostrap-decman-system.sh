@@ -50,6 +50,9 @@ chmod -u+xrw /home/thadryan/.dotfiles/.config/sway/manage-closed-lid-refresh.sh
 sudo systemctl start gdm.service
 sudo systemctl enable gdm.service
 
+systemctl --user stop pipewire.socket pipewire.service
+systemctl --user start pipewire.socket pipewire.service
+
 sudo grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 
