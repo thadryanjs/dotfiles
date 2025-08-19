@@ -9,7 +9,7 @@
 #     Audio:
 #         - Pipewire
 #     Additional packages:
-#         - git stow gdm $ gvim later, will cause break
+#         - git stow gdm # gvim later, causes break due to conflict with vim
 #     Set timezone
 #
 # In minimal arch install:
@@ -74,7 +74,7 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 wget https://installer.tresorit.com/tresorit_installer.run
 chmod -u+xrw tresorit_installer.run
-# ./tresorit_installer.run
+./tresorit_installer.run
 rm tresorit_installer.run
 
 
@@ -100,6 +100,10 @@ rm DejaVuSansMono.zip LICENSE.txt README.md
 #     cat ~/.ssh/id_ed25519.pub
 #
 # Set boot order with efibootmgr
-# efibootmgr
-# see which is current, like 001A, then run:
-# sudo efibootmgr -o 001A,0001,0000,0010,0011,0012,0013,0014,0018,0019,001B,001C,001D,001E,001F,0020,0021,0026,0003
+#     efibootmgr
+#     see which is current, like 001A, then run:
+#     sudo efibootmgr -o 001A,0001,0000,0010,0011,0012,0013,0014,0018,0019,001B,001C,001D,001E,001F,0020,0021,0026,0003
+#
+# Discord
+#    Linux settings > disable open on start and minimize to tray
+#

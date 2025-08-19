@@ -6,12 +6,11 @@ return {
         opts = {
             -- this is not a standard option for Mason, it's for use with a custom command (see config)
             ensure_installed = {
-                "clangd",
                 "pyright",
-                "lua-language-server",
+                "pyrefly",
                 "r-languageserver",
                 "ltex-ls",
-                "julia-lsp",
+                "lua-language-server",
             }
         },
 
