@@ -53,7 +53,6 @@ decman.packages += [
     "nodejs",
         "yarn",
         "npm",
-    "cmatrix",
     "ollama",
     "vlc",
     "gimp",
@@ -84,6 +83,8 @@ decman.packages += [
     "pandoc-cli",
     "rclone",
     "blueman",
+    # for matrix screensave, not a big deal
+    "noto-fonts-cjk",
 
     ### system-level stuff
     "foot",
@@ -153,6 +154,8 @@ decman.packages += [
 decman.aur_packages += [
     "decman",
     "yay",
+    # had to call yay on this manually
+    "unimatrix-git",
     "btrfs-assistant",
     "sway-screenshot",
     "ferdium-bin",

@@ -59,7 +59,7 @@ alias dotfiles="cd ~/.dotfiles"
 alias config="cd ~/.dotfiles/.config"
 # alias dec="sudo decman --source ~/.config/decman/decman.py"
 alias dec="sudo decman"
-
+alias matrix="kitty --config ~/.config/kitty/unimatrix.conf unimatrix"
 alias mount="cd /mnt/Workspace"
 alias vault="cd ~/WorkVault/"
 alias vaulthome="cd ~/HomeVault/"
