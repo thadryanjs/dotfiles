@@ -25,18 +25,20 @@ input type:pointer {
 workspace_layout tabbed
 
 
-#
 # Display
-#
-
+# This command can be used to scale the display temporarily for when I'm on a different monitor
+# swaymsg output "*" scale 1
 font pango:DejaVuSansM Nerd Font Mono 12
 
+output DP-2 {
+    mode "3840x2160"
+    position 1920,0
+}
+
 # Use "swaymsg -t get_outputs" to get diplays (eDP-1 in this case)
-set $laptop eDP-1
+# set $laptop eDP-1
 bindswitch --reload --locked lid:on output $laptop disable
 bindswitch --reload --locked lid:off output $laptop enable
-
-output DP-1 scale 2
 
 
 # bindswitch lid:on output eDP-1 disable
@@ -100,7 +102,8 @@ for_window [app_id="kitty"] border none
 
 # output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # output * bg /home/thadryan/HomeVault/Areas/Art/Backgrounds/BluefinDinos/autumn-night.jpeg fill
-output * bg /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock1.jpg fill
+# output * bg /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock1.jpg fill
+output * bg /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock-hd-wallpaper2.jpg fill
 
 #
 # Input configuration

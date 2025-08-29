@@ -156,3 +156,6 @@ quantile
 numpy
 dataframes
 DataFrame
+misspecification
+misspecified
+generalizable
