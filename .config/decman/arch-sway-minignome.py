@@ -195,7 +195,15 @@ decman.packages += [
     # -wlr is needed for screensharing to work
     "xdg-desktop-portal-gnome", "xdg-user-dirs-gtk", "xdg-desktop-portal-wlr",
     "xorg-server", "xorg-xinit",
-    "yelp"
+    "yelp",
+    "libavcodec.so=61-64",
+    "libavformat.so=61-64",
+    "libavutil.so=59-64",
+    "libswresample.so=5-64",
+    "libegl",
+    "libgl",
+    "libglvnd",
+    "nvidia-utils=580.76.05",
 ]
 
 decman.aur_packages += [
