@@ -6,6 +6,7 @@ RUN ostree container commit
 
 # Layer additional packages using rpm-ostree
 RUN rpm-ostree install \
+    gnome-tweaks \
 	stow \
 	neovim \
 	gvim \
@@ -16,7 +17,7 @@ RUN rpm-ostree install \
 	distrobox \
 	openconnect \
 	cifs-utils
-	
+
 # distrobox create --name nix-toolbox --image ghcr.io/thrix/nix-toolbox:42
 
 # RUN flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo

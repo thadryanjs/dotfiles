@@ -261,3 +261,6 @@ bind -x '"\C-a": atuin_search_and_edit'
 ## zoxide
 # eval "$(zoxide init bash)"
 
+
+## flatpaks
+alias manage-flatpaks="python /var/home/thadryan/.dotfiles/.config/misc/manage-flatpaks.py"
