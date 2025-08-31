@@ -14,13 +14,20 @@
   # want to update the value, then make sure to first check the Home Manager
   # release notes.
   home.stateVersion = "25.05"; # Please read the comment before changing.
-
+  nixpkgs.config = {
+    allowUnfree = true;
+  };
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  home.packages = [
+  home.packages = with pkgs; [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
+      neovim
+	    gvim
+	    tmux
+	    fzf
+	    atuin
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -68,7 +75,7 @@
   #  /etc/profiles/per-user/thadryan/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    # EDITOR = "nvim";
   };
 
   # Let Home Manager install and manage itself.
