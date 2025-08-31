@@ -7,8 +7,9 @@ flatpaks = [
     "com.vivaldi.Vivaldi",
     "org.mozilla.firefox",
     "org.ferdium.Ferdium",
-    "org.fedoraproject.MediaWriter",
+    "org.zotero.Zotero",
     # gnome specific
+    # "org.gnome.Calendar",
     "org.gnome.Connections",
     "org.gnome.baobab",
     "org.gnome.font-viewer",
@@ -27,4 +28,5 @@ flatpaks = [
     "org.gnome.clocks",
     "org.gnome.Extensions",
     # misc?
+    "org.fedoraproject.MediaWriter",
 ]
