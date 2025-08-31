@@ -260,3 +260,4 @@ bind -x '"\C-a": atuin_search_and_edit'
 
 ## zoxide
 eval "$(zoxide init bash)"
+
