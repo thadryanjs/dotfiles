@@ -96,6 +96,7 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
+
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
@@ -133,9 +134,9 @@ xterm*|rxvt*)
     ;;
 esac
 
-# if (env | grep -Fq 'DISTROBOX'); then
-#     PS1='📦\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\W\[\033[00m\]$(parse_git_branch)\n~:) '
-# fi
+if (env | grep -Fq 'DISTROBOX'); then
+    PS1='📦\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\W\[\033[00m\]$(parse_git_branch)\n~:) '
+fi
 
 
 function y() {
@@ -259,4 +260,8 @@ bind -x '"\C-a": atuin_search_and_edit'
 
 
 ## zoxide
-eval "$(zoxide init bash)"
+# eval "$(zoxide init bash)"
+
+
+## flatpaks
+alias manage-flatpaks="python /var/home/thadryan/.dotfiles/.config/misc/manage-flatpaks.py"

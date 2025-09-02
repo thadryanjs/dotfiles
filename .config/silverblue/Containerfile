@@ -1,0 +1,25 @@
+# Use a Fedora bootable image as the base
+FROM quay.io/fedora-ostree-desktops/silverblue:42
+
+# Commit the base image for bootc to track changes
+RUN ostree container commit
+
+RUN rpm-ostree install \
+    gnome-tweaks \
+	stow \
+    git \
+    openssl \
+    openssl-devel \
+	kitty \
+	distrobox \
+	openconnect \
+	cifs-utils \
+	gvim \
+	neovim \
+	tmux \
+	fzf \
+	atuin
+
+# TODO: Can I move from neovim down to a nix dev container withouth messing up my workflow?
+# TODO: This might be so simple I can just use vanilla sb and write these handful of packages down
+# now that I have my own script for flatpaks
