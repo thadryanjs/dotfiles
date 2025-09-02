@@ -239,17 +239,10 @@ fzf_ripgrep() {
 bind -x '"\C-g": fzf_ripgrep'
 
 bind '"\C-r": reverse-search-history'
-# bind '"\C-a": "atuin history list --cmd-only | uniq | fzf\n"'
-function atuin_search() {
-    selected_command=$(atuin history list --cmd-only | uniq | fzf)
-    if [ -n "$selected_command" ]; then
-        eval "$selected_command"
-    fi
-}
-# experimental
+
 function atuin_search_and_edit() {
   local selected_command
-  selected_command=$(atuin history list --cmd-only | uniq | fzf)
+  selected_command=$(atuin history list --cmd-only | awk '!seen[$0]++' | fzf)
   if [ -n "$selected_command" ]; then
     READLINE_LINE=$selected_command
     READLINE_POINT=${#READLINE_LINE}

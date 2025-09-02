@@ -18,7 +18,8 @@ RUN rpm-ostree install \
 	neovim \
 	tmux \
 	fzf \
-	atuin
+	atuin \
+    flatpak
 
 # TODO: Can I move from neovim down to a nix dev container withouth messing up my workflow?
 # TODO: This might be so simple I can just use vanilla sb and write these handful of packages down
