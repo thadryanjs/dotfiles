@@ -1,26 +1,15 @@
-# Use a Fedora bootable image as the base
 FROM quay.io/fedora-ostree-desktops/silverblue:42
+ARG FEDORA_VER=42
+ENV FEDORA_VER=${FEDORA_VER}
 
-# Commit the base image for bootc to track changes
 RUN ostree container commit
 
+# install rpmfusion release RPMs first so repos are available
 RUN rpm-ostree install \
-    gnome-tweaks \
-	stow \
-    git \
-    openssl \
-    openssl-devel \
-	kitty \
-	distrobox \
-	openconnect \
-	cifs-utils \
-	gvim \
-	neovim \
-	tmux \
-	fzf \
-	atuin \
-    flatpak
+  "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${FEDORA_VER}.noarch.rpm" \
+  "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${FEDORA_VER}.noarch.rpm"
 
-# TODO: Can I move from neovim down to a nix dev container withouth messing up my workflow?
-# TODO: This might be so simple I can just use vanilla sb and write these handful of packages down
-# now that I have my own script for flatpaks
+RUN rpm-ostree install \
+    gnome-tweaks stow git openssl openssl-devel kitty distrobox openconnect cifs-utils \
+    gvim neovim tmux fzf atuin \
+    akmod-nvidia xorg-x11-drv-nvidia-cuda nvidia-settings xorg-x11-drv-nvidia-cuda-libs
