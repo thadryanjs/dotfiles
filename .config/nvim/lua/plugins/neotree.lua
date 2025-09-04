@@ -16,7 +16,7 @@ return {
             -- this sets the working dir - could be useful so I'm leaving it but not using it for now
 --            nmap('<c-b>', ':Neotree toggle dir=%:p:h<CR>')
             nmap('<C-n>', ':Neotree toggle<CR>')
-
+            -- start open
             require("neo-tree").setup({
                 window = {
                     width = 27

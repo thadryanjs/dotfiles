@@ -40,6 +40,31 @@ vim.o.timeoutlen = 30000  -- Increase timeout length to 30 seconds
 --vim.opt.formatoptions:remove({ 'o' })
 -- vim.cmd(":set formatoptions-=r")
 
+-- [ Folds ]j
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'v:lua.custom_fold_expr(v:lnum)' -- Custom fold expression function
+vim.opt.foldlevelstart=20
+
+function _G.custom_fold_expr(lnum)
+  local line = vim.fn.getline(lnum)
+  if line:match('^# %%') then
+    return '>1' -- Start a new fold level
+  elseif line:match('^$') then
+    return '=' -- Keep previous fold level for empty lines
+  end
+  return '1' -- Default fold level
+end
+-- vim.opt.foldmethod = "manual"
+
+-- vim.opt.foldmethod = "indent"
+
+-- this gives me an error saying this can't be a number but the docs say it has to be
+-- a number https://neovim.io/doc/user/fold.html#_foldcolumn
+-- it works when I set it manually in the while running
+-- works with quotes but works with ints in live nvim lol
+vim.opt.foldcolumn = "auto"
+
+
 -- smarter search
 vim.opt.ignorecase = true
 vim.opt.smartcase = true

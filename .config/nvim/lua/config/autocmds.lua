@@ -26,6 +26,15 @@ vim.api.nvim_create_autocmd({ "BufEnter" }, {
   command = [[source /home/thadryan/.config/nvim/ftplugin/todo.vim]]
 })
 
+vim.api.nvim_create_autocmd("VimEnter", {
+  pattern = "*",
+  callback = function()
+    vim.api.nvim_command("Neotree") -- Open Neotree
+    vim.api.nvim_command("wincmd w") -- Move to the next window (or use other commands)
+    -- Alternatively, if you want to focus a specific buffer:
+    -- vim.api.nvim_command("buffer <buffer_number>", false) -- Replace <buffer_number>
+  end,
+})
 
 -- do not conceal characters in any file
 -- vim.api.nvim_create_autocmd({ "BufEnter" }, {

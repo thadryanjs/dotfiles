@@ -10,6 +10,21 @@ RUN rpm-ostree install \
   "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${FEDORA_VER}.noarch.rpm"
 
 RUN rpm-ostree install \
-    gnome-tweaks stow git openssl openssl-devel kitty distrobox openconnect cifs-utils \
-    gvim neovim tmux fzf atuin \
-    akmod-nvidia xorg-x11-drv-nvidia-cuda nvidia-settings xorg-x11-drv-nvidia-cuda-libs
+    gnome-tweaks \
+    stow \
+    git \
+    openssl \
+    openssl-devel \
+    kitty \
+    distrobox \
+    openconnect \
+    cifs-utils \
+    gvim \
+    neovim \
+    tmux \
+    fzf \
+    atuin \
+    akmod-nvidia \
+    xorg-x11-drv-nvidia-cuda \
+    nvidia-settings \
+    xorg-x11-drv-nvidia-cuda-libs

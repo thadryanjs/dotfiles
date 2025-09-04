@@ -23,7 +23,12 @@
     vim-full
     fzf
     atuin
+    tree
     yazi
+      ripgrep
+      silver-searcher
+      fd
+      bat
     pixi
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
