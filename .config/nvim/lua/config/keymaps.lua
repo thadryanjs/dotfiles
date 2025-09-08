@@ -187,3 +187,9 @@ vim.api.nvim_create_user_command("ToggleSpellcheck", function ()
         print("Spellcheck and underline are now ON")
       end
 end, {})
+
+vim.api.nvim_create_user_command("SetPixiPythonEnv", function()
+    local python_path = vim.fn.trim(vim.fn.system("pixi run which python"))
+    vim.g.python3_host_prog = python_path
+    print("Pixi Python environment set to: " .. python_path)
+end, {})

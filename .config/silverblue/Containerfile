@@ -21,6 +21,7 @@ RUN rpm-ostree install \
     cifs-utils \
     gvim \
     neovim \
+    xclip \
     tmux \
     fzf \
     atuin \
