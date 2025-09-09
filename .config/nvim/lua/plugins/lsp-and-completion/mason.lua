@@ -6,7 +6,7 @@ return {
         opts = {
             -- this is not a standard option for Mason, it's for use with a custom command (see config)
             ensure_installed = {
-                "pyright",
+                "ty",
                 "pyrefly",
                 "r-languageserver",
                 "ltex-ls",

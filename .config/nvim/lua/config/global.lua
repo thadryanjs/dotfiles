@@ -78,16 +78,14 @@ vim.opt.breakindent = true
 vim.o.updatetime = 500
 
 -- how lsp diagnostics are displayed
---
--- making these toggleable would be nice
 vim.diagnostic.config {
   virtual_text = false,
   signs = true,
-  underline = true,
+  underline = false,
 }
 
 -- code folding is evil
-vim.opt.foldenable = false
+-- vim.opt.foldenable = false
 
 -- filetype
 vim.cmd [[ filetype plugin on ]]

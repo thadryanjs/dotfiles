@@ -15,14 +15,19 @@ return {
                 autostart = false
             }))
 
-            lspconfig.pyright.setup(coq.lsp_ensure_capabilities({
-                autostart = false,
-                settings = {
-                    python = {
-                        pythonPath = vim.fn.exepath("python3")
-                    },
+            local util = require("lspconfig.util")
+            local configs = require("lspconfig.configs")
+            local data_path = vim.fn.stdpath("data")
+
+            if not configs.pyrefly then
+              configs.pyrefly = {
+                default_config = {
+                  cmd = { data_path .. "/mason/bin/pyrefly", "lsp" },
+                  filetypes = { "python" },
+                  root_dir = util.root_pattern(".git", "."),
                 },
-            }))
+              }
+            end
 
             lspconfig.pyrefly.setup(coq.lsp_ensure_capabilities({
                 autostart = true,
@@ -32,6 +37,26 @@ return {
                     },
                 },
             }))
+
+
+           -- if not configs.ty then
+           --   configs.ty = {
+           --     default_config = {
+           --       cmd = { data_path .. "/mason/bin/ty", "--stdio" },
+           --       filetypes = { "python" },
+           --       root_dir = util.root_pattern(".git", "."),
+           --     },
+           --   }
+           -- end
+           --
+           -- lspconfig.ty.setup(coq.lsp_ensure_capabilities({
+           --     autostart = true,
+           --     settings = {
+           --         python = {
+           --             pythonPath = vim.fn.getcwd() .. "/.pixi/envs/default/bin/python"
+           --         },
+           --     },
+           -- }))
 
             -- https://www.reddit.com/r/neovim/comments/s24zvh/how_can_i_load_a_user_dictionary_into_ltexls/
             lspconfig.ltex.setup(coq.lsp_ensure_capabilities({
@@ -45,17 +70,10 @@ return {
                 }
             }))
 
-            lspconfig.julials.setup(coq.lsp_ensure_capabilities({
-                autostart = false
-            }))
-
             lspconfig.lua_ls.setup(coq.lsp_ensure_capabilities({
                 autostart = false
             }))
 
-            -- lspconfig.clangd.setup(coq.lsp_ensure_capabilities({
-            --     autostart = false
-            -- }))
         end
     }
 }

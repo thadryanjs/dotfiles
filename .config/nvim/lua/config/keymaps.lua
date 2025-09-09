@@ -142,13 +142,21 @@ nmap('<leader>dp', '<cmd>lua vim.diagnostic.goto_prev()<CR>')
 nmap("<leader>nw", "<cmd>Navbuddy<CR>")
 
 
--- these might not be working anymore
--- sane diagnostics
+-- minal diagnostics
 vim.api.nvim_create_user_command("DiagnosticsLight", function()
     vim.diagnostic.config {
         virtual_text = false,
         signs = false,
         underline = true,
+    }
+end, {})
+
+-- normal diagnostics
+vim.api.nvim_create_user_command("DiagnosticsMedium", function()
+    vim.diagnostic.config {
+        virtual_text = false,
+        signs = true,
+        underline = false,
     }
 end, {})
 

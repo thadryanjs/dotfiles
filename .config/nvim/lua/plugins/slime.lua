@@ -5,7 +5,7 @@ return {
         config = function()
             vim.g.slime_cell_delimiter = "# %%"
             vim.g.slime_target = "tmux"
-            vim.g.slime_python_ipython = 0
+            vim.g.slime_python_ipython = 1
 
             function ToggleSlimeIPython()
               if vim.g.slime_python_ipython == 1 then
