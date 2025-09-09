@@ -17,6 +17,7 @@ vim.opt.autochdir = false
 vim.opt.undofile = true
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.o.numberwidth = 1
 -- enable mouse
 vim.opt.mouse = 'a'
 vim.opt.mousefocus = true
@@ -27,7 +28,7 @@ vim.opt.conceallevel = 0
 -- also no signcolumn
 -- vim.opt.signcolumn = 'no'
 -- vim.opt.statuscolumn = 'no'
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = 'number'
 vim.opt.scrolloff = 5
 vim.opt.spell = false
 vim.opt.spelllang = 'en_us'
