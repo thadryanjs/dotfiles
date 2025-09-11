@@ -1,4 +1,4 @@
-name: triforecast
+name: dev
 root: ~/
 windows:
   - code:

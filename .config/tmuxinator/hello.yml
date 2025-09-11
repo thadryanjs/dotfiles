@@ -51,7 +51,5 @@ windows:
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - nvim
-        - guard
   # - server: bundle exec rails s
   # - logs: tail -f log/development.log
