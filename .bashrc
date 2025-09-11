@@ -81,8 +81,10 @@ alias oud_predictors_ml_sync="sh ~/.scripts/oud-predictors-ml.sh"
 
 alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
 
-alias lock="swaylock --ignore-empty-password --image /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock2.jpg"
+# alias lock="swaylock --ignore-empty-password --image /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock2.jpg"
 
+alias tmuxdev="sh ~/.scripts/tmux-dev-session.sh"
+alias tmuxvpn="sh ~/.scripts/tmux-vpn-session.sh"
 
 
 alias ls='ls --color=auto'
@@ -148,24 +150,9 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'micromamba shell init' !!
-export MAMBA_EXE='/home/thadryan/.local/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/home/thadryan/micromamba';
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell bash --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    alias micromamba="$MAMBA_EXE"  # Fallback on help from micromamba activate
-fi
-unset __mamba_setup
-# <<< mamba initialize <<<
-
 export PATH="/home/thadryan/.pixi/bin:$PATH"
-# export PATH="/home/.local/share/tresorit:$PATH"
-
 export PATH="$HOME/.local/share/tresorit:$PATH"
-
+export PATH=$PATH:/var/home/thadryan/bin
 
 ## atuin
 # if you make a typo, you can't scroll up and fix it so it's not a 'command'

@@ -18,6 +18,10 @@ vim.opt.undofile = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.o.numberwidth = 1
+-- Automatically reload files changed externally
+vim.opt.autoread = true
+-- Increase check interval (in milliseconds)
+vim.opt.updatetime = 500
 -- enable mouse
 vim.opt.mouse = 'a'
 vim.opt.mousefocus = true

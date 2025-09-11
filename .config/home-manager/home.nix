@@ -19,6 +19,7 @@
   # environment.
   home.packages = with pkgs; [
     tmux
+      tmuxinator
     neovim
     vim-full
     fzf
