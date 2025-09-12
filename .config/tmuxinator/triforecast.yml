@@ -1,5 +1,5 @@
 name: triforecast
-root: ~/
+root: /mnt/Workspace/triforecast
 windows:
   - code:
       layout: ef64,174x44,0,0{122x44,0,0,2,51x44,123,0,4}

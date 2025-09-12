@@ -1,13 +1,46 @@
 test -s ~/.alias && . ~/.alias || true
 
-# eval "$(zoxide init bash)"
-
 stty -ixon
 
-# shopt -s histappend
+export EDITOR="nvim"
+export LLM_KEY=NONE
 
-# Check if not running interactively
-[[ $- != *i* ]] && return
+alias reboot="systemctl reboot"
+alias shutdown="sudo shutdown now"
+
+alias nvimconfig="cd ~/.dotfiles/.config/nvim"
+alias dotfiles="cd ~/.dotfiles"
+alias config="cd ~/.dotfiles/.config"
+
+alias matrix="kitty --config ~/.config/kitty/unimatrix.conf unimatrix"
+
+alias mount="cd /mnt/Workspace"
+alias vault="cd ~/WorkVault/"
+alias vaulthome="cd ~/HomeVault/"
+alias projects="cd ~/WorkVault/Projects/"
+
+alias discovery="sh ~/.scripts/discovery.sh"
+alias polaris="sh ~/.scripts/polaris.sh"
+alias andes="sh ~/.scripts/andes.sh"
+alias dartfs="sh ~/.scripts/mount-dartfs.sh"
+alias vpn="sh ~/.scripts/vpn.sh"
+
+alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
+
+alias ado_mat_sync="sh ~/.scripts/ado-mat-sync.sh"
+alias oud_predictors_ml_sync="sh ~/.scripts/oud-predictors-ml.sh"
+
+alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
+
+# alias lock="swaylock --ignore-empty-password --image /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock2.jpg"
+alias tmuxvpn="sh ~/.scripts/tmux-vpn-session.sh"
+
+alias ls='ls --color=auto'
+alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
+alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
+# the Chuck command
+alias lss='ls -ltrh'
+alias open='xdg-open'
 
 # export TMUX_CONF=~/.config/tmux/tmux.conf
 # check for tmux sessions, optionally join
@@ -39,60 +72,6 @@ if [[ -z "$TMUX" ]]; then
         tmux new-session
     fi
 fi
-
-
-export EDITOR="nvim"
-export LLM_KEY=NONE
-
-# hack for now
-if [ -n "$(ls ~/Downloads/MarkDownload/)" ] && \
-   [ -d ~/WorkVault/Resources/WebClips ]; then
-  mv ~/Downloads/MarkDownload/* ~/WorkVault/Resources/WebClips
-fi
-
-alias reboot="systemctl reboot"
-alias shutdown="sudo shutdown now"
-alias update="sh .scripts/debian-nix-update.sh"
-
-alias nvimconfig="cd ~/.dotfiles/.config/nvim"
-alias dotfiles="cd ~/.dotfiles"
-alias config="cd ~/.dotfiles/.config"
-# alias dec="sudo decman --source ~/.config/decman/decman.py"
-alias dec="sudo decman"
-alias matrix="kitty --config ~/.config/kitty/unimatrix.conf unimatrix"
-alias mount="cd /mnt/Workspace"
-alias vault="cd ~/WorkVault/"
-alias vaulthome="cd ~/HomeVault/"
-alias projects="cd ~/WorkVault/Projects/"
-alias system="cd ~/WorkVault/Areas/Tech/System"
-alias tech="cd ~/WorkVault/Areas/Tech/"
-alias ta="cd ~/WorkVault/Projects/TA-2025-Winter"
-
-alias discovery="sh ~/.scripts/discovery.sh"
-alias polaris="sh ~/.scripts/polaris.sh"
-alias andes="sh ~/.scripts/andes.sh"
-alias dartfs="sh ~/.scripts/mount-dartfs.sh"
-alias vpn="sh ~/.scripts/vpn.sh"
-
-alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
-
-alias ado_mat_sync="sh ~/.scripts/ado-mat-sync.sh"
-alias oud_predictors_ml_sync="sh ~/.scripts/oud-predictors-ml.sh"
-
-alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
-
-# alias lock="swaylock --ignore-empty-password --image /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock2.jpg"
-
-alias tmuxdev="sh ~/.scripts/tmux-dev-session.sh"
-alias tmuxvpn="sh ~/.scripts/tmux-vpn-session.sh"
-
-
-alias ls='ls --color=auto'
-alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
-alias l='ls -lav --ignore=.?*'   # show long listing but no hidden dotfiles except "."
-# the Chuck command
-alias lss='ls -ltrh'
-alias open='xdg-open'
 
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
@@ -152,7 +131,6 @@ function y() {
 
 export PATH="/home/thadryan/.pixi/bin:$PATH"
 export PATH="$HOME/.local/share/tresorit:$PATH"
-export PATH=$PATH:/var/home/thadryan/bin
 
 ## atuin
 # if you make a typo, you can't scroll up and fix it so it's not a 'command'
@@ -238,10 +216,8 @@ function atuin_search_and_edit() {
 
 bind -x '"\C-a": atuin_search_and_edit'
 
-
 ## zoxide
 # eval "$(zoxide init bash)"
-
 
 ## flatpaks
 alias manage-flatpaks="python /var/home/thadryan/.dotfiles/.config/misc/manage-flatpaks.py"

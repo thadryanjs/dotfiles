@@ -2,13 +2,16 @@ FROM quay.io/fedora-ostree-desktops/silverblue:42
 ARG FEDORA_VER=42
 ENV FEDORA_VER=${FEDORA_VER}
 
-# RUN ostree container commit
-
-# install rpmfusion release RPMs first so repos are available
+# Enable fusion repos
 RUN rpm-ostree install \
   "https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-${FEDORA_VER}.noarch.rpm" \
   "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${FEDORA_VER}.noarch.rpm"
 
+# Get COPR repos
+RUN curl -L https://copr.fedorainfracloud.org/coprs/lihaohong/yazi/repo/fedora-${FEDORA_VER}/lihaohong-yazi-fedora-${FEDORA_VER}.repo -o /etc/yum.repos.d/lihaohong-yazi-fedora-${FEDORA_VER}.repo && \
+    curl -L https://copr.fedorainfracloud.org/coprs/fcsm/tmuxinator/repo/fedora-${FEDORA_VER}/fcsm-tmuxinator-fedora-${FEDORA_VER}.repo -o /etc/yum.repos.d/fcsm-tmuxinator-fedora-${FEDORA_VER}.repo
+
+# Install packages
 RUN rpm-ostree install \
     gnome-tweaks \
     stow \
@@ -28,6 +31,6 @@ RUN rpm-ostree install \
     akmod-nvidia \
     xorg-x11-drv-nvidia-cuda \
     nvidia-settings \
-    xorg-x11-drv-nvidia-cuda-libs
-
-# RUN gem install tmuxinator
+    xorg-x11-drv-nvidia-cuda-libs \
+    yazi \
+    tmuxinator
