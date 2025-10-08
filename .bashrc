@@ -34,6 +34,7 @@ alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/
 
 # alias lock="swaylock --ignore-empty-password --image /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock2.jpg"
 alias tmuxvpn="sh ~/.scripts/tmux-vpn-session.sh"
+alias focusmode="sh ~/.scripts/focus-mode.sh"
 
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
@@ -221,3 +222,4 @@ bind -x '"\C-a": atuin_search_and_edit'
 
 ## flatpaks
 alias manage-flatpaks="python /var/home/thadryan/.dotfiles/.config/misc/manage-flatpaks.py"
+export PATH="/var/home/thadryan/.pixi/bin:$PATH"

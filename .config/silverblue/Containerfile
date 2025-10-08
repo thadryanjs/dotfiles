@@ -8,14 +8,20 @@ RUN rpm-ostree install \
   "https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-${FEDORA_VER}.noarch.rpm"
 
 # Get COPR repos
-RUN curl -L https://copr.fedorainfracloud.org/coprs/lihaohong/yazi/repo/fedora-${FEDORA_VER}/lihaohong-yazi-fedora-${FEDORA_VER}.repo -o /etc/yum.repos.d/lihaohong-yazi-fedora-${FEDORA_VER}.repo && \
-    curl -L https://copr.fedorainfracloud.org/coprs/fcsm/tmuxinator/repo/fedora-${FEDORA_VER}/fcsm-tmuxinator-fedora-${FEDORA_VER}.repo -o /etc/yum.repos.d/fcsm-tmuxinator-fedora-${FEDORA_VER}.repo
+RUN curl -L https://copr.fedorainfracloud.org/coprs/lihaohong/yazi/repo/fedora-${FEDORA_VER}/lihaohong-yazi-fedora-${FEDORA_VER}.repo -o /etc/yum.repos.d/lihaohong-yazi-fedora-${FEDORA_VER}.repo
+
+RUN curl -L https://copr.fedorainfracloud.org/coprs/fcsm/tmuxinator/repo/fedora-${FEDORA_VER}/fcsm-tmuxinator-fedora-${FEDORA_VER}.repo -o /etc/yum.repos.d/fcsm-tmuxinator-fedora-${FEDORA_VER}.repo
+
+# using quarto in a distrobox for now
+# RUN rpm-ostree install \
+#   https://copr.fedorainfracloud.org/coprs/albersonmiranda/rtools/repo/fedora-${FEDORA_VER}/albersonmiranda-rtools-release-${FEDORA_VER}.noarch.rpm
 
 # Install packages
 RUN rpm-ostree install \
     gnome-tweaks \
     stow \
     git \
+    tree \
     openssl \
     openssl-devel \
     kitty \
@@ -32,5 +38,14 @@ RUN rpm-ostree install \
     xorg-x11-drv-nvidia-cuda \
     nvidia-settings \
     xorg-x11-drv-nvidia-cuda-libs \
+    java-latest-openjdk \
     yazi \
-    tmuxinator
+    tmuxinator \
+    gnome-pomodoro \
+    gnome-browser-connector
+
+# To complete setup run the following after syncing dotfiles with stow
+# sh ~/.scripts/manage-flatpaks.sh
+# sh ~/.scripts/gnome-tweak-settings.sh
+# sh ~/.scripts/pixi-install.sh
+# sh ~/.scripts/spotify-discord-bridge.sh

@@ -5,5 +5,3 @@ windows:
   - vpn:
       layout: main-vertical
       panes: vpn # sh ~/.scripts/vpn.sh
-# This doesn't work currently - tmuxinator is inside the box, which doesn't have open connect because it uses sudo
-# For now, just use the tmuxvpn alias for the vpn panel and declare everything else. Still way neater than before.

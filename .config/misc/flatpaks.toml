@@ -8,6 +8,8 @@ flatpaks = [
     "org.mozilla.firefox",
     "org.ferdium.Ferdium",
     "org.zotero.Zotero",
+    "org.videolan.VLC",
+    "org.libreoffice.LibreOffice",
     # gnome specific
     # "org.gnome.Calendar",
     "org.gnome.Connections",
@@ -20,7 +22,7 @@ flatpaks = [
     "org.gnome.Calculator",
     "org.gnome.Evince",
     # "org.gnome.Contacts",
-    "org.gnome.Weather",
+    # "org.gnome.Weather",
     "org.gnome.Maps",
     "org.gnome.TextEditor",
     "org.gnome.Characters",

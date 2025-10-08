@@ -32,7 +32,12 @@
       fd
       bat
     pixi
-    tomato-c
+    quarto
+    pandoc
+    texliveTeTeX
+    # open jdk distribution
+    zulu
+
 
 # TODO: types?
 
