@@ -33,6 +33,7 @@ RUN rpm-ostree install \
     xclip \
     tmux \
     fzf \
+    the_silver_searcher \
     atuin \
     akmod-nvidia \
     xorg-x11-drv-nvidia-cuda \

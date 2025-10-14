@@ -29,6 +29,7 @@ flatpaks = [
     "org.gnome.Logs",
     "org.gnome.clocks",
     "org.gnome.Extensions",
+    "com.hunterwittenborn.Celeste",
     # misc?
     "org.fedoraproject.MediaWriter",
 ]
