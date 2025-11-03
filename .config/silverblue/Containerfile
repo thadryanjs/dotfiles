@@ -12,6 +12,8 @@ RUN curl -L https://copr.fedorainfracloud.org/coprs/lihaohong/yazi/repo/fedora-$
 
 RUN curl -L https://copr.fedorainfracloud.org/coprs/fcsm/tmuxinator/repo/fedora-${FEDORA_VER}/fcsm-tmuxinator-fedora-${FEDORA_VER}.repo -o /etc/yum.repos.d/fcsm-tmuxinator-fedora-${FEDORA_VER}.repo
 
+RUN curl -L https://copr.fedorainfracloud.org/coprs/mozes/zotero7/repo/fedora-${FEDORA_VER}/mozes-zotero7-fedora-${FEDORA_VER}.repo -o /etc/yum.repos.d/mozes-zotero7-fedora-${FEDORA_VER}.repo
+
 # using quarto in a distrobox for now
 # RUN rpm-ostree install \
 #   https://copr.fedorainfracloud.org/coprs/albersonmiranda/rtools/repo/fedora-${FEDORA_VER}/albersonmiranda-rtools-release-${FEDORA_VER}.noarch.rpm
@@ -42,10 +44,20 @@ RUN rpm-ostree install \
     java-latest-openjdk \
     yazi \
     tmuxinator \
+    zotero \
     gnome-pomodoro \
     gnome-browser-connector
 
+    # pandoc \
+    # texlive \
+    # texlive-psnfss \
+    # texlive-ec \
+    # texlive-lm \
+
+
 # To complete setup run the following after syncing dotfiles with stow
+# gnome tweaks: v-shell, system-tray-reloaded (needed for megasync)
+# sh ~/.scripts/megasync-install-on-fedora.sh
 # sh ~/.scripts/manage-flatpaks.sh
 # sh ~/.scripts/gnome-tweak-settings.sh
 # sh ~/.scripts/pixi-install.sh

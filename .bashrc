@@ -223,3 +223,10 @@ bind -x '"\C-a": atuin_search_and_edit'
 ## flatpaks
 alias manage-flatpaks="python /var/home/thadryan/.dotfiles/.config/misc/manage-flatpaks.py"
 export PATH="/var/home/thadryan/.pixi/bin:$PATH"
+
+## move webclips to vault (markdownload can't do outside standard Downloads folder due to browser security policies)
+# hack for now
+if [ -n "$(ls ~/Downloads/MarkDownload/)" ] && \
+   [ -d ~/WorkVault/Resources/WebClips ]; then
+  mv ~/Downloads/MarkDownload/* ~/WorkVault/Resources/WebClips
+fi
