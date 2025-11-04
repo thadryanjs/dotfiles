@@ -1,5 +1,5 @@
 name: surg-lapvchole
-root: /mnt/Workspace/SurgicalRobots/
+root: /mnt/Workspace/surg-bots/lap-vs-chole/
 windows:
   - code:
       layout: ef64,174x44,0,0{122x44,0,0,2,51x44,123,0,4}

@@ -1,5 +1,5 @@
 name: surg-curve
-root: ~/WorkVault/Projects/SurgicalRobots/LearningCurve/
+root: /var/home/thadryan/WorkVault/Projects/SurgicalRobots/LearningCurve
 windows:
   - code:
       layout: ef64,174x44,0,0{122x44,0,0,2,51x44,123,0,4}
