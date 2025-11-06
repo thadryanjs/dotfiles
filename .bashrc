@@ -12,7 +12,7 @@ alias nvimconfig="cd ~/.dotfiles/.config/nvim"
 alias dotfiles="cd ~/.dotfiles"
 alias config="cd ~/.dotfiles/.config"
 
-alias matrix="kitty --config ~/.config/kitty/unimatrix.conf unimatrix"
+# alias matrix="kitty --config ~/.config/kitty/unimatrix.conf unimatrix"
 
 alias mount="cd /mnt/Workspace"
 alias vault="cd ~/WorkVault/"
@@ -25,16 +25,15 @@ alias andes="sh ~/.scripts/andes.sh"
 alias dartfs="sh ~/.scripts/mount-dartfs.sh"
 alias vpn="sh ~/.scripts/vpn.sh"
 
-alias triforecast="cd ~/WorkVault/Projects/triforecast/triforecast"
-
-alias ado_mat_sync="sh ~/.scripts/ado-mat-sync.sh"
-alias oud_predictors_ml_sync="sh ~/.scripts/oud-predictors-ml.sh"
-
 alias mntssh="sshfs f006fkc@discovery7.hpcc.dartmouth.edu:/dartfs-hpc/rc/home/c/f006fkc/Workspace/opioid-predictions/triforecast sshmnt/"
 
 # alias lock="swaylock --ignore-empty-password --image /home/thadryan/HomeVault/Areas/Art/Backgrounds/bioshock2.jpg"
+
+alias tmi="tmuxinator"
 alias tmuxvpn="sh ~/.scripts/tmux-vpn-session.sh"
+
 alias focusmode="sh ~/.scripts/focus-mode.sh"
+
 
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."

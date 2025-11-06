@@ -40,12 +40,13 @@ return {
             local telescope = require('telescope')
 
             -- includes the files in the gitignore by default
-            vim.keymap.set('n', '<leader>ff', ":Telescope find_files hidden=true no_ignore=true<CR>",
-                    { noremap = true, silent = true })
+            -- moving to fzf lua because it works on CIFS mount
+            -- vim.keymap.set('n', '<leader>ff', ":Telescope find_files hidden=true no_ignore=true<CR>", { noremap = true, silent = true })
             -- search for version control tracked files only
             vim.keymap.set('n', '<leader>ft', builtin.find_files, {})
             -- live grep for strings in many files
-            vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+            -- moving to fzf lua because it works on CIFS mount
+            -- vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
             -- look through open buffers
             vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
             -- searches the text under the cursor
@@ -53,7 +54,8 @@ return {
             -- search help pages
             vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
             -- searches recent files
-            vim.keymap.set('n', '<leader>fr', ":Telescope oldfiles<cr>")
+            -- moving to fzf lua because it works on CIFS mount
+            -- vim.keymap.set('n', '<leader>fr', ":Telescope oldfiles<cr>")
 
             telescope.load_extension("workspaces")
             -- telescope.load_extension('vim_bookmarks')
