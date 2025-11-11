@@ -10,12 +10,8 @@ return {
       -- vim.keymap.set('n', '<leader>fg', ':FzfLua grep<CR>', {})
       vim.keymap.set('n', '<leader>fg', ':FzfLua live_grep<CR>', {})
       vim.keymap.set('n', '<leader>fr', ':FzfLua oldfiles<CR>', {})
-      vim.keymap.set('n', '<leader>fb', ':FzfLua blines<CR>', {})
+      -- searches the content of a buffer
+      vim.keymap.set('n', '<leader>sb', ':FzfLua blines<CR>', {})
     end,
   },
 }
-
--- Replace these telescope functions with fzf-lua
--- vim.keymap.set('n', '<leader>ff', ":Telescope find_files hidden=true no_ignore=true<CR>", { noremap = true, silent = true })
--- vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
--- vim.keymap.set('n', '<leader>fr', ":Telescope oldfiles<cr>")

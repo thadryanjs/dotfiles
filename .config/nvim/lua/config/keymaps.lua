@@ -34,7 +34,8 @@ nmap("<C-v>", '"+p')
 vim.api.nvim_set_keymap('i', '<CR>', 'v:lua.pumvisible() ? "<C-Y>" : "<CR>"', { expr = true, noremap = true })
 
 -- home
-nmap("<leader>wo", ":e /home/thadryan/Documents/Vault/workspaces-overview.md<CR>")
+nmap("<leader>qw", ":e queue.md<CR>")
+nmap("<leader>qc", ":wq queue.md<CR>")
 
 -- preview buffer (https://stackoverflow.com/questions/28808922/quickly-switch-to-the-last-edited-buffer)
 nmap("<leader>pp", "<C-^>")
@@ -89,6 +90,9 @@ end, {})
 -- :w | %bd | e# | bd
 nmap("<leader>ca", ":w | %bd | e# | bd#<CR>")
 
+-- open quickfix
+nmap("<leader>qo", ":copen <CR>")
+nmap("<leader>qc", ":cclose <CR>")
 -- remove current quickfix entry under cursor (apparently impossible lol)
 
 -- set no conceal
@@ -113,9 +117,10 @@ nmap("<leader>cd", ":cd %:p:h<CR>")
 nmap("<leader>td", ":e ~/WorkVault/todo.txt<CR>")
 
 -- telescope buffers
-nmap("<leader>fb", "<cmd>Telescope buffers<CR>")
+-- nmap("<leader>fb", "<cmd>Telescope buffers<CR>")
 nmap("<leader>bp", "<cmd>bprevious<CR>")
 nmap("<leader>bn", "<cmd>bnext<CR>")
+nmap("<leader>bc", "<cmd>bnext<CR>")
 
 -- pipe operator
 imap("kk", "%>%")

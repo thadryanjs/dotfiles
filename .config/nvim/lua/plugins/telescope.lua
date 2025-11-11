@@ -47,7 +47,7 @@ return {
             -- live grep for strings in many files
             -- moving to fzf lua because it works on CIFS mount
             -- vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-            -- look through open buffers
+            -- search names open buffers
             vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
             -- searches the text under the cursor
             vim.keymap.set('n', '<leader>fu', builtin.grep_string, {})
