@@ -102,3 +102,49 @@ vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {f
 
 -- python provider
 vim.g.python3_host_prog = '/usr/bin/python3'
+
+-- This is a hack because neotree messes with :bd
+function CloseCurrentBufferAndSwitchOrQuit()
+  local curr_buf = vim.api.nvim_get_current_buf()
+  local listed_buffers = {}
+
+  -- Collect listed buffers
+  for _, bufnr in ipairs(vim.api.nvim_list_bufs()) do
+    if vim.fn.buflisted(bufnr) == 1 and vim.api.nvim_buf_is_loaded(bufnr) then
+      table.insert(listed_buffers, bufnr)
+    end
+  end
+
+  if #listed_buffers <= 1 then
+    -- Last buffer, so quit Neovim
+    vim.cmd('quit')
+    return
+  end
+
+  -- Try to switch to alternate buffer
+  local alt_buf = vim.fn.bufnr('#')
+  if alt_buf == -1 or alt_buf == curr_buf or not vim.api.nvim_buf_is_loaded(alt_buf) then
+    -- Fallback: pick any listed buffer except current
+    for _, bufnr in ipairs(listed_buffers) do
+      if bufnr ~= curr_buf then
+        alt_buf = bufnr
+        break
+      end
+    end
+  end
+
+  -- Switch to alt_buf
+  if vim.api.nvim_buf_is_valid(alt_buf) then
+    vim.api.nvim_set_current_buf(alt_buf)
+  else
+    -- No valid buffer to switch to, just open a new one
+    vim.cmd('enew')
+  end
+
+  -- Delete current buffer
+  if vim.api.nvim_buf_is_valid(curr_buf) then
+    vim.api.nvim_buf_delete(curr_buf, { force = false })
+  end
+end
+
+vim.api.nvim_set_keymap('n', '<leader>bd', ':lua CloseCurrentBufferAndSwitchOrQuit()<CR>', { noremap = true, silent = true })

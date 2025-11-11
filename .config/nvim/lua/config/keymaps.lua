@@ -36,6 +36,7 @@ vim.api.nvim_set_keymap('i', '<CR>', 'v:lua.pumvisible() ? "<C-Y>" : "<CR>"', { 
 -- home
 nmap("<leader>qw", ":e queue.md<CR>")
 nmap("<leader>qc", ":wq queue.md<CR>")
+nmap("<leader>qu", ":! python ~/.scripts/overqueue.py ~/WorkVault/<CR>")
 
 -- preview buffer (https://stackoverflow.com/questions/28808922/quickly-switch-to-the-last-edited-buffer)
 nmap("<leader>pp", "<C-^>")
