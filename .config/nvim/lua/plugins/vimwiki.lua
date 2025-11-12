@@ -20,5 +20,20 @@ return {
                 -- },
             }
         end,
+        config = function()
+            vim.keymap.set('n', '<leader>lc', ": VimwikiToggleListItem<CR>", {})
+            vim.keymap.set('n', '<leader>la', 'i- [ ] ', {})
+            vim.keymap.set('n', '<leader>lf', function()
+              require('fzf-lua').live_grep {
+                search = "- [ ]",
+                prompt = "> TODOS (- [ ])> ",
+              }
+            end, { silent = true })
+        end
+
     },
 }
+
+-- vimwiki
+-- nmap("<leader>lc", ": VimwikiToggleListItem<CR>")
+-- imap("kk", "%>%")

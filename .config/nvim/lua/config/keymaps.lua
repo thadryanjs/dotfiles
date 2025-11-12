@@ -33,10 +33,11 @@ nmap("<C-v>", '"+p')
 -- autocomplete
 vim.api.nvim_set_keymap('i', '<CR>', 'v:lua.pumvisible() ? "<C-Y>" : "<CR>"', { expr = true, noremap = true })
 
--- home
-nmap("<leader>qw", ":e queue.md<CR>")
+-- home and queue m
+nmap("<leader>qw", ":e ~/WorkVault/queue.md | set readonly<CR>")
+nmap("<leader>qh", ":e ~/HomeVault/queue.md | set readonly<CR>")
 nmap("<leader>qc", ":wq queue.md<CR>")
-nmap("<leader>qu", ":! python ~/.scripts/overqueue.py ~/WorkVault/<CR>")
+nmap("<leader>qu", ":! sh ~/.scripts/overqueue.sh<CR>")
 
 -- preview buffer (https://stackoverflow.com/questions/28808922/quickly-switch-to-the-last-edited-buffer)
 nmap("<leader>pp", "<C-^>")
@@ -115,7 +116,7 @@ nmap("<leader>hr", ":nohl<CR>")
 nmap("<leader>cd", ":cd %:p:h<CR>")
 
 -- open todo.txt
-nmap("<leader>td", ":e ~/WorkVault/todo.txt<CR>")
+-- nmap("<leader>lc", ": VimwikiToggleListItem<CR>")
 
 -- telescope buffers
 -- nmap("<leader>fb", "<cmd>Telescope buffers<CR>")

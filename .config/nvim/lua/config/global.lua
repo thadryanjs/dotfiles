@@ -148,3 +148,4 @@ function CloseCurrentBufferAndSwitchOrQuit()
 end
 
 vim.api.nvim_set_keymap('n', '<leader>bd', ':lua CloseCurrentBufferAndSwitchOrQuit()<CR>', { noremap = true, silent = true })
+
