@@ -149,3 +149,10 @@ end
 
 vim.api.nvim_set_keymap('n', '<leader>bd', ':lua CloseCurrentBufferAndSwitchOrQuit()<CR>', { noremap = true, silent = true })
 
+local home = vim.loop.os_homedir()  -- get expanded home directory
+
+-- On startup check if cwd is home; if so, change directory
+if vim.fn.getcwd() == home then
+  -- Change directory to your desired path
+  vim.cmd('cd ' .. home .. '/WorkVault')
+end
