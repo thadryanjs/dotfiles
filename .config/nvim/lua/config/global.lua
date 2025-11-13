@@ -103,6 +103,7 @@ vim.cmd [[autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {f
 -- python provider
 vim.g.python3_host_prog = '/usr/bin/python3'
 
+
 -- This is a hack because neotree messes with :bd
 function CloseCurrentBufferAndSwitchOrQuit()
   local curr_buf = vim.api.nvim_get_current_buf()
