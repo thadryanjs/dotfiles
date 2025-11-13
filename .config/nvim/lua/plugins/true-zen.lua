@@ -1,6 +1,7 @@
 return {
     {
         "loqusion/true-zen.nvim",
+        enabled = false,
         config = function()
             require("true-zen").setup({
                 modes = {

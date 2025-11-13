@@ -5,7 +5,7 @@ return {
         "ThePrimeagen/harpoon",
         -- specify the brach to use
         branch = "harpoon2",
-        enabled = true,
+        enabled = false,
         opts = {
           settings = {
             save_on_toggle = true,

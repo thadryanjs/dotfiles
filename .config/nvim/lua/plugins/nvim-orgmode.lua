@@ -12,7 +12,7 @@ return {
                 win_split_mode = "float",
                 -- win_border = "rounded",
 
-                -- Agenda
+                -- [[ Agenda ]] --
                 org_agenda_files = {
                     '~/WorkVault/Projects/**/*.org',
                     '~/HomeVault/Projects/**/*.org',
@@ -58,7 +58,7 @@ return {
                     }
                 },
 
-                -- Tasks
+                -- [[ Tasks ]] --
                 org_capture_templates = {
                     t = {
                         description = 'Simple TODO',
@@ -71,10 +71,10 @@ return {
                         '    DEADLINE: %t SCHEDULED: %t',
                       },
                     },
-                    -- I don't want every to-be-read as a todo
+                    -- these get filtered out by one of my agenda views
                     b = {
-                        description = 'Untracked to-be-read',
-                        template = '* %?',
+                        description = 'Home to-be-read',
+                        template = '* TODO [#B]* %?',
                     }
                 },
                 org_todo_keywords = {
@@ -93,7 +93,8 @@ return {
                 },
 
             })
-            -- colors
+
+            -- [[ Colors ]] --
             -- to mess with the colors: after orgmode setup, apply highlight overrides
             vim.api.nvim_create_autocmd('ColorScheme', {
                 pattern = '*',
@@ -113,7 +114,7 @@ return {
             -- vim.api.nvim_set_hl(0, '@org.priority.low', { fg = '#AAAAAA', italic = true })
             -- vim.api.nvim_set_hl(0, '@org.priority.lowest', { fg = '#777777' })
 
-            -- misc
+            -- [[ Misc ]] --
             -- open main orgfile with name of dir
             local function open_orgfile()
               local cwd = vim.fn.getcwd()
@@ -138,9 +139,7 @@ return {
               silent = true
             })
 
-            -- insert date and scheduling templates
-
-            -- simple date
+            -- insert simple date
             _G.insert_org_date = function()
               local date = os.date("<%Y-%m-%d>")  -- e.g. <2024-06-13>
               vim.api.nvim_put({date}, 'c', true, true)
@@ -153,15 +152,7 @@ return {
               { noremap = true, silent = true }
             )
 
-            _G.insert_todo_template = function()
-                local row, _ = unpack(vim.api.nvim_win_get_cursor(0))
-                local lines = vim.split(todo_template, "\n", { plain = true })
-                vim.api.nvim_buf_set_lines(0, row, row, false, lines)
-            end
-
-            vim.keymap.set('n', '<leader>td', _G.insert_todo_template, { noremap = true, silent = true })
-
-            -- template date
+            -- insert date and scheduling templates
             vim.api.nvim_set_keymap(
               'n',
               '<leader>id',
@@ -181,13 +172,6 @@ return {
               ':lua insert_deadline_scheduled_today()<CR>',
               { noremap = true, silent = true }
             )
-
-            -- NOTE: If you are using nvim-treesitter with ~ensure_installed = "all"~ option
-            -- add ~org~ to ignore_install
-            -- require('nvim-treesitter.configs').setup({
-                --   ensure_installed = 'all',
-                --   ignore_install = { 'org' },
-                -- })
             end,
         }
     }

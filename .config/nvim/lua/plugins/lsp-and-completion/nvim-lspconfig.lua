@@ -2,80 +2,30 @@ return {
     {
         "neovim/nvim-lspconfig",
         config = function()
+            vim.lsp.config("*", {
+              flags = {
+                -- Debounce settings can improve performance
+                debounce_text_changes = 150,
+              },
+              -- Example: Define common on_attach or capabilities here if desired
+            })
 
-            local lspconfig = require('lspconfig')
-            local coq = require('coq')
+            -- Initialize lspconfig to add its configurations to the runtime path
+            require("lspconfig")
 
-            local words = {}
-            for word in io.open(vim.fn.stdpath("config") .. "/spell/en.utf-8.add", "r"):lines() do
-            	table.insert(words, word)
-            end
+            -- List the servers you want to enable
+            local servers = {
+              "lua_ls",
+              "ty"
+            }
 
-            lspconfig.r_language_server.setup(coq.lsp_ensure_capabilities({
-                autostart = false
-            }))
+            -- Enable the listed servers.
+            -- This triggers Neovim to look for configurations in the runtime path
+            -- (both from lspconfig and your custom ~/.config/nvim/lsp/)
+            vim.lsp.enable(servers)
 
-            local util = require("lspconfig.util")
-            local configs = require("lspconfig.configs")
-            local data_path = vim.fn.stdpath("data")
-
-            if not configs.pyrefly then
-              configs.pyrefly = {
-                default_config = {
-                  cmd = { data_path .. "/mason/bin/pyrefly", "lsp" },
-                  filetypes = { "python" },
-                  root_dir = util.root_pattern(".git", "."),
-                },
-              }
-            end
-
-            -- a few bugs? (import, stackoverflow (weird?))
-            lspconfig.pyrefly.setup(coq.lsp_ensure_capabilities({
-                autostart = false,
-                settings = {
-                    python = {
-                        pythonPath = vim.fn.getcwd() .. "/.pixi/envs/default/bin/python"
-                    },
-                },
-            }))
-
-           -- Ty loads WAY WAY WAY faster (I have diagnostics waiting for me when the file opens lol), updates almost instantly
-           -- but doesn't recognize pixi (easy to ignore)
-           -- https://github.com/astral-sh/ty/issues/265
-           if not configs.ty then
-             configs.ty = {
-               default_config = {
-                 cmd = { data_path .. "/mason/bin/ty", "server" },
-                 filetypes = { "python" },
-                 root_dir = util.root_pattern(".git", "."),
-               },
-             }
-           end
-
-           lspconfig.ty.setup(coq.lsp_ensure_capabilities({
-               autostart = true,
-               settings = {
-                   python = {
-                       pythonPath = vim.fn.getcwd() .. "/.pixi/envs/default/bin/python"
-                   },
-               },
-           }))
-
-            -- https://www.reddit.com/r/neovim/comments/s24zvh/how_can_i_load_a_user_dictionary_into_ltexls/
-            lspconfig.ltex.setup(coq.lsp_ensure_capabilities({
-                autostart = false,
-                settings = {
-                    ltex = {
-                        dictionary = {
-                            ['en-US'] = words,
-                        },
-                    },
-                }
-            }))
-
-            lspconfig.lua_ls.setup(coq.lsp_ensure_capabilities({
-                autostart = false
-            }))
+            -- Optional: Add global keymaps for LSP functions here,
+            -- perhaps within a general on_attach function passed to vim.lsp.config('*', ...)
 
         end
     }
