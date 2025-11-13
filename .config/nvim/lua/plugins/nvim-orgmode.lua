@@ -18,6 +18,8 @@ return {
                     '~/HomeVault/Projects/**/*.org',
                 },
                 org_agenda_skip_scheduled_if_done = true,
+                -- I have "BLOCKED" as a done state and like to see the things turn green
+                org_agenda_skip_deadline_if_done = false,
                 org_deadline_warning_days = 7,
                 org_agenda_custom_commands = {
                     -- ignore to-be-read files
@@ -77,8 +79,8 @@ return {
                 },
                 org_todo_keywords = {
                     'TODO',
-                    -- 'WAITING',
-                    -- '|',
+                    -- minor blocks, emails replies
+                    '|',
                     'DONE',
                     'BLOCKED'
                 },
