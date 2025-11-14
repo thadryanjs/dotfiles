@@ -3,6 +3,7 @@ return {
     dependencies = { "nvim-lua/plenary.nvim", "MunifTanjim/nui.nvim" },
     cmd = { "LLMSessionToggle", "LLMSelectedTextHandler", "LLMAppHandler" },
     enabled = false,
+    lazy = true,
     config = function()
         local tools = require("llm.tools")
         require("llm").setup({

@@ -15,7 +15,11 @@ return {
                 -- [[ Agenda ]] --
                 org_agenda_files = {
                     '~/WorkVault/Projects/**/*.org',
+                    '~/WorkVault/refile.org',
+                    '~/WorkVault/to-be-read.org',
+
                     '~/HomeVault/Projects/**/*.org',
+                    '~/HomeVault/to-be-read.org',
                 },
                 org_agenda_skip_scheduled_if_done = true,
                 -- I have "BLOCKED" as a done state and like to see the things turn green
@@ -134,7 +138,7 @@ return {
             })
 
             -- refile hotkey
-            vim.api.nvim_set_keymap('n', '<leader>wr', ':e ~/WorkVault/Projects/refile.org<CR>', {
+            vim.api.nvim_set_keymap('n', '<leader>wr', ':e ~/WorkVault/refile.org<CR>', {
               noremap = true,
               silent = true
             })

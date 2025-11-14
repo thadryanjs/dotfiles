@@ -34,6 +34,7 @@ alias tmuxvpn="sh ~/.scripts/tmux-vpn-session.sh"
 
 alias focusmode="sh ~/.scripts/focus-mode.sh"
 
+alias queue="python ~/.scripts/overqueue.py ."
 
 alias ls='ls --color=auto'
 alias ll='ls -lav --ignore=..'   # show long listing of all except ".."
@@ -118,6 +119,8 @@ esac
 if (env | grep -Fq 'DISTROBOX'); then
     PS1='📦\[\033[01;32m\]\u@\h\[\033[00m\]\[\033[01;34m\]:\W\[\033[00m\]$(parse_git_branch)\n~:) '
 fi
+
+
 
 
 function y() {
