@@ -5,7 +5,7 @@ return {
         ft = { 'org' },
         config = function()
             require('orgmode').setup({
-                org_default_notes_file = '~/WorkVault//refile.org',
+                org_default_notes_file = '~/WorkVault/refile.org',
                 org_startup_folded = "showeverything",
                 -- the craziest shit I ever did see
                 org_adapt_indentation = false,
