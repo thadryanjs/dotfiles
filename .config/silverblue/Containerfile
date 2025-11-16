@@ -40,6 +40,7 @@ RUN rpm-ostree install \
     nvidia-settings \
     xorg-x11-drv-nvidia-cuda-libs \
     java-latest-openjdk \
+    sqlite \
     yazi \
     tmuxinator \
     zotero \
