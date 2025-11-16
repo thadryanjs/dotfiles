@@ -13,7 +13,6 @@ return {
 
 
         -- vim.api.nvim_set_keymap("n", "<leader>wi", ":e *.org<CR>", { noremap = true, silent = true })
-        vim.api.nvim_set_keymap("n", "<leader>wq", ":e queue.md<CR>", { noremap = true, silent = true })
         vim.api.nvim_set_keymap("n", "<leader>wa", ":WorkspacesAdd<CR>", { noremap = true, silent = true })
 
         end

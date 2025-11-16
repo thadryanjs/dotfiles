@@ -35,10 +35,10 @@ RUN rpm-ostree install \
     fzf \
     the_silver_searcher \
     atuin \
-    akmod-nvidia \
-    xorg-x11-drv-nvidia-cuda \
-    nvidia-settings \
-    xorg-x11-drv-nvidia-cuda-libs \
+    # akmod-nvidia \
+    # xorg-x11-drv-nvidia-cuda \
+    # nvidia-settings \
+    # xorg-x11-drv-nvidia-cuda-libs \
     java-latest-openjdk \
     sqlite \
     yazi \

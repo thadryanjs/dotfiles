@@ -120,6 +120,8 @@ return {
             -- vim.api.nvim_set_hl(0, '@org.priority.lowest', { fg = '#777777' })
 
             -- [[ Misc ]] --
+            -- shortcuts to open key files quickly
+            vim.api.nvim_set_keymap('n', '<leader>wi', ':e index.md<CR>', {})
             -- open main orgfile with name of dir
             local function open_orgfile()
               local cwd = vim.fn.getcwd()
@@ -132,7 +134,7 @@ return {
               end
             end
 
-            vim.api.nvim_set_keymap('n', '<leader>wi', '', {
+            vim.api.nvim_set_keymap('n', '<leader>wo', '', {
               noremap = true,
               silent = true,
               callback = open_orgfile,
