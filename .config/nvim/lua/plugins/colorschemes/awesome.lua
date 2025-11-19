@@ -1,5 +1,4 @@
 return {
-    {
-        "rafi/awesome-vim-colorschemes"
-    }
+    enabled = false,
+    "rafi/awesome-vim-colorschemes"
 }

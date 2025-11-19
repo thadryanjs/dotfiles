@@ -78,8 +78,8 @@ https://github.com/Kurama622/llm.nvim/issues/73
 
 This works:
 curl http://localhost:11434/api/generate -d '{
-  "model": "qwen2.5-coder:7b",
-  "prompt": "Why is the sky blue?"
+    "model": "qwen2.5-coder:7b",
+    "prompt": "Why is the sky blue?"
 }'
 
 
@@ -87,16 +87,16 @@ Works
 curl -X POST http://localhost:11434/v1/completions -H "Content-Type: application/json" -d '{
     "model": "qwen2.5-coder:7b",
     "prompt": "function add(a, b) {",
-    "max_tokens": 100,
-    "n_completions": 1
-}'
+        "max_tokens": 100,
+        "n_completions": 1
+    }'
 
 
-- float	Input:Submit	Submit your question	[i] ctrl+g	Input
-- float	Input:Cancel	Cancel dialog response	[i] ctrl+c	Input
-- float	Input:Resend	Rerespond to the dialog	[i] ctrl+r	Input
-- float	Input:HistoryNext	Select the next session history	[i] ctrl+j	Input
-- float	Input:HistoryPrev	Select the previous session history	[i] ctrl+k
+    - float	Input:Submit	Submit your question	[i] ctrl+g	Input
+    - float	Input:Cancel	Cancel dialog response	[i] ctrl+c	Input
+    - float	Input:Resend	Rerespond to the dialog	[i] ctrl+r	Input
+    - float	Input:HistoryNext	Select the next session history	[i] ctrl+j	Input
+    - float	Input:HistoryPrev	Select the previous session history	[i] ctrl+k
 
 
-]]--
+    ]]--

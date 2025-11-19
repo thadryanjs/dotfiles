@@ -1,6 +1,4 @@
 return {
-    {
-        "ubaldot/vim-outline",
-        enabled = false
-    }
+    "ubaldot/vim-outline",
+    enabled = false
 }

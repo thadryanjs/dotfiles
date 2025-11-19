@@ -1,5 +1,4 @@
 return {
-  {
     'luukvbaal/statuscol.nvim',
     enabled = false,
     opts = function()
@@ -9,15 +8,14 @@ return {
             -- override the default list of segments with:
             -- number-less fold indicator, then signs, then line number & separator
             segments = {
-              { text = { builtin.foldfunc }, click = 'v:lua.ScFa' },
-              { text = { '%s' }, click = 'v:lua.ScSa' },
-              {
-                text = { builtin.lnumfunc, ' ' },
-                condition = { true, builtin.not_empty },
-                click = 'v:lua.ScLa',
-              },
+                { text = { builtin.foldfunc }, click = 'v:lua.ScFa' },
+                { text = { '%s' }, click = 'v:lua.ScSa' },
+                {
+                    text = { builtin.lnumfunc, ' ' },
+                    condition = { true, builtin.not_empty },
+                    click = 'v:lua.ScLa',
+                },
             },
-          }
-        end,
-    }
+        }
+    end,
 }

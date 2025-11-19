@@ -1,6 +1,4 @@
 return {
-    {
-        enabled = false,
-        "tools-life/taskwiki"
-    }
+    enabled = false,
+    "tools-life/taskwiki"
 }

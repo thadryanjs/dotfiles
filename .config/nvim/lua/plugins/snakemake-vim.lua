@@ -1,6 +1,4 @@
 return {
-    {
-        "ShaiberAlon/snakemake-vim",
-        enabled = false
-    }
+    "ShaiberAlon/snakemake-vim",
+    enabled = false
 }
